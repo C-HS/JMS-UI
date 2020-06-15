@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Home</title>
+  <title>Catalog</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,6 +17,9 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -437,7 +440,91 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+         <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Catalog</h1>
+
+            
+            <nav class="">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Delete</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+
+
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
+           
+
+          </div>
+
+
+
+
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Select</th>
+                      <th>Catalog ID</th>
+                      <th>Name</th>
+                      <th>Date Created</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Select</th>
+                      <th>Catalog ID</th>
+                      <th>Name</th>
+                      <th>Date Created</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>CAT_001</td>
+                      <td>GOLD</td>
+                      <td>2011/04/25</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>CAT_002</td>
+                      <td>SILVER</td>
+                      <td>2011/07/25</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>CAT_003</td>
+                      <td>DIAMOND</td>
+                      <td>2009/01/12</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>CAT_004</td>
+                      <td>PLATINIM</td>
+                      <td>2012/03/29</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>CAT_005</td>
+                      <td>ARTIFICIAL</td>
+                      <td>2010/03/17</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
 
         </div>
         <!-- /.container-fluid -->
@@ -494,6 +581,13 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 
