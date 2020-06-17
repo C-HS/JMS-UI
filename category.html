@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Catalog</title>
+  <title>Category</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -101,8 +101,8 @@
         </a>
         <div id="collapseProduct" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item active" href="catalog.html">Catalog</a>
-            <a class="collapse-item" href="category.html">Category</a>
+            <a class="collapse-item" href="catalog.html">Catalog</a>
+            <a class="collapse-item active" href="category.html">Category</a>
             <a class="collapse-item" href="cards.html">Product</a>
              <a class="collapse-item" href="cards.html">Unit Of Measure</a>
           </div>
@@ -441,11 +441,27 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Catalog</h1>
+            <h1 class="h3 mb-0 text-gray-800">Category</h1>
 
-            <!-- <a href="create_catalog.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Edit</a>
-            -->
+            
+            <nav class="">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Delete</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Print Barcode</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
 
+
+            <a href="create_category.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
+           
 
           </div>
 
@@ -453,75 +469,69 @@
 
 
           <!-- DataTales Example -->
-
           <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary"><a href="catalog.html">Catalog</a> -> <a href="view_catalog.html">CAT_001 (GOLD)</a>  -> Edit</h6>
-            </div>
-            
-            
-
             <div class="card-body">
-
-              <form>
-
-              <div class="row">
-                
-                
-
-                <div class="col-lg-5">
-                  <div class="p-6">
-                    
-                     
-                      <div class="form-group">
-                        <label>Catalog ID</label>
-                        <input type="text" class="form-control form-control-user" id="exampleInputEmail" value="CAT_001">
-                        
-                        
-                      </div>
-                      <div class="form-group">
-                        <label>Catalog Name</label>
-                        <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="GOLD">
-                      </div>
-
-                      <div class="text-center">
-                        <a href="view_catalog.html" class="btn btn-primary">
-                          Save
-                        </a>
-                      </div>
-                    
-                  </div>
-                </div>
-                <div class="col-lg-3">
-
-                  <div class="p-6">
-                    
-                    
-                  </div>
-
-                </div>
-
-                <div class="col-lg-3">
-
-                  <div class="p-6">
-                    
-                    <div class="text-center border-1">
-                      <img class="img-profile" width="150" height="150" src="img/gold.jpg">
-                      <h1 class="h6 text-gray-600 mb-4">Update Logo</h1>
-                    </div>
-                  </div>
-
-                </div>
-
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Select</th>
+                      <th>Category ID</th>
+                      <th>Name</th>
+                      <th>Catalog</th>
+                      <th>Date Created</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Select</th>
+                      <th>Category ID</th>
+                      <th>Name</th>
+                      <th>Catalog</th>
+                      <th>Date Created</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td><a href="view_category.html">CG_001</a></td>
+                      <td>Gold Necklase</td>
+                      <td>GOLD</td>
+                      <td>2011/04/25</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>CG_002</td>
+                      <td>Gold Ring</td>
+                      <td>GOLD</td>
+                      <td>2011/07/25</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>CG_003</td>
+                      <td>Gold Bangles</td>
+                      <td>GOLD</td>
+                      <td>2009/01/12</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>CG_004</td>
+                      <td>Silver Coin</td>
+                      <td>SILVER</td>
+                      <td>2012/03/29</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>CG_005</td>
+                      <td>Platinum Ring</td>
+                      <td>PLATINUM</td>
+                      <td>2010/03/17</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-            </form>
-
             </div>
           </div>
-
-         
-         
-         
 
         </div>
         <!-- /.container-fluid -->

@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Catalog</title>
+  <title>Category</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -101,8 +101,8 @@
         </a>
         <div id="collapseProduct" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item active" href="catalog.html">Catalog</a>
-            <a class="collapse-item" href="category.html">Category</a>
+            <a class="collapse-item" href="catalog.html">Catalog</a>
+            <a class="collapse-item active" href="category.html">Category</a>
             <a class="collapse-item" href="cards.html">Product</a>
              <a class="collapse-item" href="cards.html">Unit Of Measure</a>
           </div>
@@ -441,10 +441,10 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Catalog</h1>
+            <h1 class="h3 mb-0 text-gray-800">Category</h1>
 
-            <!-- <a href="create_catalog.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Edit</a>
-            -->
+            <a href="edit_category.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Edit</a>
+           
 
 
           </div>
@@ -456,7 +456,7 @@
 
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary"><a href="catalog.html">Catalog</a> -> <a href="view_catalog.html">CAT_001 (GOLD)</a>  -> Edit</h6>
+              <h6 class="m-0 font-weight-bold text-primary"><a href="category.html">Category</a> -> <a href="view_category.html">CG_001 (Gold Necklase)</a></h6>
             </div>
             
             
@@ -471,23 +471,22 @@
 
                 <div class="col-lg-5">
                   <div class="p-6">
+              
+
                     
-                     
+
                       <div class="form-group">
-                        <label>Catalog ID</label>
-                        <input type="text" class="form-control form-control-user" id="exampleInputEmail" value="CAT_001">
-                        
-                        
+                        <label>Category ID</label>
+                        <input type="text" disabled="true" class="form-control form-control-user" id="exampleInputEmail" value="CG_001">
                       </div>
                       <div class="form-group">
-                        <label>Catalog Name</label>
-                        <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="GOLD">
+                        <label>Category Name</label>
+                        <input type="text" disabled="true" class="form-control form-control-user" id="exampleInputEmail"  value="GOLD">
                       </div>
 
-                      <div class="text-center">
-                        <a href="view_catalog.html" class="btn btn-primary">
-                          Save
-                        </a>
+                      <div class="form-group">
+                        <label>Catalog</label>
+                        <input type="text" disabled="true" class="form-control form-control-user" id="exampleInputEmail" value="CAT_001 GOLD">
                       </div>
                     
                   </div>
@@ -506,8 +505,7 @@
                   <div class="p-6">
                     
                     <div class="text-center border-1">
-                      <img class="img-profile" width="150" height="150" src="img/gold.jpg">
-                      <h1 class="h6 text-gray-600 mb-4">Update Logo</h1>
+                      <img class="img-profile" width="150" height="150" src="img/gold_necklace.jpg">
                     </div>
                   </div>
 
@@ -520,7 +518,68 @@
           </div>
 
          
-         
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary"><a href="category.html">Category</a> ->  <a href="view_category.html">CG_001 (Gold Necklase)</a> -> Products</h6>
+            </div>
+            
+            
+
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Product ID</th>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Sale Price</th>
+                      <th>Cost</th>
+                      <th>QOH</th>
+                      <th>UOM</th>
+                      <th>Tracability</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Product ID</th>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Sale Price</th>
+                      <th>Cost</th>
+                      <th>QOH</th>
+                      <th>UOM</th>
+                      <th>Tracability</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td>PROD_001</td>
+                      <td>Neckless 232</td>
+                      <td>Storable</td>
+                      <td>125000.000</td>
+                      <td>100000.000</td>
+                      <td>5</td>
+                      <td>Piece</td>
+                      <td>Serialised</td>
+                    </tr>
+                    <tr>
+                      <td>PROD_002</td>
+                      <td>Neckless 459</td>
+                      <td>Storable</td>
+                      <td>135000.000</td>
+                      <td>106000.000</td>
+                      <td>2</td>
+                      <td>Piece</td>
+                      <td>Serialised</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
          
 
         </div>
