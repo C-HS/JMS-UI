@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Catalog</title>
+  <title>Unit Of Measure</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -101,10 +101,10 @@
         </a>
         <div id="collapseProduct" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item active" href="catalog.html">Catalog</a>
-            <a class="collapse-item" href="category.html">Category</a>
+            <a class="collapse-item" href="catalog.html">Catalog</a>
+            <a class="collapse-item " href="category.html">Category</a>
             <a class="collapse-item" href="product.html">Product</a>
-             <a class="collapse-item" href="uom.html">Unit Of Measure</a>
+             <a class="collapse-item active" href="uom.html">Unit Of Measure</a>
           </div>
         </div>
       </li>
@@ -441,11 +441,27 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Catalog</h1>
+            <h1 class="h3 mb-0 text-gray-800">Unit Of Measure</h1>
 
-            <!-- <a href="create_catalog.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Edit</a>
-            -->
+            
+            <nav class="">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Delete</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Print Barcode</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
 
+
+            <a href="create_uom.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
+           
 
           </div>
 
@@ -453,75 +469,68 @@
 
 
           <!-- DataTales Example -->
-
           <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary"><a href="catalog.html">Catalog</a> -> <a href="view_catalog.html">CAT_001 (GOLD)</a>  -> Edit</h6>
-            </div>
-            
-            
-
             <div class="card-body">
-
-              <form>
-
-              <div class="row">
-                
-                
-
-                <div class="col-lg-5">
-                  <div class="p-6">
-                    
-                     
-                      <div class="form-group">
-                        <label>Catalog ID</label>
-                        <input type="text" class="form-control form-control-user" id="exampleInputEmail" value="CAT_001">
-                        
-                        
-                      </div>
-                      <div class="form-group">
-                        <label>Catalog Name</label>
-                        <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="GOLD">
-                      </div>
-
-                      <div class="text-center">
-                        <a href="view_catalog.html" class="btn btn-primary">
-                          Save
-                        </a>
-                      </div>
-                    
-                  </div>
-                </div>
-                <div class="col-lg-3">
-
-                  <div class="p-6">
-                    
-                    
-                  </div>
-
-                </div>
-
-                <div class="col-lg-3">
-
-                  <div class="p-6">
-                    
-                    <div class="text-center border-1">
-                      <img class="img-profile" width="150" height="150" src="img/gold.jpg">
-                      <h1 class="h6 text-gray-600 mb-4">Update Logo</h1>
-                    </div>
-                  </div>
-
-                </div>
-
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Select</th>
+                      <th>UOM_ID</th>
+                      <th>Unit Name</th>
+                      <th>Date Created</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Select</th>
+                      <th>UOM_ID</th>
+                      <th>Unit Name</th>
+                      <th>Date Created</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td><a href="view_uom.html">UOM_001</a></td>
+                      <td>Piece</td>
+                      <td>2011/04/25</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>UOM_002</td>
+                      <td>Pair</td>
+                      <td>2011/07/25</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>UOM_003</td>
+                      <td>Gram</td>
+                      <td>2009/01/12</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>UOM_004</td>
+                      <td>mm</td>
+                      <td>2012/03/29</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>UOM_005</td>
+                      <td>cm</td>
+                      <td>2010/03/17</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>UOM_006</td>
+                      <td>inch</td>
+                      <td>2010/03/17</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-            </form>
-
             </div>
           </div>
-
-         
-         
-         
 
         </div>
         <!-- /.container-fluid -->
