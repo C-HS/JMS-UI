@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Home</title>
+  <title>Product Attribute</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,6 +17,9 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -91,17 +94,17 @@
         Catalog Management
       </div>
 
-     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
+     <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
           <i class="fas fa-fw fa-cog"></i>
           <span>Product</span>
         </a>
-        <div id="collapseProduct" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseProduct" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="catalog.html">Catalog</a>
             <a class="collapse-item " href="category.html">Category</a>
             <a class="collapse-item" href="product.html">Product</a>
-            <a class="collapse-item" href="product_attribute.html">Product Attribute</a>
+            <a class="collapse-item active" href="product_attribute.html">Product Attribute</a>
              <a class="collapse-item" href="uom.html">Unit Of Measure</a>
           </div>
         </div>
@@ -438,7 +441,125 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+         <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Product Attribute</h1>
+
+            
+            <nav class="">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Delete</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Print Barcode</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+
+
+            <a href="create_product_attribute.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
+           
+
+          </div>
+
+
+
+
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Select</th>
+                      <th>Attribute_ID</th>
+                      <th>Name</th>
+                      <th>Unit</th>
+                      <th>Date Created</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Select</th>
+                      <th>Attribute_ID</th>
+                      <th>Name</th>
+                      <th>Unit</th>
+                      <th>Date Created</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td><a href="view_product_attribute.html">PA_001</a></td>
+                      <td>Polish</td>
+                      <td>No Unit</td>
+                      <td>2011/07/25</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>PA_002</td>
+                      <td>Color</td>
+                      <td>No Unit</td>
+                      <td>2011/04/25</td>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox"></td>
+                      <td>PA_003</td>
+                      <td>Metal Weight</td>
+                      <td>Gram</td>
+                      <td>2009/01/12</td>
+                    </tr>
+                    <td><input type="checkbox"></td>
+                      <td>PA_004</td>
+                      <td>Stone Weight</td>
+                      <td>Gram</td>
+                      <td>2009/01/12</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>PA_005</td>
+                      <td>Bangle Diameter</td>
+                      <td>Inch</td>
+                      <td>2012/03/29</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>PA_006</td>
+                      <td>Stone Count</td>
+                      <td>Piece</td>
+                      <td>2012/03/29</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>PA_007</td>
+                      <td>Stone Type</td>
+                      <td>No Unit</td>
+                      <td>2010/03/17</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>PA_008</td>
+                      <td>Metal Quality</td>
+                      <td>Karat</td>
+                      <td>2010/03/17</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>PA_009</td>
+                      <td>Total Weight</td>
+                      <td>Gram</td>
+                      <td>2010/03/17</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
 
         </div>
         <!-- /.container-fluid -->
@@ -495,6 +616,13 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 
