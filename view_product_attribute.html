@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Home</title>
+  <title>Product Attribute</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,6 +17,9 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -91,17 +94,17 @@
         Catalog Management
       </div>
 
-     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
+     <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
           <i class="fas fa-fw fa-cog"></i>
           <span>Product</span>
         </a>
-        <div id="collapseProduct" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseProduct" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="catalog.html">Catalog</a>
             <a class="collapse-item " href="category.html">Category</a>
             <a class="collapse-item" href="product.html">Product</a>
-            <a class="collapse-item" href="product_attribute.html">Product Attribute</a>
+            <a class="collapse-item active" href="product_attribute.html">Product Attribute</a>
              <a class="collapse-item" href="uom.html">Unit Of Measure</a>
           </div>
         </div>
@@ -438,7 +441,133 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+         <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Product Attribute</h1>
+
+            <a href="edit_product_attribute.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Edit</a>
+           
+          </div>
+
+
+
+
+          <!-- DataTales Example -->
+
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary"><a href="product_attribute.html">Product Attribute</a> -> <a href="view_product_attribute.html">PA_001 (Polish)</a></h6>
+            </div>
+            
+            
+
+            <div class="card-body">
+
+              <form>
+
+              <div class="row">
+                
+                
+
+                <div class="col-lg-5">
+                  <div class="p-6">
+              
+
+                    
+
+                      <div class="form-group">
+                        <label>Attribute ID</label>
+                        <input type="text" disabled="true" class="form-control form-control-user" id="exampleInputEmail" value="PA_001">
+                      </div>
+                      <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" disabled="true" class="form-control form-control-user" id="exampleInputEmail"  value="Polish">
+                      </div>
+
+                      <div class="form-group">
+                        <label>Unit</label>
+                        <input type="text" disabled="true" class="form-control form-control-user" id="exampleInputEmail" value="No Unit">
+                      </div>
+                    
+                  </div>
+                </div>
+                <div class="col-lg-3">
+
+                  <div class="p-6">
+                    
+                    
+                  </div>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                  <div class="p-6">
+                    
+                  </div>
+
+                </div>
+
+              </div>
+            </form>
+
+            </div>
+          </div>
+
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800"> Value</h1>
+
+            <a href="manage_product_attribute_value.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Manage Value</a>
+           
+          </div>
+         
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary"><a href="product_attribute.html">Product Attribute</a> -> <a href="view_product_attribute.html">PA_001 (Polish)</a> -> Values</h6>
+            </div>
+            
+            
+
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Value_ID</th>
+                      <th>Value</th>
+                      <th>Date Created</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Value_ID</th>
+                      <th>Value</th>
+                      <th>Date Created</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <th>VAL_001</th>
+                      <td>No Polish</td>
+                      <td>2010/03/17</td>
+                    </tr>
+                    <tr>
+                      <th>VAL_002</th>
+                      <td>Gold Polish</td>
+                      <td>2010/03/17</td>
+                    </tr>
+                    <tr>
+                      <th>VAL_003</th>
+                      <td>Rhodium Polish</td>
+                      <td>2010/03/17</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+         
 
         </div>
         <!-- /.container-fluid -->
@@ -495,6 +624,13 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 
