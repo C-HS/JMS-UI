@@ -445,26 +445,6 @@
             <h1 class="h3 mb-0 text-gray-800">Catalog</h1>
 
             
-            <nav class="">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Actions
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Delete</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Edit</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Print Barcode</a>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-
-
-            <a href="create_catalog.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
-           
 
           </div>
 
@@ -472,63 +452,84 @@
 
 
           <!-- DataTales Example -->
+
           <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary"><a href="catalog.html">Catalog</a> -> Create</h6>
+            </div>
             <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Select</th>
-                      <th>Catalog ID</th>
-                      <th>Name</th>
-                      <th>Date Created</th>
-                    </tr>
-                  </thead>
-                  <!-- <tfoot>
-                    <tr>
-                      <th>Select</th>
-                      <th>Catalog ID</th>
-                      <th>Name</th>
-                      <th>Date Created</th>
-                    </tr>
-                  </tfoot> -->
-                  <tbody>
-                    <tr>
-                      <td><input type="checkbox"></td>
-                      <td><a href="view_catalog.html">CAT_001</a></td>
-                      <td>GOLD</td>
-                      <td>2011/04/25</td>
-                    </tr>
-                    <tr>
-                      <td><input type="checkbox"></td>
-                      <td>CAT_002</td>
-                      <td>SILVER</td>
-                      <td>2011/07/25</td>
-                    </tr>
-                    <tr>
-                      <td><input type="checkbox"></td>
-                      <td>CAT_003</td>
-                      <td>DIAMOND</td>
-                      <td>2009/01/12</td>
-                    </tr>
-                    <tr>
-                      <td><input type="checkbox"></td>
-                      <td>CAT_004</td>
-                      <td>PLATINIM</td>
-                      <td>2012/03/29</td>
-                    </tr>
-                    <tr>
-                      <td><input type="checkbox"></td>
-                      <td>CAT_005</td>
-                      <td>ARTIFICIAL</td>
-                      <td>2010/03/17</td>
-                    </tr>
-                  </tbody>
-                </table>
+
+              <form>
+
+              <div class="row">
+                
+                
+
+                <div class="col-lg-5">
+                  <div class="p-6">
+                    <div class="text-center">
+                      <h1 class="h4 text-gray-900 mb-4">New Catalog</h1>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label>Catalog ID</label>
+                      <input type="text"  class="form-control form-control-user" id="exampleInputEmail" >
+                      
+                      
+                    </div>
+                    <div class="form-group">
+                      <label>Catalog Name</label>
+                      <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                    </div>
+                      <!--
+                      <div class="form-group">
+                        <input type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address">
+                      </div>
+                      <div class="form-group row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                          <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                        </div>
+                        <div class="col-sm-6">
+                          <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repeat Password">
+                        </div>
+                      </div>
+                      -->
+                      <div class="text-center">
+                      <a href="view_catalog.html" class="btn btn-primary">
+                        Create
+                      </a>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col-lg-3">
+
+                  <div class="p-6">
+                    
+                    
+                  </div>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                  <div class="p-6">
+                    
+                    <div class="text-center border-1">
+                      <img class="img-profile" width="150" height="150" src="img/placeholder.png">
+                      <h1 class="h6 text-gray-600 mb-4">Add Logo</h1>
+                    </div>
+                  </div>
+
+                </div>
+
               </div>
+            </form>
+
             </div>
           </div>
 
+         
         </div>
         <!-- /.container-fluid -->
 

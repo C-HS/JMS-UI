@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Catalog</title>
+  <title>Product Attribute</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -101,10 +101,10 @@
         </a>
         <div id="collapseProduct" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item active" href="catalog.html">Catalog</a>
-            <a class="collapse-item" href="category.html">Category</a>
+            <a class="collapse-item" href="catalog.html">Catalog</a>
+            <a class="collapse-item " href="category.html">Category</a>
             <a class="collapse-item" href="product.html">Product</a>
-            <a class="collapse-item" href="product_attribute.html">Product Attribute</a>
+            <a class="collapse-item active" href="product_attribute.html">Product Attribute</a>
              <a class="collapse-item" href="uom.html">Unit Of Measure</a>
           </div>
         </div>
@@ -442,19 +442,17 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Catalog</h1>
+            <h1 class="h3 mb-0 text-gray-800">Suppliar/Vendor List</h1>
 
             
             <nav class="">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Actions
+                    Action
                   </a>
                   <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Delete</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Edit</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Print Barcode</a>
                   </div>
@@ -463,7 +461,7 @@
             </nav>
 
 
-            <a href="create_catalog.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
+            <a href="create_product_attribute.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
            
 
           </div>
@@ -479,48 +477,73 @@
                   <thead>
                     <tr>
                       <th>Select</th>
-                      <th>Catalog ID</th>
+                      <th>Supplier/Vendor_ID</th>`
                       <th>Name</th>
-                      <th>Date Created</th>
+                      <th>Address</th>
+                      <th>Contact Person</th>
                     </tr>
                   </thead>
-                  <!-- <tfoot>
-                    <tr>
-                      <th>Select</th>
-                      <th>Catalog ID</th>
-                      <th>Name</th>
-                      <th>Date Created</th>
-                    </tr>
-                  </tfoot> -->
                   <tbody>
                     <tr>
                       <td><input type="checkbox"></td>
-                      <td><a href="view_catalog.html">CAT_001</a></td>
-                      <td>GOLD</td>
-                      <td>2011/04/25</td>
-                    </tr>
-                    <tr>
-                      <td><input type="checkbox"></td>
-                      <td>CAT_002</td>
-                      <td>SILVER</td>
+                      <td><a href="view_product_attribute.html">PA_001</a></td>
+                      <td>Polish</td>
+                      <td>No Unit</td>
                       <td>2011/07/25</td>
                     </tr>
                     <tr>
                       <td><input type="checkbox"></td>
-                      <td>CAT_003</td>
-                      <td>DIAMOND</td>
+                      <td>PA_002</td>
+                      <td>Color</td>
+                      <td>No Unit</td>
+                      <td>2011/04/25</td>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox"></td>
+                      <td>PA_003</td>
+                      <td>Metal Weight</td>
+                      <td>Gram</td>
+                      <td>2009/01/12</td>
+                    </tr>
+                    <td><input type="checkbox"></td>
+                      <td>PA_004</td>
+                      <td>Stone Weight</td>
+                      <td>Gram</td>
                       <td>2009/01/12</td>
                     </tr>
                     <tr>
                       <td><input type="checkbox"></td>
-                      <td>CAT_004</td>
-                      <td>PLATINIM</td>
+                      <td>PA_005</td>
+                      <td>Bangle Diameter</td>
+                      <td>Inch</td>
                       <td>2012/03/29</td>
                     </tr>
                     <tr>
                       <td><input type="checkbox"></td>
-                      <td>CAT_005</td>
-                      <td>ARTIFICIAL</td>
+                      <td>PA_006</td>
+                      <td>Stone Count</td>
+                      <td>Piece</td>
+                      <td>2012/03/29</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>PA_007</td>
+                      <td>Stone Type</td>
+                      <td>No Unit</td>
+                      <td>2010/03/17</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>PA_008</td>
+                      <td>Metal Quality</td>
+                      <td>Karat</td>
+                      <td>2010/03/17</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>PA_009</td>
+                      <td>Total Weight</td>
+                      <td>Gram</td>
                       <td>2010/03/17</td>
                     </tr>
                   </tbody>
