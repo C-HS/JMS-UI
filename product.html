@@ -466,6 +466,90 @@
 
           </div>
 
+        <!-- Content Row -->
+        <div class="row">
+
+          <!-- Earnings (Monthly) Card Example -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">By Category</div>
+                  
+                      <select class="form-control form-control-user" id="catalogId" >
+                        <option>All</option>
+                        <option>Gold Necklase</option>
+                        <option>Gold Ring</option>
+                        <option>Gold Bangles</option>
+                        <option>Silver Coin</option>
+                        <option>Platinum Ring</option>
+                      </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+           <!-- Earnings (Monthly) Card Example -->
+           <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-success shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  
+                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">By Type</div>
+                    <select class="form-control form-control-user" id="catalogId" >
+                      <option>All</option>
+                      <option>Storable</option>
+                      <option>Consumable</option>
+                      <option>Service</option>
+                    </select>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+                      <!-- Earnings (Monthly) Card Example -->
+                      <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-info shadow h-100 py-2">
+                          <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">By Sale / Purchase</div>
+                                <select class="form-control form-control-user" id="catalogId" >
+                                  <option>All</option>
+                                  <option>Sale</option>
+                                  <option>Purchase</option>
+                                </select>
+                            
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+          
+                      <!-- Pending Requests Card Example -->
+                      <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-warning shadow h-100 py-2">
+                          <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                              
+                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">By Tracebility</div>
+                                <select class="form-control form-control-user" id="catalogId" >
+                                  <option>All</option>
+                                  <option>Serialized</option>
+                                  <option>Non Serialized</option>
+                                </select>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                   
+
+
+          </div>
+
+        
 
 
 
@@ -480,12 +564,12 @@
                       <th>Product ID</th>
                       <th>Name</th>
                       <th>Category</th>
+                      <th>For</th>
                       <th>Type</th>
                       <th>Sale Price</th>
                       <th>Cost</th>
                       <th>QOH</th>
                       <th>UOM</th>
-                      <th>Tracability</th>
                     </tr>
                   </thead>
                   <tfoot>
@@ -494,12 +578,12 @@
                       <th>Product ID</th>
                       <th>Name</th>
                       <th>Category</th>
+                      <th>For</th>
                       <th>Type</th>
                       <th>Sale Price</th>
                       <th>Cost</th>
                       <th>QOH</th>
                       <th>UOM</th>
-                      <th>Tracability</th>
                     </tr>
                   </tfoot>
                   <tbody>
@@ -508,24 +592,24 @@
                       <td>PROD_001</td>
                       <td>Neckless 232</td>
                       <td>Gold Necklase</td>
+                      <td>Sale</td>
                       <td>Storable</td>
                       <td>125000.000</td>
                       <td>100000.000</td>
                       <td>5</td>
                       <td>Unit</td>
-                      <td>Serialised</td>
                     </tr>
                     <tr>
                       <td><input type="checkbox"></td>
                       <td>PROD_002</td>
                       <td>Neckless 459</td>
                       <td>Gold Necklase</td>
+                      <td>Purchase</td>
                       <td>Storable</td>
                       <td>135000.000</td>
                       <td>106000.000</td>
                       <td>2</td>
                       <td>Unit</td>
-                      <td>Serialised</td>
                     </tr>
                   </tbody>
                 </table>
