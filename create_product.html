@@ -102,7 +102,7 @@
         <div id="collapseProduct" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="catalog.html">Catalog</a>
-            <a class="collapse-item " href="category.html">Category</a>
+            <a class="collapse-item" href="category.html">Category</a>
             <a class="collapse-item active" href="product.html">Product</a>
             <a class="collapse-item" href="product_attribute.html">Product Attribute</a>
              <a class="collapse-item" href="uom.html">Unit Of Measure</a>
@@ -445,178 +445,279 @@
             <h1 class="h3 mb-0 text-gray-800">Product</h1>
 
             
-            <nav class="">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Action
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Delete</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Print Barcode</a>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-
-
-            <a href="create_product.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
-           
 
           </div>
 
-        <!-- Content Row -->
-        <div class="row">
-
-          <!-- Earnings (Monthly) Card Example -->
-          <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-left-primary shadow h-100 py-2">
-              <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">By Category</div>
-                  
-                      <select class="form-control form-control-user" id="catalogId" >
-                        <option>All</option>
-                        <option>Gold Necklase</option>
-                        <option>Gold Ring</option>
-                        <option>Gold Bangles</option>
-                        <option>Silver Coin</option>
-                        <option>Platinum Ring</option>
-                      </select>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-           <!-- Earnings (Monthly) Card Example -->
-           <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-left-success shadow h-100 py-2">
-              <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                  
-                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">By Type</div>
-                    <select class="form-control form-control-user" id="catalogId" >
-                      <option>All</option>
-                      <option>Storable</option>
-                      <option>Consumable</option>
-                      <option>Service</option>
-                    </select>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-                      <!-- Earnings (Monthly) Card Example -->
-                      <div class="col-xl-3 col-md-6 mb-4">
-                        <div class="card border-left-info shadow h-100 py-2">
-                          <div class="card-body">
-                            <div class="row no-gutters align-items-center">
-                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">By Sale / Purchase</div>
-                                <select class="form-control form-control-user" id="catalogId" >
-                                  <option>All</option>
-                                  <option>Sale</option>
-                                  <option>Purchase</option>
-                                </select>
-                            
-                             </div>
-                          </div>
-                        </div>
-                      </div>
-          
-                      <!-- Pending Requests Card Example -->
-                      <div class="col-xl-3 col-md-6 mb-4">
-                        <div class="card border-left-warning shadow h-100 py-2">
-                          <div class="card-body">
-                            <div class="row no-gutters align-items-center">
-                              
-                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">By Traceability</div>
-                                <select class="form-control form-control-user" id="catalogId" >
-                                  <option>All</option>
-                                  <option>Serialized</option>
-                                  <option>Non Serialized</option>
-                                </select>
-                              
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                   
-
-
-          </div>
-
-        
 
 
 
           <!-- DataTales Example -->
+
           <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary"><a href="product.html">Product</a> -> Create</h6>
+            </div>
             <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Select</th>
-                      <th>Product ID</th>
-                      <th>Name</th>
-                      <th>Category</th>
-                      <th>For</th>
-                      <th>Type</th>
-                      <th>Sale Price</th>
-                      <th>Cost</th>
-                      <th>QOH</th>
-                      <th>UOM</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                    <tr>
-                      <th>Select</th>
-                      <th>Product ID</th>
-                      <th>Name</th>
-                      <th>Category</th>
-                      <th>For</th>
-                      <th>Type</th>
-                      <th>Sale Price</th>
-                      <th>Cost</th>
-                      <th>QOH</th>
-                      <th>UOM</th>
-                    </tr>
-                  </tfoot>
-                  <tbody>
-                    <tr>
-                      <td><input type="checkbox"></td>
-                      <td>PROD_001</td>
-                      <td>Neckless 232</td>
-                      <td>Gold Necklase</td>
-                      <td>Sale</td>
-                      <td>Storable</td>
-                      <td>125000.000</td>
-                      <td>100000.000</td>
-                      <td>5</td>
-                      <td>Unit</td>
-                    </tr>
-                    <tr>
-                      <td><input type="checkbox"></td>
-                      <td>PROD_002</td>
-                      <td>Neckless 459</td>
-                      <td>Gold Necklase</td>
-                      <td>Purchase</td>
-                      <td>Storable</td>
-                      <td>135000.000</td>
-                      <td>106000.000</td>
-                      <td>2</td>
-                      <td>Unit</td>
-                    </tr>
-                  </tbody>
-                </table>
+
+              <form>
+
+                <div class="row">
+
+                  <div class="col-lg-10">
+
+
+                      <div class="row">
+                
+                
+
+                        <div class="col-lg-6">
+                          <div class="p-6">                    
+                            <div class="form-group">
+                              <label>Product ID</label>
+                              <input type="text"  class="form-control form-control-user" id="exampleInputEmail" >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="p-6">
+                            <div class="form-group">
+                              <label>Product Name</label>
+                              <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+        
+                      
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="row">
+                                  <div class="col-lg-6">
+                                      <div class="p-6">  
+                                        <div class="form-check">
+                                          <input type="checkbox" class="form-check-input" id="canBeSoldCheck">
+                                          <label class="form-check-label" for="canBeSoldCheck">Can Be Sold</label>
+                                        </div>
+                                      </div>
+                                      <div class="p-6">  
+                                        <div class="form-check">
+                                          <input type="checkbox" class="form-check-input" id="canBePurchasedCheck">
+                                          <label class="form-check-label" for="canBePurchasedCheck">Can Be Purchased</label>
+                                        </div>
+                                      </div>
+                                      <div class="p-6">  
+                                        <div class="form-check">
+                                          <input type="checkbox" class="form-check-input" id="SerializedCheck">
+                                          <label class="form-check-label" for="SerializedCheck">Serialized</label>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  
+                          </div>
+                       </div>
+                       <div class="col-lg-6">
+                        <div class="p-6">
+                          <div class="form-group">
+                            <label>Product Type</label>
+                            <select class="form-control form-control-user" id="productTypeId" >
+                              <option>Select Type</option>
+                              <option>Strorable</option>
+                              <option>Consumable</option>
+                              <option>Service</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="row">
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          
+                          <div class="form-group">
+                            <label>Internal Reference</label>
+                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+      
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          <div class="form-group">
+                            <label>Category</label>
+                            <select class="form-control form-control-user" id="catalogId" >
+                              <option>Select Category</option>
+                              <option>Gold Necklase</option>
+                              <option>Gold Ring</option>
+                              <option>Gold Bangles</option>
+                              <option>Silver Coin</option>
+                              <option>Platinum Ring</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+
+                                <div class="col-lg-6">
+                                  <div class="p-6">                    
+                                    
+                                    <div class="form-group">
+                                      <label>HSN/SAC Code</label>
+                                      <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                  <div class="p-6">                    
+                                    <div class="form-group">
+                                      <label>HSN/SAC Description</label>
+                                      <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                          <div class="row">
+
+                            <div class="col-lg-6">
+                              <div class="p-6">                    
+                                
+                                <div class="form-group">
+                                  <label>Sales Price (Rs)</label>
+                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+            
+                                </div>
+                                
+                              </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                              <div class="p-6">                    
+                                <div class="form-group">
+                                  <label>Cost Price (Rs)</label>
+                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                                </div>
+                              </div>
+                            </div>
+                         </div>
+
+                         <div class="row">
+
+                                <div class="col-lg-6">
+                                  <div class="p-6">                    
+                                    
+                                    <div class="form-group">
+                                      <label>Unit Of Measure</label>
+                                      <select class="form-control form-control-user" id="unitId" >
+                                        <option>Select Unit</option>
+                                        <option>Unit</option>
+                                        <option>No Unit</option>
+                                        <option>Pair</option>
+                                        <option>Gram</option>
+                                        <option>mm</option>
+                                        <option>cm</option>
+                                        <option>inch</option>
+                                        <option>Karat</option>
+                                        <option>Piece</option>
+                                      </select>
+                
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                  <div class="p-6">                    
+                                    <div class="form-group">
+                                      <label>Company</label>
+                                      <select class="form-control form-control-user" id="unitId">
+                                        <option>Select</option>
+                                        <option>Iaito Infotech Pvt Ltd</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                         </div>
+
+                         <div class="row">
+
+                          <div class="col-lg-6">
+                            <div class="p-6">                    
+                              
+                              <div class="form-group">
+                                <label>Tax</label>
+                                <select class="form-control" id="unitId" multiple>
+                                  <option>Select Tax</option>
+                                  <option>Cess 0.5%</option>
+                                  <option>GST 5%</option>
+                                  <option>GST 12%</option>
+                                  <option>GST 18%</option>
+                                  <option>GST 28%</option>
+                                </select>
+          
+                              </div>
+                              
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="p-6">                    
+                              <div class="form-group">
+                                <label>Description</label>
+                                <textarea class="form-control" aria-label="Large"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                   </div>
+
+                  </div>   
+                    
+                    <div class="col-lg-2">
+                        
+                        <div class="text-center border-1">
+                          <img class="img-profile" width="120" height="120" src="img/placeholder.png">
+                          <h1 class="h6 text-gray-600 mb-4">Add Logo</h1>
+                        </div>
+                    </div>
+                      
+                </div>
+                
+
+              <div class="row">
+
+                <div class="col-lg-10">
+                  <div class="p-6"> 
+
+                    <div class="text-center">
+                      <a href="view_category.html" class="btn btn-primary">
+                        Create
+                      </a>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                
+
               </div>
+
+
+            </form>
+
             </div>
           </div>
 
+         
         </div>
         <!-- /.container-fluid -->
 
