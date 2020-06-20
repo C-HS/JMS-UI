@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Home</title>
+  <title>Catalog</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,6 +17,9 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -61,8 +64,8 @@
         </a>
         <div id="collapseSales" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="sales-quotations.html">Quotation</a>
-            <a class="collapse-item" href="sales-order.html">Sales Order</a>
+            <a class="collapse-item" href="buttons.html">Quotation</a>
+            <a class="collapse-item" href="cards.html">Sales Order</a>
              <a class="collapse-item" href="cards.html">Customer</a>
               <a class="collapse-item" href="cards.html">Outgoing Shipment</a>
           </div>
@@ -76,9 +79,9 @@
         </a>
         <div id="collapsePurchase" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="purchase-quotations.html">Quotation</a>
-            <a class="collapse-item" href="purchase-order.html">Purchase Order</a>
-             <a class="collapse-item" href="vendor_list.html">Supplier/Vendor</a>
+            <a class="collapse-item" href="buttons.html">Quotation</a>
+            <a class="collapse-item" href="cards.html">Purchase Order</a>
+             <a class="collapse-item" href="cards.html">Supplier/Vendor</a>
               <a class="collapse-item" href="cards.html">Incomming Shipment</a>
           </div>
         </div>
@@ -91,15 +94,15 @@
         Catalog Management
       </div>
 
-     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
+     <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
           <i class="fas fa-fw fa-cog"></i>
           <span>Product</span>
         </a>
-        <div id="collapseProduct" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseProduct" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="catalog.html">Catalog</a>
-            <a class="collapse-item " href="category.html">Category</a>
+            <a class="collapse-item active" href="catalog.html">Catalog</a>
+            <a class="collapse-item" href="category.html">Category</a>
             <a class="collapse-item" href="product.html">Product</a>
             <a class="collapse-item" href="product_attribute.html">Product Attribute</a>
              <a class="collapse-item" href="uom.html">Unit Of Measure</a>
@@ -438,7 +441,59 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+         <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Request for Quotations</h1>
+
+            
+            <nav class="">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Actions
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Delete</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Edit</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Print Barcode</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+
+
+            <a href="create_catalog.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
+           
+
+          </div>
+
+
+
+
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <td>Select</td>
+                      <td>Reference</td>
+                      <td>Order Date</td>
+                      <td>Vendor</td>
+                      <td>Purchase Representative</td>
+                      <td>Source Document</td>
+                      <td>Total</td>
+                      <td>Status</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
 
         </div>
         <!-- /.container-fluid -->
@@ -495,6 +550,13 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 
