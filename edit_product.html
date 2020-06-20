@@ -443,10 +443,7 @@
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Product</h1>
-
-            
-
-          </div>
+         </div>
 
 
 
@@ -455,7 +452,7 @@
 
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary"><a href="product.html">Product</a> -> Create</h6>
+              <h6 class="m-0 font-weight-bold text-primary"><a href="product.html">Product</a> -> <a href="view_product.html">PROD_001 (Neckless 232) </a> -> Edit</h6>
             </div>
             <div class="card-body">
 
@@ -474,7 +471,7 @@
                           <div class="p-6">                    
                             <div class="form-group">
                               <label>Product ID</label>
-                              <input type="text"  class="form-control form-control-user" id="exampleInputEmail" >
+                              <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="PROD_001">
                             </div>
                           </div>
                         </div>
@@ -482,7 +479,7 @@
                           <div class="p-6">
                             <div class="form-group">
                               <label>Product Name</label>
-                              <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                              <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Neckless 232">
                             </div>
                           </div>
                         </div>
@@ -497,7 +494,7 @@
                                   <div class="col-lg-6">
                                       <div class="p-6">  
                                         <div class="form-check">
-                                          <input type="checkbox" class="form-check-input" id="canBeSoldCheck">
+                                          <input type="checkbox" class="form-check-input" id="canBeSoldCheck" checked>
                                           <label class="form-check-label" for="canBeSoldCheck">Can Be Sold</label>
                                         </div>
                                       </div>
@@ -509,7 +506,7 @@
                                       </div>
                                       <div class="p-6">  
                                         <div class="form-check">
-                                          <input type="checkbox" class="form-check-input" id="SerializedCheck">
+                                          <input type="checkbox" class="form-check-input" id="SerializedCheck" checked>
                                           <label class="form-check-label" for="SerializedCheck">Serialized</label>
                                         </div>
                                       </div>
@@ -523,7 +520,7 @@
                             <label>Product Type</label>
                             <select class="form-control form-control-user" id="productTypeId" >
                               <option>Select Type</option>
-                              <option>Strorable</option>
+                              <option selected>Storable</option>
                               <option>Consumable</option>
                               <option>Service</option>
                             </select>
@@ -540,7 +537,7 @@
                           
                           <div class="form-group">
                             <label>Internal Reference</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="NL_232"  >
       
                           </div>
                           
@@ -553,7 +550,7 @@
                             <label>Category</label>
                             <select class="form-control form-control-user" id="catalogId" >
                               <option>Select Category</option>
-                              <option>Gold Necklase</option>
+                              <option selected>Gold Necklase</option>
                               <option>Gold Ring</option>
                               <option>Gold Bangles</option>
                               <option>Silver Coin</option>
@@ -571,7 +568,7 @@
                                     
                                     <div class="form-group">
                                       <label>HSN/SAC Code</label>
-                                      <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                                      <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="71131930" >
                 
                                     </div>
                                     
@@ -582,7 +579,7 @@
                                   <div class="p-6">                    
                                     <div class="form-group">
                                       <label>HSN/SAC Description</label>
-                                      <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                                      <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="HS Code 71131930" >
                                     </div>
                                   </div>
                                 </div>
@@ -594,7 +591,7 @@
                                 
                                 <div class="form-group">
                                   <label>Sales Price (Rs)</label>
-                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="125000.000" >
             
                                 </div>
                                 
@@ -605,7 +602,7 @@
                               <div class="p-6">                    
                                 <div class="form-group">
                                   <label>Cost Price (Rs)</label>
-                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="100000.000" >
                                 </div>
                               </div>
                             </div>
@@ -620,7 +617,7 @@
                                       <label>Unit Of Measure</label>
                                       <select class="form-control form-control-user" id="unitId" >
                                         <option>Select Unit</option>
-                                        <option>Unit</option>
+                                        <option selected>Unit</option>
                                         <option>No Unit</option>
                                         <option>Pair</option>
                                         <option>Gram</option>
@@ -642,7 +639,7 @@
                                       <label>Company</label>
                                       <select class="form-control form-control-user" id="unitId">
                                         <option>Select</option>
-                                        <option>Iaito Infotech Pvt Ltd</option>
+                                        <option selected>Iaito Infotech Pvt Ltd</option>
                                       </select>
                                     </div>
                                   </div>
@@ -658,7 +655,9 @@
                                 <label>Tax</label>
                                 <select class="form-control" id="unitId" multiple>
                                   <option>Select Tax</option>
-                                  <option>Cess 0.5%</option>
+                                  <option selected>Cess 0.5%</option>
+                                  <option>GST 0%</option>
+                                  <option selected>GST 3%</option>
                                   <option>GST 5%</option>
                                   <option>GST 12%</option>
                                   <option>GST 18%</option>
@@ -674,7 +673,7 @@
                             <div class="p-6">                    
                               <div class="form-group">
                                 <label>Description</label>
-                                <textarea class="form-control" aria-label="Large"></textarea>
+                                <textarea class="form-control" aria-label="Large">Neckless 232</textarea>
                               </div>
                             </div>
                           </div>
@@ -685,8 +684,8 @@
                     <div class="col-lg-2">
                         
                         <div class="text-center border-1">
-                          <img class="img-profile" width="120" height="120" src="img/placeholder.png">
-                          <h1 class="h6 text-gray-600 mb-4">Add Logo</h1>
+                          <img class="img-profile" width="120" height="120" src="img/product_001.jpg">
+                          <h1 class="h6 text-gray-600 mb-4">Update</h1>
                         </div>
                     </div>
                       
@@ -700,7 +699,7 @@
 
                     <div class="text-center">
                       <a href="view_product.html" class="btn btn-primary">
-                        Create
+                        Save
                       </a>
                     </div>
                     
