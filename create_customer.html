@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Home</title>
+  <title>Catalog</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,6 +17,9 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -61,9 +64,9 @@
         </a>
         <div id="collapseSales" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="sales-quotations.html">Quotation</a>
-            <a class="collapse-item" href="sales-order.html">Sales Order</a>
-             <a class="collapse-item" href="customer_list.html">Customer</a>
+            <a class="collapse-item" href="buttons.html">Quotation</a>
+            <a class="collapse-item" href="cards.html">Sales Order</a>
+             <a class="collapse-item" href="cards.html">Customer</a>
               <a class="collapse-item" href="cards.html">Outgoing Shipment</a>
           </div>
         </div>
@@ -76,9 +79,9 @@
         </a>
         <div id="collapsePurchase" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="purchase-quotations.html">Quotation</a>
-            <a class="collapse-item" href="purchase-order.html">Purchase Order</a>
-             <a class="collapse-item" href="vendor_list.html">Supplier/Vendor</a>
+            <a class="collapse-item" href="buttons.html">Quotation</a>
+            <a class="collapse-item" href="cards.html">Purchase Order</a>
+             <a class="collapse-item" href="cards.html">Supplier/Vendor</a>
               <a class="collapse-item" href="cards.html">Incomming Shipment</a>
           </div>
         </div>
@@ -91,15 +94,15 @@
         Catalog Management
       </div>
 
-     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
+     <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
           <i class="fas fa-fw fa-cog"></i>
           <span>Product</span>
         </a>
-        <div id="collapseProduct" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseProduct" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="catalog.html">Catalog</a>
-            <a class="collapse-item " href="category.html">Category</a>
+            <a class="collapse-item active" href="catalog.html">Catalog</a>
+            <a class="collapse-item" href="category.html">Category</a>
             <a class="collapse-item" href="product.html">Product</a>
             <a class="collapse-item" href="product_attribute.html">Product Attribute</a>
              <a class="collapse-item" href="uom.html">Unit Of Measure</a>
@@ -438,8 +441,163 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+         <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Catalog</h1>
 
+            
+
+          </div>
+
+
+
+
+          <!-- DataTales Example -->
+
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary"><a href="catalog.html">Vendor</a> -> Create</h6>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <legend>Vendor</legend>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <label for="vendor">Vendor</label>
+                      </div>
+                      <div class="col-sm-6">
+                        <select class="form-control" id="Vendor">
+                          <option value="Vendor One">Vendor One</option>
+                          <option value="Vendor Two">Vendor Two</option>
+                          <option value="Vendor Three">Vendor Three</option>
+                      </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <label for="vendorProductName">Vendor Product Name</label>
+                      </div>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-controrl" id="vendorProductName">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <label for="vendorProductCode">Vendor Product Code</label>
+                      </div>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-controrl" id="vendorProductCode">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <label for="productVarient">Product Varient</label>
+                      </div>
+                      <div class="col-sm-6">
+                        <select class="form-control" id="productVarient">
+                          <option value="Varient One">Varient One</option>
+                          <option value="Varient Two">Varient Two</option>
+                          <option value="Varient Three">Varient Three</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <label for="deliveryLeadTime">Delivery Lead Time</label>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control" id="deliveryLeadTime">
+                          </div>
+                          <div class="col-sm-4">
+                            <p>days</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <legend>Other Information</legend>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label for="company">Company</label>
+                        </div>
+                        <div class="col-sm-6">
+                          <select class="form-control" id="company">
+                            <option value="IAITO">IAITO</option>
+                            <option value="MIDSKART">MIDSTKART</option>
+                            <option value="GOOGLE">GOOGLE</option>
+                          </select>
+                        </div>
+                      </div>
+                      <br/><br/>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <input type="button" value="Save & Close" class="bg-gradient-primary" id="saveAndClose">
+                        </div>
+                        <div class="col-md-4">
+                          <input type="button" value="Save & New" class="bg-gradient-primary" id="saveAndClose">
+                        </div>
+                        <div class="col-md-4">
+                          <input type="button" value="Discard" class="bg-gradient-primary" id="saveAndClose">
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <legend>Price List</legend>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="quantity">Quantity</label>
+                      </div>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="quantity">
+                      </div>
+                      <div class="col-sm-4">
+                        Units
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="price">Price</label>
+                      </div>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="quantity">
+                      </div>
+                      <div class="col-sm-4">
+                        <select class="form-control" id="currncy">
+                          <option value="INR">INR</option>
+                          <option value="USD">USD</option>
+                          <option value="KPR">KPR</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="validity">Validity</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <div class="row">
+                          <div class="col-sm-5">
+                            <input type="text" class="form-control" id="validity">
+                          </div>
+                          <div class="col-sm-2">
+                            -to-
+                          </div>
+                          <div class="col-sm-5">
+                            <input type="text" class="form-control" id="validity">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </form>
+
+            </div>
+          </div>
+
+         
         </div>
         <!-- /.container-fluid -->
 
@@ -495,6 +653,13 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 
