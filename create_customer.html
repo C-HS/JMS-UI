@@ -460,10 +460,121 @@
             <div class="card-body">
               <form>
                 <div class="row">
-                  
+                  <div class="col-sm-8">
+                    <div class="row">
+                      <label><input type="radio" name="optradio" checked>Individual</label>
+                      <label><input type="radio" name="optradio">Company</label>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <label for="name">Name&nbsp;</label>
+                      </div>
+                      <div class="col-sm-9">
+                        <input type="text" id="name" name="name" style="width: inherit;">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <label for="company">Company</label>
+                      </div>
+                      <div class="col-sm-9">
+                        <select class="form-control" id="company">
+                          <option value="IAITO">IAITO</option>
+                          <option value="MIDSKART">MIDSTKART</option>
+                          <option value="GOOGLE">GOOGLE</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                      <img class="img-profile float-right" width="120px" height="120px" src="img/placeholder.png">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="companyAddress">Company Address</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <textarea name="companyAddress" id="companyAddreaa" cols="30" rows="3" class="form-control"></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="GSTIN">GSTIN</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control" id="GSTIN">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="phone">Phone</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control" id="phone">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="mobile">Mobile</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control" id="mobile">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="email">Email</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <email class="form-control" id="email"></email>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="weblink">Web Links</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control" id="weblink">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="tags">Tags</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <select class="form-control" id="tags">
+                          <option value="Tag One">Tag One</option>
+                          <option value="Tag Two">Tag Two</option>
+                          <option value="Tag Three">Tag Three</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#CA">Contact & Address</a>
+                    </li>
+                    <li class="nav-item"><a href="#SP" class="nav-link">Sales & Purchase</a></li>
+                    <li class="nav-item"><a href="#IV" class="nav-link">Invoicing</a></li>
+                    <li class="nav-item"><a href="#IN" class="nav-link">Internal Notes</a></li>
+                  </ul>
                 </div>
               </form>
-            </form>
+              <div class="tab-content">
+                <div id="CA" class="container tab-pane active">
+                  <input type="button" value="Add" id="add" />
+                </div>
+                <div id="SP" class="container tab-pane"></div>
+                <div id="IV" class="container tab-pane"></div>
+                <div id="IN" class="container tab-pane"></div>
+              </div>
 
             </div>
           </div>
