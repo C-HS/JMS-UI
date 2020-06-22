@@ -593,16 +593,90 @@
             <div class="modal-content">
               <!-- modal Header -->
               <div class="modal-header">
-                <h4>Modal Heading</h4>
+                <h4>Create Contact</h4>
                 <button class="close" type="button" data-dismiss="modal">&times;</button>
               </div>
               <!-- Modal Body -->
               <div class="modal-body">
-                Modal Body
+                <div class="container fluid">
+                  <div class="row">&nbsp;&nbsp;
+                    <label><input type="radio" name="optradio" checked>&nbsp;Contact</label>&nbsp;&nbsp;
+                    <label><input type="radio" name="optradio">&nbsp;Invoice Address</label>&nbsp;&nbsp;
+                    <label><input type="radio" name="optradio">&nbsp;Delivery Address</label>&nbsp;&nbsp;
+                    <label><input type="radio" name="optradio">&nbsp;Other Address</label>&nbsp;&nbsp;
+                    <label><input type="radio" name="optradio">&nbsp;Private Address</label>
+                  </div>  
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <label for="contactName">Contact Name</label>
+                        </div>
+                        <div class="col-sm-7">
+                          <input type="text" class="form-control" id="contacttName">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <label for="contactName">Address</label>
+                        </div>
+                        <div class="col-sm-7">
+                          <input type="text" class="form-control" id="contacttName">
+                          <input type="text" class="form-control" id="contacttName">
+                          <input type="text" class="form-control" id="contacttName">
+                          <select class="form-control" id="Countries">
+                            <option value="US">United States</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="RS">Russia</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <label for="contactName">Notes</label>
+                        </div>
+                        <div class="col-sm-7">
+                          <textarea name="notes" id="notes" style="width: inherit; resize: none;" rows="2"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          &nbsp;<label for="email">Email</label>
+                        </div>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="email">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          &nbsp;<label for="email">Phone</label>
+                        </div>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="phone">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          &nbsp;<label for="email">Mobile</label>
+                        </div>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="mobile">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <img class="img-profile float-right" width="120px" height="120px" src="img/placeholder.png">
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- Modal Footer -->
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <div class="modal-footer">  
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save & Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save & New</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
               </div>
             </div>
           </div>
