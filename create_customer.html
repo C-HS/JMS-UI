@@ -497,7 +497,7 @@
                         <label for="companyAddress">Company Address</label>
                       </div>
                       <div class="col-sm-8">
-                        <textarea name="companyAddress" id="companyAddreaa" cols="30" rows="3" class="form-control"></textarea>
+                        <textarea name="companyAddress" id="companyAddreaa" cols="30" rows="3" class="form-control" style="resize: none;"></textarea>
                       </div>
                     </div>
                     <div class="row">
@@ -559,11 +559,17 @@
                 <div class="row">
                   <ul class="nav nav-tabs">
                     <li class="nav-item">
-                      <a class="nav-link active" href="#CA">Contact & Address</a>
+                      <a class="nav-link active" href="#CA" data-toggle="pill">Contact & Address</a>
                     </li>
-                    <li class="nav-item"><a href="#SP" class="nav-link">Sales & Purchase</a></li>
-                    <li class="nav-item"><a href="#IV" class="nav-link">Invoicing</a></li>
-                    <li class="nav-item"><a href="#IN" class="nav-link">Internal Notes</a></li>
+                    <li class="nav-item">
+                      <a href="#SP" class="nav-link" data-toggle="pill">Sales & Purchase</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#IV" class="nav-link" data-toggle="pill">Invoicing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#IN" class="nav-link" data-toggle="pill">Internal Notes</a>
+                    </li>
                   </ul>
                 </div>
               </form>
@@ -571,9 +577,9 @@
                 <div id="CA" class="container tab-pane active">
                   <input type="button" value="Add" id="add" />
                 </div>
-                <div id="SP" class="container tab-pane"></div>
-                <div id="IV" class="container tab-pane"></div>
-                <div id="IN" class="container tab-pane"></div>
+                <div id="SP" class="container tab-pane"><h3>SP</h3></div>
+                <div id="IV" class="container tab-pane"><h3>IV</h3></div>
+                <div id="IN" class="container tab-pane"><h3>IN</h3></div>
               </div>
 
             </div>
