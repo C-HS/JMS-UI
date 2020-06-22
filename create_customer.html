@@ -462,7 +462,7 @@
                 <div class="row">
                   <div class="col-sm-8">
                     <div class="row">
-                      <label><input type="radio" name="optradio" checked>Individual</label>
+                      <label><input type="radio" name="optradio" checked>Individual</label>&nbsp;&nbsp;
                       <label><input type="radio" name="optradio">Company</label>
                     </div>
                     <div class="row">
@@ -575,7 +575,7 @@
               </form>
               <div class="tab-content">
                 <div id="CA" class="container tab-pane active">
-                  <input type="button" value="Add" id="add" />
+                  <input type="button" value="Add" id="add" class="btn btn-primary" data-toggle="modal" data-target="#contactAndAddress"/>
                 </div>
                 <div id="SP" class="container tab-pane"><h3>SP</h3></div>
                 <div id="IV" class="container tab-pane"><h3>IV</h3></div>
@@ -588,6 +588,25 @@
          
         </div>
         <!-- /.container-fluid -->
+        <div class="modal fade" id="contactAndAddress">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <!-- modal Header -->
+              <div class="modal-header">
+                <h4>Modal Heading</h4>
+                <button class="close" type="button" data-dismiss="modal">&times;</button>
+              </div>
+              <!-- Modal Body -->
+              <div class="modal-body">
+                Modal Body
+              </div>
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
       <!-- End of Main Content -->
