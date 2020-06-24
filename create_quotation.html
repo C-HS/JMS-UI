@@ -25,7 +25,15 @@
     $(document).ready(function(){
         var i = 1;
         $("#addRow").click(function() {
-          $('#addr' + i).html("<td>" + (i + 1) + "</td><td><input name='user" + i + "' type='text' placeholder='User' class='form-control input-md'  /></td><td><input  name='pass" + i + "' type='text' placeholder='Password'  class='form-control input-md'></td><td><input  name='ip" + i + "' type='text' placeholder='IP'  class='form-control input-md'></td><td><input  name='country" + i + "' type='text' placeholder='Country'  class='form-control input-md'></td><td><input  name='ipDisp" + i + "' type='text' placeholder='IP details'  class='form-control input-md'></td>");
+          $('#addr' + i).html(
+            "<td>" + (i + 1) + "</td>" +
+            "<td><input name='prod" + i + "' type='text' placeholder='Sample Product' "+ i +" class='form-control input-md'/></td>"+
+            "<td><input  name='prodDesc" + i + "' type='text' placeholder='Sample Desc' class='form-control input-md'></td>"+
+            "<td><input  name='quantity" + i + "' type='text' placeholder='###.##'  class='form-control input-md'></td>"+
+            "<td><input  name='unitPrice" + i + "' type='text' placeholder='$$$.$$'  class='form-control input-md'></td>"+
+            "<td><input  name='taxes" + i + "' type='text' placeholder='%%.%%'  class='form-control input-md'></td>" +
+            "<td><input  name='subTotal" + i + "' type='text' placeholder='###.##'  class='form-control input-md'></td>"
+          );
 
           $('#tab_logic').append('<tr id="addr' + (i + 1) + '"></tr>');
           i++;
@@ -576,19 +584,22 @@
                                 #
                             </th>
                             <th class="text-center">
-                                User
+                                Product
                             </th>
                             <th class="text-center">
-                                Password
+                                Desription
                             </th>
                             <th class="text-center">
-                                IP
+                                Quantity
                             </th>
                             <th class="text-center">
-                                Country
+                                Unit Price
                             </th>
                             <th class="text-center">
-                                IP disponibility
+                                Taxes
+                            </th>
+                            <th class="text-center">
+                              Sub-Total
                             </th>
                         </tr>
                     </thead>
@@ -598,19 +609,22 @@
                             1
                             </td>
                             <td>
-                            <input type="text" name='user0'  placeholder='User' class="form-control"/>
+                            <input type="text" name='user0'  placeholder='Sample Product' class="form-control"/>
                             </td>
                             <td>
-                            <input type="text" name='pass0' placeholder='Password' class="form-control"/>
+                            <input type="text" name='pass0' placeholder='Sample Desc' class="form-control"/>
                             </td>
                             <td>
-                            <input type="text" name='ip0' placeholder='IP' class="form-control"/>
+                            <input type="text" name='ip0' placeholder='Some #' class="form-control"/>
                             </td>
                             <td>
-                            <input type="text" name='country0' placeholder='Country' class="form-control"/>
+                            <input type="text" name='country0' placeholder='$$$.$$' class="form-control"/>
                             </td>
                             <td>
-                            <input type="text" name='ipDisp0' placeholder='IP Details' class="form-control"/>
+                            <input type="text" name='ipDisp0' placeholder='%%.%%' class="form-control"/>
+                            </td>
+                            <td>
+                            <input type="text" name='ipDisp0' placeholder='###.##' class="form-control"/>
                             </td>
                         </tr>
                         <tr id='addr1'></tr>
@@ -619,6 +633,43 @@
                 <input type="button" class="btn btn-primary" id="addRow" value="Add Product">
                 <input type="button" class="btn btn-secondary float-right" id="deleteRow" value="Delete Product">
                 <!-- <a id="add_row" class="btn btn-default pull-left">Add Row</a><a id='delete_row' class="pull-right btn btn-default">Delete Row</a> -->
+                <br/><br/>
+                <div class="row">
+                  <div class="col-sm-8">
+                    <textarea name="termsAndCond" placeholder="Terms and Consitions" id="termsAndCond"  style="resize: none;width: inherit; height: inherit;"></textarea>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <label for="untexedAmt">Untaxed Amount</label>
+                      </div>
+                      <div class="col-sm-6">
+                        $1366.00
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <label for="untexedAmt">Taxes</label>
+                      </div>
+                      <div class="col-sm-6">
+                        $27.10
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-8"></div>
+                  <div class="col-sm-4">
+                    <div class="row border-top">
+                      <div class="col-sm-6">
+                        <label for="total">Total</label>
+                      </div>
+                      <div class="col-sm-6">
+                        $1382.10
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 </div>
                 <div id="OP" class="container tab-pane">
                   <h3>Optional Products</h3>
