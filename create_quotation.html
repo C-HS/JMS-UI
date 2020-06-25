@@ -577,7 +577,7 @@
                   </ul>
                 </div>
               </form>
-              <div class="tab-content">
+              <div class="tab-content mb-3">
                 <div id="OL" class="container tab-pane active">
                   <h3>Order Line</h3>
                   <table class="table table-bordered table-hover" id="tab_logic">
@@ -678,7 +678,226 @@
                   <h3>Optional Products</h3>
                 </div>
                 <div id="OI" class="container tab-pane">
-                  <h3>Other Info</h3>
+                  <div class="row mt-2">
+                    <div class="col-sm-6"><h3 class="text-primary">Sales</h3></div>
+                    <div class="col-sm-6"><h3 class="text-primary">Invoicing</h3></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="salesPerson">Sales Person</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <select id="salesPerson" class="form-control">
+                            <option value="sPerson1">Sales Person One</option>
+                            <option value="sPerson2">Sales Person Two</option>
+                            <option value="sPerson3">Sales Person Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="fiscalPosition">Fiscal Position</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <select id="fiscalPosition" class="form-control">
+                            <option value="fPosition1">Fiscal Position One</option>
+                            <option value="fPosition2">Fiscal Position Two</option>
+                            <option value="fPosition3">Fiscal Position Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="salesTeam">Sales Team</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <select id="salesTeam" class="form-control">
+                            <option value="sTeam1">Sales Team One</option>
+                            <option value="sTeam2">Sales Team Two</option>
+                            <option value="sTeam3">Sales Team Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="journal">Journal</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <select id="fiscalPosition" class="form-control">
+                            <option value="journal1">Journal One</option>
+                            <option value="journal2">Journal Two</option>
+                            <option value="journal3">Journal Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="company">Company</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <select id="company" class="form-control">
+                            <option value="company1">Company One</option>
+                            <option value="company2">Company Two</option>
+                            <option value="company3">Company Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="onlineSign">Online Signature</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <input type="checkbox" class="" id="onlineSign" checked>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="onlinePayment">Online Payment</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <input type="checkbox" class="" id="onlinePayment" checked>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="customerRef">Customer Reference</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="customerRef" checked>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col-sm-6">
+                      <h3 class="text-primary">Delivery</h3>
+                    </div>
+                    <div class="col-sm-6">
+                      <h3 class="text-primary">Reporting</h3>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="shippingPolicy">Shipping Policy</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <select id="shippingPolicy" class="form-control">
+                            <option value="asap">As Soon As Possible</option>
+                            <option value="FCFS">First Come First Serve</option>
+                            <option value="LIFO">Last In First Out</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="sourceDoc">Source Document</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="sourceDoc">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="deliveryDate">Delivery Date</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <input type="date" class="form-control" id="deliveryDate">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="campaign">Campaign</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <select id="campaign" class="form-control">
+                            <option value="camp1">Campaign One</option>
+                            <option value="camp2">Campaign Two</option>
+                            <option value="camp3">Campaign Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="campaign">Campaign</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <select id="medium" class="form-control">
+                            <option value="med1">Medium One</option>
+                            <option value="med2">Medium Two</option>
+                            <option value="med3">Medium Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="source">Source</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <select id="source" class="form-control">
+                            <option value="source1">Source One</option>
+                            <option value="source2">Source Two</option>
+                            <option value="source3">Source Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div id="CS" class="container tab-pane">
                   <h3>Customer Signature</h3>
