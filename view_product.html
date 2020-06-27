@@ -449,7 +449,7 @@
           <div class="row">
 
             <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-2 col-md-8 mb-4">
+            <div class="col-xl-2 col-md-6 mb-4">
               <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
@@ -464,7 +464,7 @@
             </div>
 
             <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-2 col-md-8 mb-4">
+            <div class="col-xl-2 col-md-6 mb-4">
               <div class="card border-left-success shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
@@ -497,15 +497,33 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Promised</div>
-                      <div class="h6 mb-0 font-weight-bold text-gray-800">0.00 Units</div>
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Customers</div>
+                      <div class="h6 mb-0 font-weight-bold text-gray-800">3</div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div class="col-xl-2 col-md-6 mb-4">
+              <div class="card border-left-danger shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Vendors</div>
+                      <div class="h6 mb-0 font-weight-bold text-gray-800">1</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
           </div>
 
+        
    
           <div class="card shadow mb-4">
             <div class="card-header py-3">
@@ -736,6 +754,31 @@
                           </div>
                    </div>
 
+                   <div class="row">
+
+                        <div class="col-lg-6">
+                          <div class="p-6">                    
+                            
+                            <div class="form-group">
+                              <label>Weight (Gram)</label>
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="29.52" >
+        
+                            </div>
+                            
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                          <div class="p-6">                    
+                            <div class="form-group">
+                              <!-- <label>Cost Price (Rs)</label>
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="100000.000" >
+                            -->
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+
                   </div>   
                     
                     <div class="col-lg-2">
@@ -770,6 +813,84 @@
             </form>
 
             </div>
+          </div>
+
+
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Product Variants</h1>
+
+            <nav class="">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Delete</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Print Barcode</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+
+
+            <a href="create_product_variant.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create New Variant</a>
+          </div>
+
+
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary"><a href="product.html">Product</a> -> PROD_001 (Neckless 232) -> Variants</h6>
+            </div>
+            
+            
+
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Select</th>
+                      <th>Int_Ref</th>
+                      <th>Values</th>
+                      <th>Sales Price</th>
+                      <th>Cost Price</th>
+                      <th>QOH</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Select</th>
+                      <th>Int_Ref</th>
+                      <th>Values</th>
+                      <th>Sales Price</th>
+                      <th>Cost Price</th>
+                      <th>QOH</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td><a href="view_product_variant.html">NL_232-01</a></td>
+                      <td>[Polish : No Polish] [Stone Count :0]</td>
+                      <td>125000.000</td>
+                      <td>100000.000</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>NL_232-02</td>
+                      <td>[Polish : Rhodium Polish] [Stone Count :1]</td>
+                      <td>122000.000</td>
+                      <td>98000.000</td>
+                      <td>2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
           </div>
 
 

@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Product</title>
+  <title>Product Variant</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -18,8 +18,102 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this page -->
-    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+  <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+
+// Add Delete variant attribute
+      var addCount = 1;
+      $("#addAttributeRow").click(function() {
+        $('#attributeRow' + (addCount+1)).html(
+          "<td>" + (addCount+1) + "</td>" +
+          "<td><select  class='form-control' name='attribute" + (addCount +1) +
+                                                  "'> <option>Select Attribute</option>"+
+                                                  "<option>Polish</option>"+
+                                                  "<option>Color</option>"+
+                                                  "<option>Metal Weight</option>"+
+                                                  "<option>Stone Weight</option>"+
+                                                  "<option>Bangle Diameter</option>"+
+                                                  "<option>Stone Count</option>"+
+                                                  "<option>Stone Type</option>"+
+                                                  "<option>SMetal Quality</option>"+
+                                                  "<option>Total Weight</option>"+
+                                                  "</select></td>"+
+          "<td><input  name='attributeValue" + (addCount+1) + "' type='text' class='form-control input-md'></td>"+
+          "<td><input disabled  name='unit" + (addCount+1) + "' type='text' class='form-control input-md'></td>"
+        );
+
+        $('#variant_table').append("<tr id='attributeRow" + (addCount+2) + "'></tr>");
+        addCount++;
+      });
+      $("#deleteAttributeRow").click(function() {
+        if (addCount >= 1) {
+          $('#attributeRow' + (addCount)).html('');
+          addCount--;
+        }
+      });
+
+
+      // Add Delete Customer
+      var custCount = 1;
+      $("#addCustomerRow").click(function() {
+        $('#customerRow' + (custCount+1)).html(
+          "<td>" + (custCount+1) + "</td>" +
+          "<td><input  name='customerName" + (custCount+1) + "' type='text' class='form-control input-md'></td>"+
+          "<td><input  name='customerType" + (custCount+1) + "' type='text' class='form-control input-md'></td>"+
+          "<td><input  name='price" + (custCount+1) + "' type='text' class='form-control input-md'></td>"+
+          "<td><select  class='form-control' name='currency" + (custCount +1) +
+                                                 "'><option>Select</option>"+
+                                                  "<option>INR</option>"+
+                                                  "<option>USD</option>"+
+                                                  "</select></td>"+
+          "<td><input  name='customerCheckbox" + (custCount+1) + "' type='checkbox' class='form-control input-md'></td>"
+        );
+
+        $('#customer_table').append("<tr id='customerRow" + (custCount+2) + "'></tr>");
+        custCount++;
+      });
+      // $("#deleteCustomerRow").click(function() {
+      //   if (custCount >= 1) {
+      //     $('#customerRow' + (custCount)).html('');
+      //     custCount--;
+      //   }
+      // });
+
+
+       // Add Delete Vendor
+      var vendCount = 1;
+      $("#addVendorRow").click(function() {
+        $('#vendorRow' + (vendCount+1)).html(
+          "<td>" + (vendCount+1) + "</td>" +
+          "<td><input  name='vendorName" + (vendCount+1) + "' type='text' class='form-control input-md'></td>"+
+          "<td><input  name='vendorType" + (vendCount+1) + "' type='text' class='form-control input-md'></td>"+
+          "<td><input  name='costPrice" + (vendCount+1) + "' type='text' class='form-control input-md'></td>"+
+          "<td><select  class='form-control' name='costCurrency" + (vendCount +1) +
+                                                 "'><option>Select</option>"+
+                                                  "<option>INR</option>"+
+                                                  "<option>USD</option>"+
+                                                  "</select></td>"+
+          "<td><input  name='vendorCheckbox" + (vendCount+1) + "' type='checkbox' class='form-control input-md'></td>"
+        );
+
+        $('#vendor_table').append("<tr id='vendorRow" + (vendCount+2) + "'></tr>");
+        vendCount++;
+      });
+      // $("#deleteVendorRow").click(function() {
+      //   if (vendCount >= 1) {
+      //     $('#vendorRow' + (vendCount)).html('');
+      //     vendCount--;
+      //   }
+      // });
+
+
+
+
+  });
+  </script>
 
 </head>
 
@@ -441,18 +535,17 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Product</h1>
-         </div>
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Product Variant</h1>
+            <a href="view_product_variant.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Save</a>
+          </div>
 
+          <!-- Content Row -->
 
-
-
-          <!-- DataTales Example -->
-
+   
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary"><a href="product.html">Product</a> -> <a href="view_product.html">PROD_001 (Neckless 232) </a> -> Edit</h6>
+              <h6 class="m-0 font-weight-bold text-primary"><a href="product.html">Product</a> -> <a href="view_product.html">PROD_001 (Neckless 232)</a> -> Create Variant </h6>
             </div>
             <div class="card-body">
 
@@ -471,7 +564,7 @@
                           <div class="p-6">                    
                             <div class="form-group">
                               <label>Product ID</label>
-                              <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="PROD_001">
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="PROD_001">
                             </div>
                           </div>
                         </div>
@@ -479,7 +572,7 @@
                           <div class="p-6">
                             <div class="form-group">
                               <label>Product Name</label>
-                              <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Neckless 232">
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Neckless 232">
                             </div>
                           </div>
                         </div>
@@ -487,49 +580,6 @@
                       </div>
         
                       
-
-                      <div class="row">
-                        <div class="col-lg-6">
-                          <div class="row">
-                                  <div class="col-lg-6">
-                                      <div class="p-6">  
-                                        <div class="form-check">
-                                          <input type="checkbox" class="form-check-input" id="canBeSoldCheck" checked>
-                                          <label class="form-check-label" for="canBeSoldCheck">Can Be Sold</label>
-                                        </div>
-                                      </div>
-                                      <div class="p-6">  
-                                        <div class="form-check">
-                                          <input type="checkbox" class="form-check-input" id="canBePurchasedCheck">
-                                          <label class="form-check-label" for="canBePurchasedCheck">Can Be Purchased</label>
-                                        </div>
-                                      </div>
-                                      <div class="p-6">  
-                                        <div class="form-check">
-                                          <input type="checkbox" class="form-check-input" id="SerializedCheck" checked>
-                                          <label class="form-check-label" for="SerializedCheck">Serialized</label>
-                                        </div>
-                                      </div>
-                                  </div>
-                                  
-                          </div>
-                       </div>
-                       <div class="col-lg-6">
-                        <div class="p-6">
-                          <div class="form-group">
-                            <label>Product Type</label>
-                            <select class="form-control form-control-user" id="productTypeId" >
-                              <option>Select Type</option>
-                              <option selected>Storable</option>
-                              <option>Consumable</option>
-                              <option>Service</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
                     <div class="row">
 
                       <div class="col-lg-6">
@@ -537,7 +587,7 @@
                           
                           <div class="form-group">
                             <label>Internal Reference</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="NL_232"  >
+                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail" >
       
                           </div>
                           
@@ -546,44 +596,18 @@
 
                       <div class="col-lg-6">
                         <div class="p-6">                    
+                          
                           <div class="form-group">
-                            <label>Category</label>
-                            <select class="form-control form-control-user" id="catalogId" >
-                              <option>Select Category</option>
-                              <option selected>Gold Necklase</option>
-                              <option>Gold Ring</option>
-                              <option>Gold Bangles</option>
-                              <option>Silver Coin</option>
-                              <option>Platinum Ring</option>
-                            </select>
+                            <label>Weight (Gram)</label>
+                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+      
                           </div>
+                          
                         </div>
                       </div>
                     </div>
 
-                    <div class="row">
 
-                                <div class="col-lg-6">
-                                  <div class="p-6">                    
-                                    
-                                    <div class="form-group">
-                                      <label>HSN/SAC Code</label>
-                                      <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="71131930" >
-                
-                                    </div>
-                                    
-                                  </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                  <div class="p-6">                    
-                                    <div class="form-group">
-                                      <label>HSN/SAC Description</label>
-                                      <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="HS Code 71131930" >
-                                    </div>
-                                  </div>
-                                </div>
-                          </div>
                           <div class="row">
 
                             <div class="col-lg-6">
@@ -591,7 +615,7 @@
                                 
                                 <div class="form-group">
                                   <label>Sales Price (Rs)</label>
-                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="125000.000" >
+                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail" >
             
                                 </div>
                                 
@@ -602,70 +626,22 @@
                               <div class="p-6">                    
                                 <div class="form-group">
                                   <label>Cost Price (Rs)</label>
-                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="100000.000" >
+                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail" >
                                 </div>
                               </div>
                             </div>
                          </div>
 
-                         <div class="row">
 
-                                <div class="col-lg-6">
-                                  <div class="p-6">                    
-                                    
-                                    <div class="form-group">
-                                      <label>Unit Of Measure</label>
-                                      <select class="form-control form-control-user" id="unitId" >
-                                        <option>Select Unit</option>
-                                        <option selected>Unit</option>
-                                        <option>No Unit</option>
-                                        <option>Pair</option>
-                                        <option>Gram</option>
-                                        <option>mm</option>
-                                        <option>cm</option>
-                                        <option>inch</option>
-                                        <option>Karat</option>
-                                        <option>Piece</option>
-                                      </select>
-                
-                                    </div>
-                                    
-                                  </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                  <div class="p-6">                    
-                                    <div class="form-group">
-                                      <label>Company</label>
-                                      <select class="form-control form-control-user" id="unitId">
-                                        <option>Select</option>
-                                        <option selected>Iaito Infotech Pvt Ltd</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                         </div>
 
                          <div class="row">
 
                           <div class="col-lg-6">
                             <div class="p-6">                    
-                              
                               <div class="form-group">
-                                <label>Tax</label>
-                                <select class="form-control" id="unitId" multiple>
-                                  <option>Select Tax</option>
-                                  <option selected>Cess 0.5%</option>
-                                  <option>GST 0%</option>
-                                  <option selected>GST 3%</option>
-                                  <option>GST 5%</option>
-                                  <option>GST 12%</option>
-                                  <option>GST 18%</option>
-                                  <option>GST 28%</option>
-                                </select>
-          
+                                <label>QOH</label>
+                                <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="0" >
                               </div>
-                              
                             </div>
                           </div>
 
@@ -673,68 +649,228 @@
                             <div class="p-6">                    
                               <div class="form-group">
                                 <label>Description</label>
-                                <textarea class="form-control" aria-label="Large">Neckless 232</textarea>
+                                <textarea class="form-control" aria-label="Large"></textarea>
                               </div>
                             </div>
                           </div>
-                   </div>
+                        </div>
 
-                   
-                   <div class="row">
-
-                            <div class="col-lg-6">
-                              <div class="p-6">                    
-                                
-                                <div class="form-group">
-                                  <label>Weight (Gram)</label>
-                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="29.52" >
-            
-                                </div>
-                                
-                              </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                              <div class="p-6">                    
-                                <div class="form-group">
-                                  <!-- <label>Cost Price (Rs)</label>
-                                  <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="100000.000" >
-                                -->
-                                </div>
-                              </div>
-                            </div>
-                      </div>
-
+             
                   </div>   
                     
                     <div class="col-lg-2">
                         
                         <div class="text-center border-1">
-                          <img class="img-profile" width="120" height="120" src="img/product_001.jpg">
-                          <h1 class="h6 text-gray-600 mb-4">Update</h1>
+                          <img class="img-profile" width="120" height="120" src="img/placeholder.png">
+                          <h1 class="h6 text-gray-600 mb-4">Add</h1>
                         </div>
                     </div>
                       
                 </div>
+
+
+
                 
+                          <ul class="nav nav-tabs">
+                            <li class="nav-items">
+                              <a href="#variant_attribute" class="nav-link active" data-toggle="pill">Variant Attributes</a>
+                            </li>
+                            <li class="nav-items">
+                              <a href="#customers" class="nav-link"  data-toggle="pill">Customer</a>
+                            </li>
+                            <li class="nav-items">
+                              <a href="#vendors" class="nav-link" data-toggle="pill">Vendor</a>
+                            </li>
+                            <!-- <li class="nav-items">
+                              <a href="#CS" class="nav-link" data-toggle="pill">Customer Signatures</a>
+                            </li> -->
+                          </ul>
+                        
+                   
 
-              <div class="row">
 
-                <div class="col-lg-10">
-                  <div class="p-6"> 
+          <div class="tab-content mb-3">
 
-                    <div class="text-center">
-                      <a href="view_product.html" class="btn btn-primary">
-                        Save
-                      </a>
-                    </div>
-                    
-                  </div>
+              <div id="variant_attribute" class="card-body tab-pane active">
+                      
+                          
+                                  <table class="table table-bordered table-hover"  id="variant_table">
+                                      <thead>
+                                          <tr >
+                                              <th class="text-center">
+                                                  SNO
+                                              </th>
+                                              <th class="text-center">
+                                                  Attribute
+                                              </th>
+                                              <th class="text-center">
+                                                  Value
+                                              </th>
+                                              <th class="text-center">
+                                                Unit
+                                            </th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr id='attributeRow1'>
+                                              <td>
+                                              1
+                                              </td>
+                                              <td>
+                                                <select  class="form-control" name="attribute1">
+                                                  <option>Select Attribute</option>
+                                                  <option>Polish</option>
+                                                  <option>Color</option>
+                                                  <option>Metal Weight</option>
+                                                  <option>Stone Weight</option>
+                                                  <option>Bangle Diameter</option>
+                                                  <option>Stone Count</option>
+                                                  <option>Stone Type</option>
+                                                  <option>SMetal Quality</option>
+                                                  <option>Total Weight</option>
+                                                </select>
+                                              </td>
+                                              <td>
+                                              <input  type="text" name='attributeValue1'  class="form-control" />
+                                              </td>
+                                              <td>
+                                                <input disabled type="text" name='unit1'  class="form-control"/>
+                                              </td>
+                                          </tr>
+                                          <tr id='attributeRow2'></tr>
+                                      </tbody>
+                                  </table>
+                               
+                                  <input type="button" class="btn btn-primary" id="addAttributeRow" value="Add Row">
+                                  <input type="button" class="btn btn-secondary float-right" id="deleteAttributeRow" value="Delete Row">
+                                 
+                           
+               </div>
+
+              <div id="customers" class="card-body tab-pane">
+
+                    <table class="table table-bordered table-hover"  id="customer_table">
+                      <thead>
+                          <tr >
+                              <th class="text-center">
+                                  SNO
+                              </th>
+                              <th class="text-center">
+                                  Customer
+                              </th>
+                              <th class="text-center">
+                                Customer Type
+                             </th>
+                              <th class="text-center">
+                                  Price
+                              </th>
+                              <th class="text-center">
+                                Currency
+                            </th>
+                            <th class="text-center">
+                              Select
+                          </th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr id='customerRow1'>
+                                <td>
+                                1
+                                </td>
+                                <td>
+                                  <input type="text" name='customerName1' placeholder='Customer' class="form-control" />
+                                  </td>
+                                <td>
+                                <input type="text" name='customerType1' placeholder='Company/Individual' class="form-control"/>
+                                </td>
+                                <td>
+                                  <input type="text" name='price1' placeholder='Price' class="form-control"/>
+                                </td>
+                                <td>
+                                  <select  class="form-control" name="currency1">
+                                      <option>Select</option>
+                                      <option>INR</option>
+                                      <option>USD</option>
+                                   </select>
+                                </td>
+                                <td>
+                                  <input type="checkbox" name='customerCheckbox1'  class="form-control" />
+                                </td>
+                          </tr>
+                          
+                          <tr id='customerRow2'></tr>
+                      </tbody>
+                  </table>
+
+                  <input type="button" class="btn btn-primary" id="addCustomerRow" value="Add Customer">
+                  <input type="button" class="btn btn-secondary float-right" id="deleteCustomerRow" value="Remove Customer">
+                 
+              
                 </div>
 
+              
+              <div id="vendors" class="card-body tab-pane">
                 
+                <table class="table table-bordered table-hover"  id="vendor_table">
+                  <thead>
+                      <tr >
+                          <th class="text-center">
+                              SNO
+                          </th>
+                          <th class="text-center">
+                              Vendor
+                          </th>
+                          <th class="text-center">
+                            Vendor Type
+                         </th>
+                          <th class="text-center">
+                              Price
+                          </th>
+                          <th class="text-center">
+                            Currency
+                        </th>
+                        <th class="text-center">
+                          Select
+                      </th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr id='vendorRow1'>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                              <input type="text" name='vendorName1' placeholder='Vendor' class="form-control" />
+                              </td>
+                            <td>
+                            <input type="text" name='vendorType1' placeholder='Company/Individual' class="form-control" />
+                            </td>
+                            <td>
+                              <input type="text" name='costPrice1' placeholder='Cost Price' class="form-control" />
+                            </td>
+                            <td>
+                             
+                              <select  class="form-control" name="costCurrency1">
+                                <option>Select</option>
+                                <option>INR</option>
+                                <option>USD</option>
+                             </select>
+                            </td>
+                            <td>
+                              <input type="checkbox" name='vendorCheckbox1'  class="form-control" />
+                            </td>
+                      </tr>
 
+                      <tr id='vendorRow2'></tr>
+                  </tbody>
+              </table>
+
+              <input type="button" class="btn btn-primary" id="addVendorRow" value="Add Vendor">
+                  <input type="button" class="btn btn-secondary float-right" id="deleteVendorRow" value="Remove Vendor">
               </div>
+                  
+       </div>
+                
 
 
             </form>
@@ -742,7 +878,10 @@
             </div>
           </div>
 
-         
+
+
+
+
         </div>
         <!-- /.container-fluid -->
 
