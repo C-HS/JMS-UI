@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Catalog</title>
+  <title>Product Attribute</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -62,11 +62,11 @@
           <i class="fas fa-fw fa-cog"></i>
           <span>Sales Order</span>
         </a>
-        <div id="collapseSales" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseSales" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="sales-quotations.html">Quotation</a>
             <a class="collapse-item" href="sales-order.html">Sales Order</a>
-             <a class="collapse-item active" href="customer_list.html">Customer</a>
+             <a class="collapse-item" href="customer_list.html">Customer</a>
               <a class="collapse-item" href="cards.html">Outgoing Shipment</a>
           </div>
         </div>
@@ -154,12 +154,12 @@
           <i class="fas fa-fw fa-cog"></i>
           <span>Employee</span>
         </a>
-        <div id="collapseEmployee" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseEmployee" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Employee</a>
-            <a class="collapse-item" href="cards.html">Designation</a>
-             <a class="collapse-item" href="cards.html">User Login</a>
-             <a class="collapse-item" href="cards.html">Role</a>
+            <a class="collapse-item active" href="employee_list.html">Employee</a>
+            <a class="collapse-item" href="#">Designation</a>
+             <a class="collapse-item" href="#">User Login</a>
+             <a class="collapse-item" href="#">Role</a>
           </div>
         </div>
       </li>
@@ -442,245 +442,101 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Customer / New</h1>
+            <h1 class="h3 mb-0 text-gray-800">Employees / List</h1>
+
+            
+            <nav class="">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action
+                  </a> -->
+                  <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Delete</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Print Barcode</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+
+
+            <a href="create_employee.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
+           
+
           </div>
-
-
-
-
           <!-- DataTales Example -->
-
           <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <!-- <h6 class="m-0 font-weight-bold text-primary"> -->
-                <!-- <a href="catalog.html">Customer</a> -> Create</h6> -->
-                <input type="button" value="Save" class="btn btn-primary" id="save">
-                <input type="button" value="Discard" class="btn btn-secondary" id="save">
-            </div>
             <div class="card-body">
-              <form>
-                <div class="row">
-                  <div class="col-sm-8">
-                    <div class="row">
-                      <label><input type="radio" name="optradio" checked>Individual</label>&nbsp;&nbsp;
-                      <label><input type="radio" name="optradio">Company</label>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <label for="name">Name&nbsp;</label>
-                      </div>
-                      <div class="col-sm-9">
-                        <input type="text" id="name" name="name" style="width: inherit;" class="form-control">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <label for="company">Company</label>
-                      </div>
-                      <div class="col-sm-9">
-                        <select class="form-control" id="company">
-                          <option value="IAITO">IAITO</option>
-                          <option value="MIDSKART">MIDSTKART</option>
-                          <option value="GOOGLE">GOOGLE</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                      <img class="img-profile float-right" width="120px" height="120px" src="img/placeholder.png">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <label for="companyAddress">Company Address</label>
-                      </div>
-                      <div class="col-sm-8">
-                        <textarea name="companyAddress" id="companyAddreaa" cols="30" rows="3" class="form-control" style="resize: none;"></textarea>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <label for="GSTIN">GSTIN</label>
-                      </div>
-                      <div class="col-sm-8">
-                        <input type="text" class="form-control" id="GSTIN">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <label for="phone">Phone</label>
-                      </div>
-                      <div class="col-sm-8">
-                        <input type="text" class="form-control" id="phone">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <label for="mobile">Mobile</label>
-                      </div>
-                      <div class="col-sm-8">
-                        <input type="text" class="form-control" id="mobile">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <label for="email">Email</label>
-                      </div>
-                      <div class="col-sm-8">
-                        <email class="form-control" id="email"></email>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <label for="weblink">Web Links</label>
-                      </div>
-                      <div class="col-sm-8">
-                        <input type="text" class="form-control" id="weblink">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <label for="tags">Tags</label>
-                      </div>
-                      <div class="col-sm-8">
-                        <select class="form-control" id="tags">
-                          <option value="Tag One">Tag One</option>
-                          <option value="Tag Two">Tag Two</option>
-                          <option value="Tag Three">Tag Three</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#CA" data-toggle="pill">Contact & Address</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#SP" class="nav-link" data-toggle="pill">Sales & Purchase</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#IV" class="nav-link" data-toggle="pill">Invoicing</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#IN" class="nav-link" data-toggle="pill">Internal Notes</a>
-                    </li>
-                  </ul>
-                </div>
-              </form>
-              <div class="tab-content">
-                <div id="CA" class="container tab-pane active">
-                  <input type="button" value="Add" id="add" class="btn btn-primary" data-toggle="modal" data-target="#contactAndAddress"/>
-                </div>
-                <div id="SP" class="container tab-pane"><h3>SP</h3></div>
-                <div id="IV" class="container tab-pane"><h3>IV</h3></div>
-                <div id="IN" class="container tab-pane"><h3>IN</h3></div>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Work Phone</th>
+                      <th>Workk Email</th>
+                      <th>Company</th>
+                      <th>Department</th>
+                      <th>Job Title</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Almas Jacob</td>
+                      <td>9999999999</td>
+                      <td>deo@gmail.com</td>
+                      <td>youtube</td>
+                      <td>R&D</td>
+                      <td>Research Analyst</td>
+                    </tr>
+                    <tr> 
+                      <td><a href="view_employee.html" style="text-decoration: none;">John Doe</a></td>
+                      <td>9990201809</td>
+                      <td>johndoeo@gmail.com</td>
+                      <td>youtube</td>
+                      <td>R&D</td>
+                      <td>developer Analyst</td>
+                    </tr>
+                    <tr>
+                      <td>Anonymous</td>
+                      <td>8888888888</td>
+                      <td>no-one@gmail.com</td>
+                      <td>dont know</td>
+                      <td>classified</td>
+                      <td>unknown</td>
+                    </tr>
+                    <tr>
+                      <td>WhatIF</td>
+                      <td>7777777777</td>
+                      <td>iff@gmail.com</td>
+                      <td>ask someone else</td>
+                      <td>classified</td>
+                      <td>unknown</td>
+                    </tr>
+                    <tr>
+                      <td>illuminati</td>
+                      <td>666</td>
+                      <td>666@gmail.com</td>
+                      <td>have no idea</td>
+                      <td>classified</td>
+                      <td>unknown</td>
+                    </tr>
+                    <tr>
+                      <td>free masons</td>
+                      <td>5555555555</td>
+                      <td>support666@gmail.com</td>
+                      <td>have no idea</td>
+                      <td>classified</td>
+                      <td>unknown</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-
             </div>
           </div>
 
-         
         </div>
         <!-- /.container-fluid -->
-        <div class="modal fade" id="contactAndAddress">
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-              <!-- modal Header -->
-              <div class="modal-header">
-                <h4>Create Contact</h4>
-                <button class="close" type="button" data-dismiss="modal">&times;</button>
-              </div>
-              <!-- Modal Body -->
-              <div class="modal-body">
-                <div class="container fluid">
-                  <div class="row">&nbsp;&nbsp;
-                    <label><input type="radio" name="optradio" checked>&nbsp;Contact</label>&nbsp;&nbsp;
-                    <label><input type="radio" name="optradio">&nbsp;Invoice Address</label>&nbsp;&nbsp;
-                    <label><input type="radio" name="optradio">&nbsp;Delivery Address</label>&nbsp;&nbsp;
-                    <label><input type="radio" name="optradio">&nbsp;Other Address</label>&nbsp;&nbsp;
-                    <label><input type="radio" name="optradio">&nbsp;Private Address</label>
-                  </div>  
-                  <div class="row">
-                    <div class="col-sm-5">
-                      <div class="row">
-                        <div class="col-sm-5">
-                          <label for="contactName">Contact Name</label>
-                        </div>
-                        <div class="col-sm-7">
-                          <input type="text" class="form-control" id="contacttName">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-5">
-                          <label for="contactName">Address</label>
-                        </div>
-                        <div class="col-sm-7">
-                          <input type="text" class="form-control" id="contacttName">
-                          <input type="text" class="form-control" id="contacttName">
-                          <input type="text" class="form-control" id="contacttName">
-                          <select class="form-control" id="Countries">
-                            <option value="US">United States</option>
-                            <option value="UK">United Kingdom</option>
-                            <option value="RS">Russia</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-5">
-                          <label for="contactName">Notes</label>
-                        </div>
-                        <div class="col-sm-7">
-                          <textarea name="notes" id="notes" class="form-control" style="width: inherit; resize: none;" rows="2"></textarea>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-5">
-                      <div class="row">
-                        <div class="col-sm-3">
-                          &nbsp;<label for="email">Email</label>
-                        </div>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control" id="email">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          &nbsp;<label for="email">Phone</label>
-                        </div>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control" id="phone">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          &nbsp;<label for="email">Mobile</label>
-                        </div>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control" id="mobile">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-2">
-                      <img class="img-profile float-right" width="120px" height="120px" src="img/placeholder.png">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Modal Footer -->
-              <div class="modal-footer">  
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Save & Close</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Save & New</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
-              </div>
-            </div>
-          </div>
-        </div>
 
       </div>
       <!-- End of Main Content -->
