@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Category</title>
+  <title>Company</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -94,15 +94,15 @@
         Catalog Management
       </div>
 
-     <li class="nav-item active">
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
+     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
           <i class="fas fa-fw fa-cog"></i>
           <span>Product</span>
         </a>
-        <div id="collapseProduct" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseProduct" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="catalog.html">Catalog</a>
-            <a class="collapse-item active" href="category.html">Category</a>
+            <a class="collapse-item" href="category.html">Category</a>
             <a class="collapse-item" href="product.html">Product</a>
             <a class="collapse-item" href="product_attribute.html">Product Attribute</a>
              <a class="collapse-item" href="uom.html">Unit Of Measure</a>
@@ -115,14 +115,14 @@
         Inventory Management
       </div>
 
-     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCompany" aria-expanded="true" aria-controls="collapseCompany">
+     <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseCompany" aria-expanded="true" aria-controls="collapseCompany">
           <i class="fas fa-fw fa-cog"></i>
           <span>Company</span>
         </a>
-        <div id="collapseCompany" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseCompany" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="company.html">Company</a>
+            <a class="collapse-item active" href="company.html">Company</a>
             <a class="collapse-item" href="facility.html">Facility</a>
              <a class="collapse-item" href="loaction.html">Location</a>
              <a class="collapse-item" href="tray.html">Tray</a>
@@ -442,8 +442,9 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Category</h1>
+            <h1 class="h3 mb-0 text-gray-800">Company</h1>
 
+            
 
           </div>
 
@@ -454,87 +455,277 @@
 
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary"><a href="category.html">Category</a> -> <a href="view_category.html">CG_001 (Gold Necklase)</a> -> Edit</h6>
+              <h6 class="m-0 font-weight-bold text-primary"><a href="company.html">Company</a> -> Create</h6>
             </div>
-            
-            
-
             <div class="card-body">
 
               <form>
 
-              <div class="row">
+                <div class="row">
+
+                  <div class="col-lg-10">
+
+
+                      <div class="row">
                 
                 
 
-                <div class="col-lg-5">
-                  <div class="p-6">
-              
+                        <div class="col-lg-6">
+                          <div class="p-6">                    
+                            <div class="form-group">
+                              <label>Company ID</label>
+                              <input type="text"  class="form-control form-control-user" id="exampleInputEmail" >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="p-6">
+                            <div class="form-group">
+                              <label>Company Name</label>
+                              <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                            </div>
+                          </div>
+                        </div>
 
-                    
+                      </div>
+        
+                      <div class="row">
 
-                      <div class="form-group">
-                        <label>Category ID</label>
-                        <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="CG_001">
-                      </div>
-                      <div class="form-group">
-                        <label>Category Name</label>
-                        <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="GOLD">
-                      </div>
+                        <div class="col-lg-6">
+                          <div class="p-6">                    
+                            
+                            <div class="form-group">
+                              <label>Address Line 1</label>
+                              <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+        
+                            </div>
+                            
+                          </div>
+                        </div>
 
-                      <div class="form-group">
-                        <label>Catalog</label>
-                        <select class="form-control form-control-user" id="catalogId" >
-                          <option>Select Catalog</option>
-                          <option selected>CAT_001 GOLD</option>
-                          <option>CAT_002 SILVER</option>
-                          <option>CAT_003 DIAMOND</option>
-                          <option>CAT_004 PLATINUM</option>
-                          <option>CAT_005 ARTIFICIAL</option>
-                        </select>
-  
-                      </div>
-
-                      <div class="text-center">
-                        <a href="view_category.html" class="btn btn-primary">
-                          Save
-                        </a>
-                      </div>
-                    
+                        <div class="col-lg-6">
+                          <div class="p-6">                    
+                            <div class="form-group">
+                              <label>Address Line 2</label>
+                              <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                            </div>
+                          </div>
+                        </div>
                   </div>
-                </div>
-                <div class="col-lg-3">
+                      
 
-                  <div class="p-6">
-                    
-                    
-                  </div>
 
-                </div>
 
-                <div class="col-lg-3">
+                    <div class="row">
 
-                  <div class="p-6">
-                    
-                    <div class="text-center border-1">
-                      <img class="img-profile" width="150" height="150" src="img/gold_necklace.jpg">
-                      <h1 class="h6 text-gray-600 mb-4">Update Logo</h1>
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          
+                          <div class="form-group">
+                            <label>City</label>
+                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+      
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          <div class="form-group">
+                            <label>Country</label>
+                            <select class="form-control form-control-user" id="catalogId" >
+                              <option>Select Country</option>
+                              <option>India</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
 
+                    
+                    <div class="row">
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          <div class="form-group">
+                            <label>State</label>
+                            <select class="form-control form-control-user" id="catalogId" >
+                              <option>Select State</option>
+                              <option>Delhi</option>
+                              <option>Maharashtra</option>
+                              <option>Uttar Pradesh</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          <div class="form-group">
+                            <label>Postal Code</label>
+                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="row">
+
+                            <div class="col-lg-6">
+                              <div class="p-6">                    
+                                      
+                                <div class="form-group">
+                                      <label>Phone Number</label>
+                                      <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="" >
+                
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+  
+                                <div class="col-lg-6">
+                                  <div class="p-6">                    
+                                    
+                                    <div class="form-group">
+                                          <label>Email</label>
+                                          <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="" >
+                    
+                                        </div>
+                                        
+                                      </div>
+                                    </div>
+                    </div>
+
+                    <div class="row">
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                                
+                          <div class="form-group">
+                                <label>Mobile</label>
+                                <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="" >
+          
+                              </div>
+                              
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                          <div class="p-6">                    
+                              
+                            <div class="form-group">
+                                  <label>Website</label>
+                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="" >
+            
+                                </div>
+                                
+                              </div>
+                          </div>
+                    </div>
+
+
+                    <div class="row">
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                                
+                          <div class="form-group">
+                                <label>GSTIN</label>
+                                <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="" >
+          
+                              </div>
+                              
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                          <div class="p-6">                    
+                              
+                            <div class="form-group">
+                                  <label>Registration</label>
+                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="" >
+            
+                                </div>
+                                
+                              </div>
+                          </div>
+                    </div>
+
+                         <div class="row">
+
+                                <div class="col-lg-6">
+                                  <div class="p-6">                    
+                                    
+                                    <div class="form-group">
+                                      <label>Currency</label>
+                                      <select class="form-control form-control-user" id="unitId" >
+                                        <option>Select Currency</option>
+                                        <option>INR</option>
+                                        <option>USD</option>
+                                        <option>GBP</option>
+                                        <option>EURO</option>
+                                      </select>
+                
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                  <div class="p-6">                    
+                                    <div class="form-group">
+                                      <label>Parent Company (If Any)</label>
+                                      <select class="form-control form-control-user" id="unitId">
+                                        <option>Select</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                         </div>
+
+                   
+
+
+                  </div>   
+                    
+                    <div class="col-lg-2">
+                        
+                        <div class="text-center border-1">
+                          <img class="img-profile" width="120" height="120" src="img/placeholder.png">
+                          <h1 class="h6 text-gray-600 mb-4">Add Logo</h1>
+                        </div>
+                    </div>
+                      
                 </div>
+                
+
+              <div class="row">
+
+                <div class="col-lg-10">
+                  <div class="p-6"> 
+
+                    <div class="text-center">
+                      <a href="view_company.html" class="btn btn-primary">
+                        Create
+                      </a>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                
 
               </div>
+
+
             </form>
 
             </div>
           </div>
 
          
-
-
-         
-
         </div>
         <!-- /.container-fluid -->
 
