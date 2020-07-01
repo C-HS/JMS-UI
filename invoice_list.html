@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Home</title>
+  <title>Product Attribute</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,6 +17,9 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -91,15 +94,15 @@
         Catalog Management
       </div>
 
-     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
+     <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
           <i class="fas fa-fw fa-cog"></i>
           <span>Product</span>
         </a>
         <div id="collapseProduct" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="catalog.html">Catalog</a>
-            <a class="collapse-item " href="category.html">Category</a>
+            <a class="collapse-item" href="category.html">Category</a>
             <a class="collapse-item" href="product.html">Product</a>
             <a class="collapse-item" href="product_attribute.html">Product Attribute</a>
              <a class="collapse-item" href="uom.html">Unit Of Measure</a>
@@ -151,12 +154,12 @@
           <i class="fas fa-fw fa-cog"></i>
           <span>Employee</span>
         </a>
-        <div id="collapseEmployee" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseEmployee" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item active" href="employee_list.html">Employee</a>
-            <a class="collapse-item" href="#">Designation</a>
-             <a class="collapse-item" href="#">User Login</a>
-             <a class="collapse-item" href="#">Role</a>
+            <a class="collapse-item" href="buttons.html">Employee</a>
+            <a class="collapse-item" href="cards.html">Designation</a>
+             <a class="collapse-item" href="cards.html">User Login</a>
+             <a class="collapse-item" href="cards.html">Role</a>
           </div>
         </div>
       </li>
@@ -172,10 +175,10 @@
           <i class="fas fa-fw fa-cog"></i>
           <span>Accounting</span>
         </a>
-        <div id="collapseAccounting" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseAccounting" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="invoice_list.html">Invoice</a>
-            <a class="collapse-item" href="bill_list.html">Bill</a>
+            <a class="collapse-item active" href="buttons.html">Invoice</a>
+            <a class="collapse-item" href="cards.html">Bill</a>
           </div>
         </div>
       </li>
@@ -428,17 +431,115 @@
                 </a>
               </div>
             </li>
-
           </ul>
-
         </nav>
         <!-- End of Topbar -->
-
         <!-- Begin Page Content -->
         <div class="container-fluid">
-
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+         <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Invoice List</h1>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
+          </div>
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Number</th>
+                      <th>Customer</th>
+                      <th>Invoice Date</th>
+                      <th>Source Document</th>
+                      <th>Sales Person</th>
+                      <th>Due Date</th>
+                      <th>Tax Exclusion</th>
+                      <th>Total</th>
+                      <th>Amount Due</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>INV/2020/0001</td>
+                      <td>Registered Customer</td>
+                      <td>07/01/2020</td>
+                      <td></td>
+                      <td>Marc Demo</td>
+                      <td>08/31/2020</td>
+                      <td>$6,000.00</td>
+                      <td>$7,080.00</td>
+                      <td>$0.00</td>
+                      <td>Posted</td>
+                    </tr>
+                    <tr>
+                      <td>INV/2020/0002</td>
+                      <td>Gemini Furniture</td>
+                      <td>07/01/2020</td>
+                      <td>S00020</td>
+                      <td>Marc Demo</td>
+                      <td>08/31/2020</td>
+                      <td>$6,000.00</td>
+                      <td>$7,080.00</td>
+                      <td>$0.00</td>
+                      <td>Posted</td>
+                    </tr>
+                    <tr>
+                      <td>INV/2020/0003</td>
+                      <td>Registered Customer</td>
+                      <td>07/01/2020</td>
+                      <td></td>
+                      <td>Marc Demo</td>
+                      <td>08/31/2020</td>
+                      <td>$6,000.00</td>
+                      <td>$7,080.00</td>
+                      <td>$0.00</td>
+                      <td>Posted</td>
+                    </tr>
+                    <tr>
+                      <td>INV/2020/0004</td>
+                      <td>Un-Registered Customer</td>
+                      <td>07/01/2020</td>
+                      <td></td>
+                      <td>Marc Demo</td>
+                      <td>08/31/2020</td>
+                      <td>$6,000.00</td>
+                      <td>$7,080.00</td>
+                      <td>$0.00</td>
+                      <td>Posted</td>
+                    </tr>
+                    <tr>
+                      <td>INV/2020/0005</td>
+                      <td>Un-Registered Customer</td>
+                      <td>07/01/2020</td>
+                      <td></td>
+                      <td>Marc Demo</td>
+                      <td>08/31/2020</td>
+                      <td>$6,000.00</td>
+                      <td>$7,080.00</td>
+                      <td>$0.00</td>
+                      <td>Posted</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>$659,865.00</td>
+                      <td>$659,865.00</td>
+                      <td>$659,865.00</td>
+                      <td></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
 
         </div>
         <!-- /.container-fluid -->
@@ -495,6 +596,13 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 
