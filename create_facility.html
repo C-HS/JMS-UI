@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Company</title>
+  <title>Facility</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -44,7 +44,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="home.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -122,8 +122,8 @@
         </a>
         <div id="collapseCompany" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item active" href="company.html">Company</a>
-            <a class="collapse-item" href="facility.html">Facility</a>
+            <a class="collapse-item" href="company.html">Company</a>
+            <a class="collapse-item active" href="facility.html">Facility</a>
              <a class="collapse-item" href="location.html">Location</a>
              <a class="collapse-item" href="tray.html">Tray</a>
           </div>
@@ -138,7 +138,7 @@
         </a>
         <div id="collapseInventory" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="inventory.html">Inventory</a>
+            <a class="collapse-item" href="buttons.html">Inventory</a>
           </div>
         </div>
       </li>
@@ -442,27 +442,9 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Company</h1>
+            <h1 class="h3 mb-0 text-gray-800">Facility</h1>
 
             
-            <nav class="">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Actions
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Delete</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Print Barcode</a>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-
-
-            <a href="create_company.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
-           
 
           </div>
 
@@ -470,39 +452,201 @@
 
 
           <!-- DataTales Example -->
+
           <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary"><a href="facility.html">Facility</a> -> Create</h6>
+            </div>
             <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Select</th>
-                      <th>Company ID</th>
-                      <th>Name</th>
-                      <th>Date Created</th>
-                    </tr>
-                  </thead>
-                  <!-- <tfoot>
-                    <tr>
-                      <th>Select</th>
-                      <th>Catalog ID</th>
-                      <th>Name</th>
-                      <th>Date Created</th>
-                    </tr>
-                  </tfoot> -->
-                  <tbody>
-                    <tr>
-                      <td><input type="checkbox"></td>
-                      <td><a href="view_company.html">COM_001</a></td>
-                      <td>IAITO INFOTECH P LTD</td>
-                      <td>2011/04/25</td>
-                    </tr>
-                  </tbody>
-                </table>
+
+              <form>
+
+                <div class="row">
+
+                  <div class="col-lg-10">
+
+
+                      <div class="row">
+                
+                
+
+                        <div class="col-lg-6">
+                          <div class="p-6">                    
+                            <div class="form-group">
+                              <label>Facility ID</label>
+                              <input type="text"  class="form-control form-control-user" id="exampleInputEmail" >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="p-6">
+                            <div class="form-group">
+                              <label>Facility Name</label>
+                              <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+        
+                      
+
+
+
+                    <div class="row">
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          
+                          <div class="form-group">
+                            <label>Facility Type</label>
+                            <select class="form-control form-control-user" id="catalogId" >
+                              <option>Select</option>
+                              <option>Warehouse</option>
+                              <option>Store</option>
+                              <option>Office</option>
+                            </select>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          <div class="form-group">
+                            <label>Company</label>
+                            <select class="form-control form-control-user" id="catalogId" >
+                              <option>Select</option>
+                              <option>Iaito Infotech P Ltd</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                    <div class="row">
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          
+                          <div class="form-group">
+                            <label>City</label>
+                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+      
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          <div class="form-group">
+                            <label>Country</label>
+                            <select class="form-control form-control-user" id="catalogId" >
+                              <option>Select Country</option>
+                              <option>India</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                    <div class="row">
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          <div class="form-group">
+                            <label>State</label>
+                            <select class="form-control form-control-user" id="catalogId" >
+                              <option>Select State</option>
+                              <option>Delhi</option>
+                              <option>Maharashtra</option>
+                              <option>Uttar Pradesh</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          <div class="form-group">
+                            <label>Postal Code</label>
+                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="row">
+
+                            <div class="col-lg-6">
+                              <div class="p-6">                    
+                                      
+                                <div class="form-group">
+                                      <label>Phone Number</label>
+                                      <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="" >
+                
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+  
+                                <div class="col-lg-6">
+                                  <div class="p-6">                    
+                                    
+                                    <div class="form-group">
+                                          <label>Email</label>
+                                          <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="" >
+                    
+                                        </div>
+                                        
+                                      </div>
+                                    </div>
+                    </div>
+                   
+
+
+                  </div>   
+                    
+                    <!-- <div class="col-lg-2">
+                        
+                        <div class="text-center border-1">
+                          <img class="img-profile" width="120" height="120" src="img/placeholder.png">
+                          <h1 class="h6 text-gray-600 mb-4">Add Logo</h1>
+                        </div>
+                    </div> -->
+                      
+                </div>
+                
+
+              <div class="row">
+
+                <div class="col-lg-10">
+                  <div class="p-6"> 
+
+                    <div class="text-center">
+                      <a href="view_facility.html" class="btn btn-primary">
+                        Create
+                      </a>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                
+
               </div>
+
+
+            </form>
+
             </div>
           </div>
 
+         
         </div>
         <!-- /.container-fluid -->
 

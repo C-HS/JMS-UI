@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Company</title>
+  <title>Location</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -122,9 +122,9 @@
         </a>
         <div id="collapseCompany" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item active" href="company.html">Company</a>
+            <a class="collapse-item" href="company.html">Company</a>
             <a class="collapse-item" href="facility.html">Facility</a>
-             <a class="collapse-item" href="location.html">Location</a>
+             <a class="collapse-item active" href="location.html">Location</a>
              <a class="collapse-item" href="tray.html">Tray</a>
           </div>
         </div>
@@ -442,7 +442,7 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Company</h1>
+            <h1 class="h3 mb-0 text-gray-800">Location</h1>
 
             
             <nav class="">
@@ -461,7 +461,7 @@
             </nav>
 
 
-            <a href="create_company.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
+            <a href="create_location.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
            
 
           </div>
@@ -477,9 +477,14 @@
                   <thead>
                     <tr>
                       <th>Select</th>
-                      <th>Company ID</th>
-                      <th>Name</th>
-                      <th>Date Created</th>
+                      <th>Facility</th>
+                      <th>Location ID</th>
+                      <th>Location Type</th>
+                      <th>Area</th>
+                      <th>Aisle</th>
+                      <th>Section</th>
+                      <th>Level</th>
+                      <th>Position</th>
                     </tr>
                   </thead>
                   <!-- <tfoot>
@@ -493,9 +498,47 @@
                   <tbody>
                     <tr>
                       <td><input type="checkbox"></td>
-                      <td><a href="view_company.html">COM_001</a></td>
-                      <td>IAITO INFOTECH P LTD</td>
-                      <td>2011/04/25</td>
+                      <td>Warehouse A</td>
+                      <td><a href="view_location.html">A1AS1S1L3P2</a></td>
+                      <td>Picking</td>
+                      <td>A1</td>
+                      <td>AS1</td>
+                      <td>S1</td>
+                      <td>L3</td>
+                      <td>P2</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>Warehouse A</td>
+                      <td>A1AS3S2L5P1</td>
+                      <td>Picking</td>
+                      <td>A1</td>
+                      <td>AS3</td>
+                      <td>S2</td>
+                      <td>L5</td>
+                      <td>P1</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>Warehouse A</td>
+                      <td>A5</td>
+                      <td>Receiving</td>
+                      <td>A5</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>Warehouse A</td>
+                      <td>A7</td>
+                      <td>Despatching</td>
+                      <td>A7</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
                     </tr>
                   </tbody>
                 </table>
