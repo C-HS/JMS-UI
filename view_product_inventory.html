@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Tray</title>
+  <title>Inventory</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -115,30 +115,30 @@
         Inventory Management
       </div>
 
-     <li class="nav-item active">
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseCompany" aria-expanded="true" aria-controls="collapseCompany">
+     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCompany" aria-expanded="true" aria-controls="collapseCompany">
           <i class="fas fa-fw fa-cog"></i>
           <span>Company</span>
         </a>
-        <div id="collapseCompany" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseCompany" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="company.html">Company</a>
             <a class="collapse-item" href="facility.html">Facility</a>
              <a class="collapse-item" href="location.html">Location</a>
-             <a class="collapse-item active" href="tray.html">Tray</a>
+             <a class="collapse-item" href="tray.html">Tray</a>
           </div>
         </div>
       </li>
 
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInventory" aria-expanded="true" aria-controls="collapseInventory">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseInventory" aria-expanded="true" aria-controls="collapseInventory">
           <i class="fas fa-fw fa-cog"></i>
           <span>Inventory</span>
         </a>
-        <div id="collapseInventory" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseInventory" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="inventory.html">Inventory</a>
+            <a class="collapse-item active" href="inventory.html">Inventory</a>
             <a class="collapse-item" href="in-out-inventory.html">Inv-In-Out</a>
             <a class="collapse-item" href="search-inventory.html">Inv-Search</a>
           </div>
@@ -444,15 +444,17 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Tray</h1>
-
+            <h1 class="h3 mb-0 text-gray-800">Inventory</h1>
           </div>
+
+
+
 
           <!-- DataTales Example -->
 
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary"><a href="tray.html">Tray</a> -> Create</h6>
+              <h6 class="m-0 font-weight-bold text-primary"><a href="inventory.html">Inventory</a> [Neckless 232 (PROD_001)]</h6>
             </div>
             <div class="card-body">
 
@@ -463,78 +465,41 @@
                   <div class="col-lg-10">
 
 
-                    
-                    <div class="row">
-
-                      <div class="col-lg-6">
-                        <div class="p-6">                    
-                          
-                          <div class="form-group">
-                            <label>Tray ID</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
-                          </div>
-                          
-                        </div>
-                      </div>
-
-                      <div class="col-lg-6">
-                        <div class="p-6">                    
-                          <div class="form-group">
-                            <label>Tray Type</label>
-                            <select class="form-control form-control-user" id="catalogId" >
-                              <option>Select</option>
-                              <option>Bangle Tray</option>
-                              <option>Common Tray</option>
-                              <option>Ring Tray</option>
-                              <option>Chain Tray</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
                       <div class="row">
                 
+                
+
                         <div class="col-lg-6">
                           <div class="p-6">                    
                             <div class="form-group">
-                              <label>Facility</label>
-                              <select class="form-control form-control-user" id="catalogId" >
-                                <option>Select</option>
-                                <option>Warehouse A</option>
-                                <option>Warehouse B</option>
-                                <option>Shop ABC</option>
-                              </select>
+                              <label>Product ID</label>
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="PROD_001">
                             </div>
                           </div>
                         </div>
                         <div class="col-lg-6">
                           <div class="p-6">
                             <div class="form-group">
-                              <label>Location</label>
-                              <select class="form-control form-control-user" id="catalogId" >
-                                <option>Select</option>
-                                <option>A1AS1S1L3P2</option>
-                                <option>A1AS3S2L5P1</option>
-                                <option>A5</option>
-                                <option>A7</option>
-                              </select>
+                              <label>Product Name</label>
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Neckless 232">
                             </div>
                           </div>
                         </div>
 
                       </div>
         
-                    
+                      
+
+
+
                     <div class="row">
 
                       <div class="col-lg-6">
                         <div class="p-6">                    
                           
                           <div class="form-group">
-                            <label>Length</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
-      
+                            <label>Category</label>
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Gold Necklase">
                           </div>
                           
                         </div>
@@ -543,30 +508,8 @@
                       <div class="col-lg-6">
                         <div class="p-6">                    
                           <div class="form-group">
-                            <label>Breath</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    
-                    <div class="row">
-
-                      <div class="col-lg-6">
-                        <div class="p-6">                    
-                          <div class="form-group">
-                            <label>Height</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-6">
-                        <div class="p-6">                    
-                          <div class="form-group">
-                            <label>Description</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                            <label>Traceability</label>
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Serialized">
                           </div>
                         </div>
                       </div>
@@ -586,29 +529,137 @@
                 </div>
                 
 
-              <div class="row">
+              <!-- <div class="row">
 
                 <div class="col-lg-10">
                   <div class="p-6"> 
 
                     <div class="text-center">
-                      <a href="view_tray.html" class="btn btn-primary">
-                        Create
+                      <a href="view_facility.html" class="btn btn-primary">
+                        Save
                       </a>
                     </div>
                     
                   </div>
                 </div>
 
-                
-
-              </div>
+              </div> -->
 
 
             </form>
 
             </div>
           </div>
+
+
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Inventory Items</h6>
+            </div>
+            
+            
+
+            <div class="card-body">
+              <div class="table-responsive">
+
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>INV_ID</th>
+                      <th>VAR_ID</th>
+                      <th>Facility</th>
+                      <th>Location</th>
+                      <th>Loc_Type</th>
+                      <th>Tray</th>
+                      <th>Lot</th>
+                      <th>Slno</th>
+                      <th>Quantity</th>
+                      <th>From</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <!-- <tfoot>
+                    <tr>
+                      <th>Select</th>
+                      <th>Catalog ID</th>
+                      <th>Name</th>
+                      <th>Date Created</th>
+                    </tr>
+                  </tfoot> -->
+                  <tbody>
+                    <tr>
+                      <td><a href="move_product_inventory.html">10001</a></td>
+                      <td>NL_232-01</td>
+                      <td>Warehouse A</td>
+                      <td>A1AS1S1L3P2</td>
+                      <td>Picking</td>
+                      <td>TRAY001</td>
+                      <td>LOT001</td>
+                      <td>1000000</td>
+                      <td>1</td>
+                      <td>Sujeet Corp.</td>
+                      <td>  <a href="move_product_inventory.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i>Move</a></td>
+                    </tr>
+                    <tr>
+                      <td>10002</td>
+                      <td>NL_232-01</td>
+                      <td>Warehouse A</td>
+                      <td>A1AS1S1L3P2</td>
+                      <td>Picking</td>
+                      <td>TRAY001</td>
+                      <td>LOT001</td>
+                      <td>1000005</td>
+                      <td>1</td>
+                      <td>Sujeet Corp.</td>
+                      <td>  <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i>Move</a></td>
+                    </tr>
+                    <tr>
+                      <td>10003</td>
+                      <td>NL_232-01</td>
+                      <td>Warehouse A</td>
+                      <td>A1AS1S1L3P2</td>
+                      <td>Picking</td>
+                      <td>TRAY001</td>
+                      <td>LOT001</td>
+                      <td>1000009</td>
+                      <td>1</td>
+                      <td>Sujeet Corp.</td>
+                      <td>  <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i>Move</a></td>
+                    </tr>
+                    <tr>
+                      <td>10004</td>
+                      <td>NL_232-02</td>
+                      <td>Warehouse A</td>
+                      <td>A1AS3S2L5P1</td>
+                      <td>Picking</td>
+                      <td></td>
+                      <td>LOT003</td>
+                      <td>1000023</td>
+                      <td>1</td>
+                      <td>Sargam Ltd.</td>
+                      <td>  <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i>Move</a></td>
+                    </tr>
+                    <tr>
+                      <td>10005</td>
+                      <td>NL_232-02</td>
+                      <td>Warehouse A</td>
+                      <td>A1AS3S2L5P1</td>
+                      <td>Picking</td>
+                      <td></td>
+                      <td>LOT003</td>
+                      <td>1000025</td>
+                      <td>1</td>
+                      <td>Sargam Ltd.</td>
+                      <td>  <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i>Move</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              
+              </div>
+            </div>
+
+          </div>
+
 
          
         </div>

@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Tray</title>
+  <title>Inventory</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -115,30 +115,30 @@
         Inventory Management
       </div>
 
-     <li class="nav-item active">
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseCompany" aria-expanded="true" aria-controls="collapseCompany">
+     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCompany" aria-expanded="true" aria-controls="collapseCompany">
           <i class="fas fa-fw fa-cog"></i>
           <span>Company</span>
         </a>
-        <div id="collapseCompany" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseCompany" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="company.html">Company</a>
             <a class="collapse-item" href="facility.html">Facility</a>
              <a class="collapse-item" href="location.html">Location</a>
-             <a class="collapse-item active" href="tray.html">Tray</a>
+             <a class="collapse-item" href="tray.html">Tray</a>
           </div>
         </div>
       </li>
 
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInventory" aria-expanded="true" aria-controls="collapseInventory">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseInventory" aria-expanded="true" aria-controls="collapseInventory">
           <i class="fas fa-fw fa-cog"></i>
           <span>Inventory</span>
         </a>
-        <div id="collapseInventory" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseInventory" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="inventory.html">Inventory</a>
+            <a class="collapse-item active" href="inventory.html">Inventory</a>
             <a class="collapse-item" href="in-out-inventory.html">Inv-In-Out</a>
             <a class="collapse-item" href="search-inventory.html">Inv-Search</a>
           </div>
@@ -444,15 +444,17 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Tray</h1>
-
+            <h1 class="h3 mb-0 text-gray-800">Inventory</h1>
           </div>
+
+
+
 
           <!-- DataTales Example -->
 
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary"><a href="tray.html">Tray</a> -> Create</h6>
+              <h6 class="m-0 font-weight-bold text-primary"><a href="inventory.html">Inventory</a> Item ID [10001]</h6>
             </div>
             <div class="card-body">
 
@@ -462,79 +464,53 @@
 
                   <div class="col-lg-10">
 
-
-                    
                     <div class="row">
-
                       <div class="col-lg-6">
                         <div class="p-6">                    
-                          
                           <div class="form-group">
-                            <label>Tray ID</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                            <label>Inventory Item ID</label>
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="10001">
                           </div>
-                          
                         </div>
                       </div>
-
                       <div class="col-lg-6">
-                        <div class="p-6">                    
+                        <div class="p-6">
                           <div class="form-group">
-                            <label>Tray Type</label>
-                            <select class="form-control form-control-user" id="catalogId" >
-                              <option>Select</option>
-                              <option>Bangle Tray</option>
-                              <option>Common Tray</option>
-                              <option>Ring Tray</option>
-                              <option>Chain Tray</option>
-                            </select>
+                            <label>Product ID</label>
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="PROD_001">
                           </div>
                         </div>
                       </div>
                     </div>
 
+
                       <div class="row">
-                
                         <div class="col-lg-6">
                           <div class="p-6">                    
                             <div class="form-group">
-                              <label>Facility</label>
-                              <select class="form-control form-control-user" id="catalogId" >
-                                <option>Select</option>
-                                <option>Warehouse A</option>
-                                <option>Warehouse B</option>
-                                <option>Shop ABC</option>
-                              </select>
+                              <label>Product Name</label>
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="Neckless 232">
                             </div>
                           </div>
                         </div>
                         <div class="col-lg-6">
                           <div class="p-6">
                             <div class="form-group">
-                              <label>Location</label>
-                              <select class="form-control form-control-user" id="catalogId" >
-                                <option>Select</option>
-                                <option>A1AS1S1L3P2</option>
-                                <option>A1AS3S2L5P1</option>
-                                <option>A5</option>
-                                <option>A7</option>
-                              </select>
+                              <label>Variant ID</label>
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="NL_232-01">
                             </div>
                           </div>
                         </div>
-
                       </div>
         
-                    
-                    <div class="row">
 
+                    <div class="row">
                       <div class="col-lg-6">
                         <div class="p-6">                    
                           
                           <div class="form-group">
-                            <label>Length</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
-      
+                            <label>Category</label>
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Gold Necklase">
                           </div>
                           
                         </div>
@@ -543,8 +519,30 @@
                       <div class="col-lg-6">
                         <div class="p-6">                    
                           <div class="form-group">
-                            <label>Breath</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                            <label>Traceability</label>
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Serialized">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          
+                          <div class="form-group">
+                            <label>Facility</label>
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Warehouse A">
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          <div class="form-group">
+                            <label>Location</label>
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="A1AS1S1L3P2">
                           </div>
                         </div>
                       </div>
@@ -552,12 +550,11 @@
 
                     
                     <div class="row">
-
                       <div class="col-lg-6">
                         <div class="p-6">                    
                           <div class="form-group">
-                            <label>Height</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                            <label>Tray</label>
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="TRAY001">
                           </div>
                         </div>
                       </div>
@@ -565,12 +562,139 @@
                       <div class="col-lg-6">
                         <div class="p-6">                    
                           <div class="form-group">
-                            <label>Description</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                            <label>LOT No</label>
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="LOT001">
                           </div>
                         </div>
                       </div>
                     </div>
+
+                    
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          
+                          <div class="form-group">
+                            <label>Serial Number</label>
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="1000000">
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          <div class="form-group">
+                            <label>Quantity</label>
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="1">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          
+                          <div class="form-group">
+                            <label>Purchase Order</label>
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="PO005">
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          <div class="form-group">
+                            <label>Incomming Shipment</label>
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="INSHIP0515">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          
+                          <div class="form-group">
+                            <label>From Company</label>
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Sujeet Corp.">
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          <div class="form-group">
+                            <label>Owner Company</label>
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Iaito Infotech Pvt Ltd">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          
+                          <div class="form-group">
+                            <label>To Facility</label>
+                            <select class="form-control form-control-user" id="catalogId" >
+                              <option>Select</option>
+                              <option>Warehouse A</option>
+                              <option>Warehouse B</option>
+                              <option>Shop ABC</option>
+                            </select>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          <div class="form-group">
+                            <label>To Location</label>
+                            <select class="form-control form-control-user" id="catalogId" >
+                              <option>Select</option>
+                              <option>A1AS1S1L3P2</option>
+                              <option>A1AS3S2L5P1</option>
+                              <option>A5</option>
+                              <option>A7</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          <div class="form-group">
+                            <label>To Tray (Optional)</label>
+                            <select class="form-control form-control-user" id="catalogId" >
+                              <option>Select</option>
+                              <option>TRAY001</option>
+                              <option>TRAY002</option>
+                              <option>TRAY003</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <div class="p-6">                    
+                          <div class="form-group">
+                            <label>Quantity To Move</label>
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="1">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
 
 
                   </div>   
@@ -592,15 +716,13 @@
                   <div class="p-6"> 
 
                     <div class="text-center">
-                      <a href="view_tray.html" class="btn btn-primary">
-                        Create
+                      <a href="view_product_inventory.html" class="btn btn-primary">
+                        Move
                       </a>
                     </div>
                     
                   </div>
                 </div>
-
-                
 
               </div>
 
@@ -609,6 +731,45 @@
 
             </div>
           </div>
+
+
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Inventory Item [10001] -> Tracking</h6>
+            </div>
+            
+            
+
+            <div class="card-body">
+              <div class="table-responsive">
+
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Operation Type</th>
+                      <th>From</th>
+                      <th>To</th>
+                      <th>Date</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Purchase</td>
+                      <td>[Sujeet Corp.] [PO005] [INSHIP0515]</td>
+                      <td>[Warehouse A] [A1AS1S1L3P2]</td>
+                      <td>2011/04/25</td>
+                    </tr>
+                  </tbody>
+                </table>
+              
+              </div>
+            </div>
+
+          </div>
+
 
          
         </div>

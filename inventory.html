@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Tray</title>
+  <title>Inventory</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -102,7 +102,7 @@
         <div id="collapseProduct" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="catalog.html">Catalog</a>
-            <a class="collapse-item" href="category.html">Category</a>
+            <a class="collapse-item " href="category.html">Category</a>
             <a class="collapse-item" href="product.html">Product</a>
             <a class="collapse-item" href="product_attribute.html">Product Attribute</a>
              <a class="collapse-item" href="uom.html">Unit Of Measure</a>
@@ -115,30 +115,30 @@
         Inventory Management
       </div>
 
-     <li class="nav-item active">
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseCompany" aria-expanded="true" aria-controls="collapseCompany">
+     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCompany" aria-expanded="true" aria-controls="collapseCompany">
           <i class="fas fa-fw fa-cog"></i>
           <span>Company</span>
         </a>
-        <div id="collapseCompany" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseCompany" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="company.html">Company</a>
             <a class="collapse-item" href="facility.html">Facility</a>
              <a class="collapse-item" href="location.html">Location</a>
-             <a class="collapse-item active" href="tray.html">Tray</a>
+             <a class="collapse-item" href="tray.html">Tray</a>
           </div>
         </div>
       </li>
 
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInventory" aria-expanded="true" aria-controls="collapseInventory">
+    <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseInventory" aria-expanded="true" aria-controls="collapseInventory">
           <i class="fas fa-fw fa-cog"></i>
           <span>Inventory</span>
         </a>
-        <div id="collapseInventory" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseInventory" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="inventory.html">Inventory</a>
+            <a class="collapse-item active" href="inventory.html">Inventory</a>
             <a class="collapse-item" href="in-out-inventory.html">Inv-In-Out</a>
             <a class="collapse-item" href="search-inventory.html">Inv-Search</a>
           </div>
@@ -444,173 +444,179 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Tray</h1>
+            <h1 class="h3 mb-0 text-gray-800">Inventory</h1>
+
+            
+            <!-- <nav class="">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Delete</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Print Barcode</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+
+
+            <div></div>
+            -->
 
           </div>
+
+        <!-- Content Row -->
+        <div class="row">
+
+          <!-- Earnings (Monthly) Card Example -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">By Category</div>
+                  
+                      <select class="form-control form-control-user" id="catalogId" >
+                        <option>All</option>
+                        <option>Gold Necklase</option>
+                        <option>Gold Ring</option>
+                        <option>Gold Bangles</option>
+                        <option>Silver Coin</option>
+                        <option>Platinum Ring</option>
+                      </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+           <!-- Earnings (Monthly) Card Example -->
+           <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-success shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  
+                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">By Company</div>
+                    <select class="form-control form-control-user" id="catalogId" >
+                      <option>All</option>
+                      <option>Iaito Infotech P Ltd</option>
+                    </select>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+                      <!-- Earnings (Monthly) Card Example -->
+                      <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-info shadow h-100 py-2">
+                          <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">By Sale / Purchase</div>
+                                <select class="form-control form-control-user" id="catalogId" >
+                                  <option>All</option>
+                                  <option>Sale</option>
+                                  <option>Purchase</option>
+                                </select>
+                            
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+          
+                      <!-- Pending Requests Card Example -->
+                      <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-warning shadow h-100 py-2">
+                          <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                              
+                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">By Traceability</div>
+                                <select class="form-control form-control-user" id="catalogId" >
+                                  <option>All</option>
+                                  <option>Serialized</option>
+                                  <option>Non Serialized</option>
+                                </select>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                   
+
+
+          </div>
+
+        
+
+
 
           <!-- DataTales Example -->
-
           <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary"><a href="tray.html">Tray</a> -> Create</h6>
-            </div>
             <div class="card-body">
-
-              <form>
-
-                <div class="row">
-
-                  <div class="col-lg-10">
-
-
-                    
-                    <div class="row">
-
-                      <div class="col-lg-6">
-                        <div class="p-6">                    
-                          
-                          <div class="form-group">
-                            <label>Tray ID</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
-                          </div>
-                          
-                        </div>
-                      </div>
-
-                      <div class="col-lg-6">
-                        <div class="p-6">                    
-                          <div class="form-group">
-                            <label>Tray Type</label>
-                            <select class="form-control form-control-user" id="catalogId" >
-                              <option>Select</option>
-                              <option>Bangle Tray</option>
-                              <option>Common Tray</option>
-                              <option>Ring Tray</option>
-                              <option>Chain Tray</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                      <div class="row">
-                
-                        <div class="col-lg-6">
-                          <div class="p-6">                    
-                            <div class="form-group">
-                              <label>Facility</label>
-                              <select class="form-control form-control-user" id="catalogId" >
-                                <option>Select</option>
-                                <option>Warehouse A</option>
-                                <option>Warehouse B</option>
-                                <option>Shop ABC</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="p-6">
-                            <div class="form-group">
-                              <label>Location</label>
-                              <select class="form-control form-control-user" id="catalogId" >
-                                <option>Select</option>
-                                <option>A1AS1S1L3P2</option>
-                                <option>A1AS3S2L5P1</option>
-                                <option>A5</option>
-                                <option>A7</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
-        
-                    
-                    <div class="row">
-
-                      <div class="col-lg-6">
-                        <div class="p-6">                    
-                          
-                          <div class="form-group">
-                            <label>Length</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
-      
-                          </div>
-                          
-                        </div>
-                      </div>
-
-                      <div class="col-lg-6">
-                        <div class="p-6">                    
-                          <div class="form-group">
-                            <label>Breath</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    
-                    <div class="row">
-
-                      <div class="col-lg-6">
-                        <div class="p-6">                    
-                          <div class="form-group">
-                            <label>Height</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-6">
-                        <div class="p-6">                    
-                          <div class="form-group">
-                            <label>Description</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>   
-                    
-                    <!-- <div class="col-lg-2">
-                        
-                        <div class="text-center border-1">
-                          <img class="img-profile" width="120" height="120" src="img/placeholder.png">
-                          <h1 class="h6 text-gray-600 mb-4">Add Logo</h1>
-                        </div>
-                    </div> -->
-                      
-                </div>
-                
-
-              <div class="row">
-
-                <div class="col-lg-10">
-                  <div class="p-6"> 
-
-                    <div class="text-center">
-                      <a href="view_tray.html" class="btn btn-primary">
-                        Create
-                      </a>
-                    </div>
-                    
-                  </div>
-                </div>
-
-                
-
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <!-- <th>Select</th> -->
+                      <th>Product ID</th>
+                      <th>Product Name</th>
+                      <th>Category</th>
+                      <th>For</th>
+                      <th>Traceability</th>
+                      <th>Company</th>
+                      <th>QOH</th>
+                      <th>UOM</th>
+                      <th>Value</th>
+                    </tr>
+                  </thead>
+                  <!-- <tfoot>
+                    <tr>
+                      <th>Select</th>
+                      <th>Product ID</th>
+                      <th>Name</th>
+                      <th>Category</th>
+                      <th>For</th>
+                      <th>Type</th>
+                      <th>Sale Price</th>
+                      <th>Cost</th>
+                      <th>QOH</th>
+                      <th>UOM</th>
+                    </tr>
+                  </tfoot> -->
+                  <tbody>
+                    <tr>
+                      <!-- <td><input type="checkbox"></td> -->
+                      <td>PROD_001</td>
+                      <td>Neckless 232</td>
+                      <td>Gold Necklase</td>
+                      <td>Sale</td>
+                      <td>Serialized</td>
+                      <td>Iaito Infotech P Ltd</td>
+                      <td><a href="view_product_inventory.html">5</a></td>
+                      <td>Unit</td>
+                      <td>500000.000</td>
+                    </tr>
+                    <tr>
+                      <!-- <td><input type="checkbox"></td> -->
+                      <td>PROD_002</td>
+                      <td>Neckless 459</td>
+                      <td>Gold Necklase</td>
+                      <td>Purchase</td>
+                      <td>Serialized</td>
+                      <td>Iaito Infotech P Ltd</td>
+                      <td>2</td>
+                      <td>Unit</td>
+                      <td>212000.000</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-
-
-            </form>
-
             </div>
           </div>
 
-         
         </div>
         <!-- /.container-fluid -->
 

@@ -131,14 +131,16 @@
       </li>
 
 
-    <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInventory" aria-expanded="true" aria-controls="collapseInventory">
           <i class="fas fa-fw fa-cog"></i>
           <span>Inventory</span>
         </a>
         <div id="collapseInventory" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Inventory</a>
+            <a class="collapse-item" href="inventory.html">Inventory</a>
+            <a class="collapse-item" href="in-out-inventory.html">Inv-In-Out</a>
+            <a class="collapse-item" href="search-inventory.html">Inv-Search</a>
           </div>
         </div>
       </li>
@@ -455,7 +457,7 @@
 
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary"><a href="facility.html">Facility</a> -> [FAC_001] Warehouse A </a></h6>
+              <h6 class="m-0 font-weight-bold text-primary"><a href="facility.html">Facility</a> [Warehouse A (FAC_001)]</h6>
             </div>
             <div class="card-body">
 
@@ -643,6 +645,88 @@
 
             </div>
           </div>
+
+
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary"><a href="facility.html">Facility</a> [Warehouse A (FAC_001)] -> Location</h6>
+            </div>
+            
+            
+
+            <div class="card-body">
+              <div class="table-responsive">
+
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Facility</th>
+                      <th>Location ID</th>
+                      <th>Location Type</th>
+                      <th>Area</th>
+                      <th>Aisle</th>
+                      <th>Section</th>
+                      <th>Level</th>
+                      <th>Position</th>
+                    </tr>
+                  </thead>
+                  <!-- <tfoot>
+                    <tr>
+                      <th>Select</th>
+                      <th>Catalog ID</th>
+                      <th>Name</th>
+                      <th>Date Created</th>
+                    </tr>
+                  </tfoot> -->
+                  <tbody>
+                    <tr>
+                      <td>Warehouse A</td>
+                      <td>A1AS1S1L3P2</td>
+                      <td>Picking</td>
+                      <td>A1</td>
+                      <td>AS1</td>
+                      <td>S1</td>
+                      <td>L3</td>
+                      <td>P2</td>
+                    </tr>
+                    <tr>
+                      <td>Warehouse A</td>
+                      <td>A1AS3S2L5P1</td>
+                      <td>Picking</td>
+                      <td>A1</td>
+                      <td>AS3</td>
+                      <td>S2</td>
+                      <td>L5</td>
+                      <td>P1</td>
+                    </tr>
+                    <tr>
+                      <td>Warehouse A</td>
+                      <td>A5</td>
+                      <td>Receiving</td>
+                      <td>A5</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Warehouse A</td>
+                      <td>A7</td>
+                      <td>Despatching</td>
+                      <td>A7</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              
+              </div>
+            </div>
+
+          </div>
+
 
          
         </div>
