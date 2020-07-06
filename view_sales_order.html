@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Sales Quotation</title>
+  <title>Sales Order</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -90,8 +90,8 @@
         </a>
         <div id="collapseSales" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item active" href="sales-quotations.html">Quotation</a>
-            <a class="collapse-item" href="sales-order.html">Sales Order</a>
+            <a class="collapse-item" href="sales-quotations.html">Quotation</a>
+            <a class="collapse-item active" href="sales-order.html">Sales Order</a>
              <a class="collapse-item" href="customer_list.html">Customer</a>
               <a class="collapse-item" href="cards.html">Outgoing Shipment</a>
           </div>
@@ -471,7 +471,7 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-          <h1 class="h3 mb-0 text-gray-800">Sales Quotation</h1>
+          <h1 class="h3 mb-0 text-gray-800">Sales Order [SO0002]</h1>
 
           <nav class="">
             <ul class="navbar-nav ml-auto">
@@ -490,12 +490,11 @@
             </ul>
           </nav>
 
-          <!-- <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div> -->
 
          </div>
          <div class="row mb-2 ml-1">
-          <a href="edit_sales_quotation.html" class="btn btn-primary" role="button">Edit</a> &nbsp;
-          <a href="#" class="btn btn-success" role="button">Confirm</a> 
+          <!-- <a href="edit_sales_quotation.html" class="btn btn-primary" role="button">Edit</a> &nbsp;
+          <a href="#" class="btn btn-success" role="button">Confirm</a>  -->
           <!-- <input type="button" class="btn btn-primary" value="Save">&nbsp;
           <input type="button" class="btn btn-secondary" value="Discard"> -->
          </div>
@@ -505,19 +504,22 @@
           <!-- DataTales Example -->
 
           <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary"><a href="sales-quotations.html">Quotation</a> [SO0001]</h6>
-<!-- 
-              <div class="row">
-                <input type="button" class="btn btn-primary" value="Send by Email">
-                &nbsp;<input type="button" class="btn btn-secondary" value="Confirm">
-                &nbsp;<input type="button" class="btn btn-secondary" value="Cancel">
-              </div> -->
+            <div class="card-header py-2">
+              
+
+              <div class="row" style="float: right;">
+                <!-- <h6 class="m-0 font-weight-bold text-primary"><a href="sales-order.html">Sales Order</a> [SO0002]</h6> -->
+                <a href="edit_sales_quotation.html" class="btn btn-info" role="button">Invoice <span>1</span></a> &nbsp;
+                <a href="#" class="btn btn-warning" role="button">Delivery <span>1</span></a>
+              </div>
+                
+  
             </div>
+
             <div class="card-body">
               <form>
                 <div class="row">
-                  <h3> &nbsp; SO0001</h3>
+                  <h3> &nbsp; SO0002</h3>
                 </div>
                 <div class="row">
                   <div class="col-sm-6">
@@ -557,7 +559,7 @@
 
                     <div class="row">
                       <div class="col-sm-4">
-                        <label for="quotationDate">Quotation Date</label>
+                        <label for="quotationDate">Order Date</label>
                       </div>
                       <div class="col-sm-8">
                         01/01/2020
@@ -639,29 +641,35 @@
                   <table class="table table-bordered table-hover" id="tab_logic">
                     <thead>
                       <tr >
-                        <th class="text-center">
-                           <small class="font-weight-bold"> #</small> 
+                        <th class="text-center" style="font-size: small;">
+                            #
                         </th>
-                        <th class="text-center">
-                          <small class="font-weight-bold">Product</small> 
+                        <th class="text-center" style="font-size: small;">
+                          Product
                         </th>
-                        <th class="text-center">
-                          <small class="font-weight-bold">Description</small> 
+                        <th class="text-center" style="font-size: small;">
+                         Description
                         </th>
-                        <th class="text-center">
-                          <small class="font-weight-bold">Quantity</small>
+                        <th class="text-center" style="font-size: small;">
+                          Quantity
                         </th>
-                        <th class="text-center">
-                          <small class="font-weight-bold">Unit Price (Rs)</small>
+                        <th class="text-center" style="font-size: small;">
+                          Delivered
                         </th>
-                        <th class="text-center">
-                          <small class="font-weight-bold">Tax</small>
+                        <th class="text-center" style="font-size: small;">
+                          Invoiced
                         </th>
-                        <th class="text-center">
-                          <small class="font-weight-bold">Discount</small>
+                        <th class="text-center" style="font-size: small;">
+                          Unit Price (Rs)
                         </th>
-                        <th class="text-center">
-                          <small class="font-weight-bold">Sub-Total</small>
+                        <th class="text-center" style="font-size: small;">
+                        Tax
+                        </th>
+                        <th class="text-center" style="font-size: small;">
+                         Disc.%
+                        </th>
+                        <th class="text-center" style="font-size: small;">
+                          Sub-Total
                         </th>
                     </tr>
                     </thead>
@@ -677,7 +685,13 @@
                               [Polish : No Polish] [Stone Count :0]
                             </td>
                             <td style="font-size: small;">
-                              2.0
+                              3.0
+                            </td>
+                            <td style="font-size: small;">
+                              1.0
+                            </td>
+                            <td style="font-size: small;">
+                              1.0
                             </td>
                             <td style="font-size: small;">
                               125000.000
@@ -689,7 +703,7 @@
                               0%
                              </td>
                             <td style="font-size: small;">
-                            250000.000
+                              375000.000
                             </td>
                         </tr>
                         <tr id='addr1'></tr>
@@ -709,7 +723,7 @@
                         <label for="untexedAmt">Untaxed Amount</label>
                       </div>
                       <div class="col-sm-6" style="text-align: right">
-                        Rs 250000.000
+                        Rs 375000.000
                       </div>
                     </div>
                     <div class="row">
@@ -717,7 +731,7 @@
                         <label for="untexedAmt">Taxes</label>
                       </div>
                       <div class="col-sm-6" style="text-align: right">
-                        Rs 7500.000
+                        Rs 11250.000
                       </div>
                     </div>
                   </div>
@@ -727,10 +741,10 @@
                   <div class="col-sm-4">
                     <div class="row border-top">
                       <div class="col-sm-6">
-                        <label for="total">Total</label>
+                        <label for="total" style="font-weight: bold;">Total</label>
                       </div>
-                      <div class="col-sm-6" style="text-align: right">
-                        Rs 257500.000
+                      <div class="col-sm-6" style="text-align: right; font-weight: bold;">
+                        Rs 386250.000
                       </div>
                     </div>
                   </div>
@@ -850,7 +864,7 @@
                           <label for="customerRef">Customer Reference</label>
                         </div>
                         <div class="col-sm-8">
-                          PO5095
+                          PO5120
                         </div>
                       </div>
                     </div>

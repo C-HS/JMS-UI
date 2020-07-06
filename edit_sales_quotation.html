@@ -27,12 +27,13 @@
         $("#addRow").click(function() {
           $('#addr' + i).html(
             "<td>" + (i + 1) + "</td>" +
-            "<td><input name='prod" + i + "' type='text' placeholder='Sample Product' "+ i +" class='form-control input-md'/></td>"+
-            "<td><input  name='prodDesc" + i + "' type='text' placeholder='Sample Desc' class='form-control input-md'></td>"+
-            "<td><input  name='quantity" + i + "' type='text' placeholder='###.##'  class='form-control input-md'></td>"+
-            "<td><input  name='unitPrice" + i + "' type='text' placeholder='$$$.$$'  class='form-control input-md'></td>"+
-            "<td><input  name='taxes" + i + "' type='text' placeholder='%%.%%'  class='form-control input-md'></td>" +
-            "<td><input  name='subTotal" + i + "' type='text' placeholder='###.##'  class='form-control input-md'></td>"
+            "<td><input name='prod" + i + "' type='text' placeholder='Sample Product' "+ i +" class='form-control input-md' style='font-size: small;'/></td>"+
+            "<td><input  name='prodDesc" + i + "' type='text' placeholder='Sample Desc' class='form-control input-md' style='font-size: small;'></td>"+
+            "<td><input  name='quantity" + i + "' type='text' placeholder='###.##'  class='form-control input-md' style='font-size: small;'></td>"+
+            "<td><input  name='unitPrice" + i + "' type='text' placeholder='$$$.$$'  class='form-control input-md' style='font-size: small;'></td>"+
+            "<td><input  name='taxes" + i + "' type='text' placeholder='%%.%%'  class='form-control input-md' style='font-size: small;'></td>" +
+            "<td><input  name='discount" + i + "' type='text' placeholder='%%.%%'  class='form-control input-md' style='font-size: small;'></td>" +
+            "<td><input  name='subTotal" + i + "' type='text' placeholder='###.##'  class='form-control input-md' style='font-size: small;'></td>"
           );
 
           $('#tab_logic').append('<tr id="addr' + (i + 1) + '"></tr>');
@@ -472,30 +473,10 @@
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
           <h1 class="h3 mb-0 text-gray-800">Sales Quotation</h1>
-
-          <nav class="">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Actions
-                </a>
-                <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">PFD</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Email</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Delete</a>
-                </div>
-              </li>
-            </ul>
-          </nav>
-
-          <!-- <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div> -->
-
          </div>
          <div class="row mb-2 ml-1">
-          <a href="edit_sales_quotation.html" class="btn btn-primary" role="button">Edit</a> &nbsp;
-          <a href="#" class="btn btn-success" role="button">Confirm</a> 
+          <a href="view_sales_quotation.html" class="btn btn-primary" role="button">Save</a> &nbsp;
+          <a href="view_sales_quotation.html" class="btn btn-secondary" role="button">Discard</a> 
           <!-- <input type="button" class="btn btn-primary" value="Save">&nbsp;
           <input type="button" class="btn btn-secondary" value="Discard"> -->
          </div>
@@ -506,7 +487,7 @@
 
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary"><a href="sales-quotations.html">Quotation</a> [SO0001]</h6>
+              <h6 class="m-0 font-weight-bold text-primary"><a href="sales-quotations.html">Quotation</a> [SO0001] -> Edit</h6>
 <!-- 
               <div class="row">
                 <input type="button" class="btn btn-primary" value="Send by Email">
@@ -526,10 +507,11 @@
                         <label for="customer">Customer</label>
                       </div>
                       <div class="col-sm-8">
-                        ABC Jwellers, <Br/>
-                        245, Hosery Complex,
-                        Noida, Uttar Pradesh-110025,
-                        India.
+                        <select id="customer" class="form-control">
+                          <option value="Customer One"></option>
+                          <option selected value="Customer One">ABC Jwellers</option>
+                          <option value="Customer Two">Rahul</option>
+                        </select>
                       </div>
                     </div>
                     <div class="row">
@@ -537,7 +519,11 @@
                         <label for="paymentTerms">Payment Terms</label>
                       </div>
                       <div class="col-sm-8">
-                        15 Days After Receiving Goods</option>
+                        <select id="expiration" class="form-control">
+                          <option value="pTerms1"></option>
+                          <option selected value="pTerms2">15 Days After Receiving Goods</option>
+                          <option value="pTerms3">30% Advance and 70% On Receiving Goods</option>
+                        </select>
                       </div>
                     </div>
                     <!-- <div class="row">
@@ -560,7 +546,7 @@
                         <label for="quotationDate">Quotation Date</label>
                       </div>
                       <div class="col-sm-8">
-                        01/01/2020
+                        <input value="2020-01-01" type="date" class="form-control form-control-user" id="quotationDate">
                         <!-- <select id="expiration" class="form-control">
                           <option value="qDate1">Quotation Expiration Date One</option>
                           <option value="qDate2">Quotation Expiration Date Two</option>
@@ -576,7 +562,7 @@
                       </div>
                       <div class="col-sm-8">
 
-                        02/01/2020
+                        <input value="2020-02-01"  type="date" class="form-control form-control-user" id="expiration" name="birthday">
                         <!-- <select id="expiration" class="form-control">
                           <option value="expiration one">Expiration Date One</option>
                           <option value="expiration Two">Expiration Date Two</option>
@@ -667,41 +653,41 @@
                     </thead>
                     <tbody>
                         <tr id='addr0'>
-                            <td style="font-size: small;">
-                            1
+                            <td>
+                           <small>1</small> 
                             </td>
-                            <td style="font-size: small;">
-                              [PROD_001] Neckless 232, Variant[NL_232-01]
+                            <td>
+                            <input value="Neckless 232 Variant[NL_232-01]" type="text" name='user0' style="font-size: small;"  class="form-control"/>
                             </td>
-                            <td style="font-size: small;">
-                              [Polish : No Polish] [Stone Count :0]
+                            <td>
+                            <input value="[Polish : No Polish] [Stone Count :0]" type="text" name='pass0'  class="form-control" style="font-size: small;"/>
                             </td>
-                            <td style="font-size: small;">
-                              2.0
+                            <td>
+                            <input value="2.0" type="text" name='ip0'  class="form-control" style="font-size: small;"/>
                             </td>
-                            <td style="font-size: small;">
-                              125000.000
+                            <td>
+                            <input value="125000.000" type="text" name='country0' class="form-control" style="font-size: small;"/>
                             </td>
-                            <td style="font-size: small;">
-                             GST 3%
+                            <td>
+                            <input value="GST 3%" type="text" name='ipDisp0'  class="form-control" style="font-size: small;"/>
                             </td>
-                            <td style="font-size: small;">
-                              0%
-                             </td>
-                            <td style="font-size: small;">
-                            250000.000
+                            <td>
+                              <input value="0%" type="text" name='ipDisp0'  class="form-control" style="font-size: small;"/>
+                              </td>
+                            <td>
+                            <input value="250000.000" type="text" name='ipDisp0' class="form-control" style="font-size: small;"/>
                             </td>
                         </tr>
                         <tr id='addr1'></tr>
                     </tbody>
                 </table>
-                <!-- <input type="button" class="btn btn-primary" id="addRow" value="Add Product">
-                <input type="button" class="btn btn-secondary float-right" id="deleteRow" value="Delete Product"> -->
+                <input type="button" class="btn btn-info" id="addRow" value="Add">
+                <input type="button" class="btn btn-danger float-right" id="deleteRow" value="Delete">
                 <!-- <a id="add_row" class="btn btn-default pull-left">Add Row</a><a id='delete_row' class="pull-right btn btn-default">Delete Row</a> -->
-           
+                <br/><br/>
                 <div class="row">
                   <div class="col-sm-8">
-                    <textarea disabled name="termsAndCond" placeholder="Terms and Conditions" id="termsAndCond" class="form-control form-control-user"  ></textarea>
+                    <textarea name="termsAndCond" placeholder="Terms and Conditions" id="termsAndCond" class="form-control form-control-user"  ></textarea>
                   </div>
                   <div class="col-sm-4">
                     <div class="row">
@@ -751,7 +737,10 @@
                           <label for="salesPerson">Sales Person</label>
                         </div>
                         <div class="col-sm-8">
-                            Ankit Tripathi
+                          <select id="salesPerson" class="form-control">
+                            <option value="sPerson1"></option>
+                            <option selected value="sPerson1">Ankit Tripathi</option>
+                            <option value="sPerson2">Ramendra Verma</option>
                             <!-- <option value="sPerson3">Sales Person Three</option> -->
                           </select>
                         </div>
@@ -763,7 +752,11 @@
                           <label for="fiscalPosition">Fiscal Position</label>
                         </div>
                         <div class="col-sm-8">
-                           Inter State
+                          <select id="fiscalPosition" class="form-control">
+                            <option value="fPosition1"></option>
+                            <option value="fPosition1">Within State</option>
+                            <option selected value="fPosition2">Inter State</option>
+                            <option value="fPosition3">Export</option>
                           </select>
                         </div>
                       </div>
@@ -806,9 +799,11 @@
                           <label for="company">Company</label>
                         </div>
                         <div class="col-sm-8">
-                            Iaito Infotech P Ltd
+                          <select id="company" class="form-control">
+                            <option value="company1">Iaito Infotech P Ltd</option>
                             <!-- <option value="company2">Company Two</option>
                             <option value="company3">Company Three</option> -->
+                          </select>
                         </div>
                       </div>
                     </div>
@@ -836,7 +831,7 @@
                           <label for="onlinePayment">Payment Mode</label>
                         </div>
                         <div class="col-sm-8">
-                          
+                          <input type="Text" class="form-control" id="onlinePayment" checked>
                         </div>
                       </div>
                     </div>
@@ -850,7 +845,7 @@
                           <label for="customerRef">Customer Reference</label>
                         </div>
                         <div class="col-sm-8">
-                          PO5095
+                          <input type="text" class="form-control" id="customerRef" value="PO5095">
                         </div>
                       </div>
                     </div>
@@ -872,7 +867,11 @@
                           <label for="shippingPolicy">Shipping Policy</label>
                         </div>
                         <div class="col-sm-8">
-                          As Soon As Possible
+                          <select id="shippingPolicy" class="form-control">
+                            <option value="asap"></option>
+                            <option selected value="asap">As Soon As Possible</option>
+                            <option value="FCFS">When All Products Are Ready</option>
+                          </select>
                         </div>
                       </div>
                     </div>
@@ -894,7 +893,12 @@
                           <label for="incoterm">Incoterm</label>
                         </div>
                         <div class="col-sm-8">
-
+                          <select id="incoterm" class="form-control">
+                            <option value="asap"></option>
+                            <option value="asap">Free On Board</option>
+                            <option value="FCFS">Cost And Freight</option>
+                            <option value="FCFS">Cost Insurance And Freight</option>
+                          </select>
                         </div>
                       </div>
                     </div>
@@ -906,7 +910,7 @@
                           <label for="deliveryDate">Delivery Date</label>
                         </div>
                         <div class="col-sm-8">
-                         
+                          <input type="date" class="form-control" id="deliveryDate">
                         </div>
                       </div>
                     </div>

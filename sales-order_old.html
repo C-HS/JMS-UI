@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Sales Order</title>
+  <title>Catalog</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -44,7 +44,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="home.html">
+        <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -57,8 +57,8 @@
         Order Management
       </div>
 
-     <li class="nav-item active">
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseSales" aria-expanded="true" aria-controls="collapseSales">
+     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSales" aria-expanded="true" aria-controls="collapseSales">
           <i class="fas fa-fw fa-cog"></i>
           <span>Sales Order</span>
         </a>
@@ -67,7 +67,7 @@
             <a class="collapse-item" href="sales-quotations.html">Quotation</a>
             <a class="collapse-item active" href="sales-order.html">Sales Order</a>
              <a class="collapse-item" href="customer_list.html">Customer</a>
-              <a class="collapse-item" href="cards.html">Outgoing Shipment</a>
+              <a class="collapse-item" href="#">Outgoing Shipment</a>
           </div>
         </div>
       </li>
@@ -82,7 +82,7 @@
             <a class="collapse-item" href="purchase-quotations.html">Quotation</a>
             <a class="collapse-item" href="purchase-order.html">Purchase Order</a>
              <a class="collapse-item" href="vendor_list.html">Supplier/Vendor</a>
-              <a class="collapse-item" href="cards.html">Incomming Shipment</a>
+              <a class="collapse-item" href="#">Incomming Shipment</a>
           </div>
         </div>
       </li>
@@ -94,8 +94,8 @@
         Catalog Management
       </div>
 
-     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
+     <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
           <i class="fas fa-fw fa-cog"></i>
           <span>Product</span>
         </a>
@@ -115,33 +115,30 @@
         Inventory Management
       </div>
 
-
-      <li class="nav-item">
+     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCompany" aria-expanded="true" aria-controls="collapseCompany">
           <i class="fas fa-fw fa-cog"></i>
           <span>Company</span>
         </a>
         <div id="collapseCompany" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="company.html">Company</a>
-            <a class="collapse-item" href="facility.html">Facility</a>
-             <a class="collapse-item" href="location.html">Location</a>
-             <a class="collapse-item" href="tray.html">Tray</a>
+            <a class="collapse-item" href="buttons.html">Company</a>
+            <a class="collapse-item" href="cards.html">Facility</a>
+             <a class="collapse-item" href="cards.html">Location</a>
+             <a class="collapse-item" href="cards.html">Tray</a>
           </div>
         </div>
       </li>
 
 
-      <li class="nav-item">
+    <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInventory" aria-expanded="true" aria-controls="collapseInventory">
           <i class="fas fa-fw fa-cog"></i>
           <span>Inventory</span>
         </a>
         <div id="collapseInventory" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="inventory.html">Inventory</a>
-            <a class="collapse-item" href="in-out-inventory.html">Inv-In-Out</a>
-            <a class="collapse-item" href="search-inventory.html">Inv-Search</a>
+            <a class="collapse-item" href="buttons.html">Inventory</a>
           </div>
         </div>
       </li>
@@ -152,17 +149,17 @@
         Human Resource
       </div>
 
-      <li class="nav-item">
+     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEmployee" aria-expanded="true" aria-controls="collapseEmployee">
           <i class="fas fa-fw fa-cog"></i>
           <span>Employee</span>
         </a>
         <div id="collapseEmployee" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="employee_list.html">Employee</a>
-            <a class="collapse-item" href="#">Designation</a>
-             <a class="collapse-item" href="#">User Login</a>
-             <a class="collapse-item" href="#">Role</a>
+            <a class="collapse-item" href="buttons.html">Employee</a>
+            <a class="collapse-item" href="cards.html">Designation</a>
+             <a class="collapse-item" href="cards.html">User Login</a>
+             <a class="collapse-item" href="cards.html">Role</a>
           </div>
         </div>
       </li>
@@ -173,15 +170,15 @@
         Accounting
       </div>
 
-      <li class="nav-item">
+     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAccounting" aria-expanded="true" aria-controls="collapseAccounting">
           <i class="fas fa-fw fa-cog"></i>
           <span>Accounting</span>
         </a>
         <div id="collapseAccounting" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="invoice_list.html">Invoice</a>
-            <a class="collapse-item" href="bill_list.html">Bill</a>
+            <a class="collapse-item" href="buttons.html">Invoice</a>
+            <a class="collapse-item" href="cards.html">Bill</a>
           </div>
         </div>
       </li>
@@ -445,7 +442,7 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Sales Order</h1>
+            <h1 class="h3 mb-0 text-gray-800">Sales Orders</h1>
 
             
             <nav class="">
@@ -465,9 +462,9 @@
               </ul>
             </nav>
 
-<!-- 
-            <a href="create_sales_quotation.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
-            -->
+
+            <!-- <a href="create_catalog.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a> -->
+           
 
           </div>
 
@@ -481,54 +478,72 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      <th style="font-size: small;">Select</th>
-                      <th style="font-size: small;">Order No</th>
-                        <th style="font-size: small;">Order Date</th>
-                        <th style="font-size: small;">Delivery Date</th>
-                        <th style="font-size: small;">Expected Date</th>
-                        <th style="font-size: small;">Customer</th>
-                      <!-- <td>Sales Person</td> -->
-                      <th style="font-size: small;">Company</th>
-                      <th style="font-size: small;">Total</th>
-                      <th style="font-size: small;">Invoiced</th>
+                      <td>Select</td>
+                      <td>Order No</td>
+                      <td>Order Date</td>
+                      <td>Delivery Date</td>
+                      <td>Expected Date</td>
+                      <td>Customer</td>
+                      <td>Sales Person</td>
+                      <td>Total</td>
+                      <td>Invoice Status</td>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td style="font-size: small;"><input type="checkbox" /></td>
-                      <td style="font-size: small;"><a href="view_sales_order.html">SO0002</td>
-                      <td style="font-size: small;">01/01/2020</td>
-                      <td style="font-size: small;"></td>
-                      <td style="font-size: small;">02/01/2020</td>
-                      <td style="font-size: small;">ABC Jwellers</td>
-                      <!-- <td>Ankit</td> -->
-                      <td style="font-size: small;">Iaito Infotech P Ltd</td>
-                      <td style="font-size: small; text-align: right;">386250.000</td>
-                      <td style="font-size: small;">Partially</td>
+                      <td><input type="checkbox" /></td>
+                      <td>SO001</td>
+                      <td>01/01/2020</td>
+                      <td>02/02/2020</td>
+                      <td>05/02/2020</td>
+                      <td>Myntra</td>
+                      <td>Rishabh</td>
+                      <td>$1100.99</td>
+                      <td>Created</td>
                     </tr>
                     <tr>
-                      <td style="font-size: small;"><input type="checkbox" /></td>
-                      <td style="font-size: small;">SO0004</td>
-                      <td style="font-size: small;">01/01/2020</td>
-                      <td style="font-size: small;">01/01/2020</td>
-                      <td style="font-size: small;">02/01/2020</td>
-                      <td style="font-size: small;">Rahul</td>
-                      <!-- <td>Ankit</td> -->
-                      <td style="font-size: small;">Iaito Infotech P Ltd</td>
-                      <td style="font-size: small; text-align: right;">12000.000</td>
-                      <td style="font-size: small;">Fully</td>
+                      <td><input type="checkbox" /></td>
+                      <td>SO002</td>
+                      <td>01/01/2020</td>
+                      <td>02/02/2020</td>
+                      <td>05/02/2020</td>
+                      <td>Myntra</td>
+                      <td>Rishabh</td>
+                      <td>$1100.99</td>
+                      <td>Created</td>
                     </tr>
                     <tr>
-                      <td style="font-size: small;"><input type="checkbox" /></td>
-                      <td style="font-size: small;">SO0005</td>
-                      <td style="font-size: small;">01/01/2020</td>
-                      <td style="font-size: small;">01/01/2020</td>
-                      <td style="font-size: small;">02/01/2020</td>
-                      <td style="font-size: small;">ABC Jwellers</td>
-                      <!-- <td>Ankit</td> -->
-                      <td style="font-size: small;">Iaito Infotech P Ltd</td>
-                      <td style="font-size: small; text-align: right;">12000.000</td>
-                      <td style="font-size: small;">Nothing</td>
+                      <td><input type="checkbox" /></td>
+                      <td>SO003</td>
+                      <td>01/01/2020</td>
+                      <td>02/02/2020</td>
+                      <td>05/02/2020</td>
+                      <td>Myntra</td>
+                      <td>Rishabh</td>
+                      <td>$1100.99</td>
+                      <td>Created</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>SO004</td>
+                      <td>01/01/2020</td>
+                      <td>02/02/2020</td>
+                      <td>05/02/2020</td>
+                      <td>Myntra</td>
+                      <td>Rishabh</td>
+                      <td>$1100.99</td>
+                      <td>Created</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>SO005</td>
+                      <td>01/01/2020</td>
+                      <td>02/02/2020</td>
+                      <td>05/02/2020</td>
+                      <td>Myntra</td>
+                      <td>Rishabh</td>
+                      <td>$1100.99</td>
+                      <td>Created</td>
                     </tr>
                   </tbody>
                 </table>
