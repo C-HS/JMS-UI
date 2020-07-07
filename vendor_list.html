@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Product Attribute</title>
+  <title>Vendors</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -72,8 +72,8 @@
         </div>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePurchase" aria-expanded="true" aria-controls="collapsePurchase">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePurchase" aria-expanded="true" aria-controls="collapsePurchase">
           <i class="fas fa-fw fa-cog"></i>
           <span>Purchase Order</span>
         </a>
@@ -94,8 +94,8 @@
         Catalog Management
       </div>
 
-     <li class="nav-item active">
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
+     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
           <i class="fas fa-fw fa-cog"></i>
           <span>Product</span>
         </a>
@@ -115,30 +115,32 @@
         Inventory Management
       </div>
 
-     <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCompany" aria-expanded="true" aria-controls="collapseCompany">
           <i class="fas fa-fw fa-cog"></i>
           <span>Company</span>
         </a>
         <div id="collapseCompany" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Company</a>
-            <a class="collapse-item" href="cards.html">Facility</a>
-             <a class="collapse-item" href="cards.html">Location</a>
-             <a class="collapse-item" href="cards.html">Tray</a>
+            <a class="collapse-item" href="company.html">Company</a>
+            <a class="collapse-item" href="facility.html">Facility</a>
+             <a class="collapse-item" href="location.html">Location</a>
+             <a class="collapse-item" href="tray.html">Tray</a>
           </div>
         </div>
       </li>
 
 
-    <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInventory" aria-expanded="true" aria-controls="collapseInventory">
           <i class="fas fa-fw fa-cog"></i>
           <span>Inventory</span>
         </a>
         <div id="collapseInventory" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Inventory</a>
+            <a class="collapse-item" href="inventory.html">Inventory</a>
+            <a class="collapse-item" href="in-out-inventory.html">Inv-In-Out</a>
+            <a class="collapse-item" href="search-inventory.html">Inv-Search</a>
           </div>
         </div>
       </li>
@@ -149,17 +151,17 @@
         Human Resource
       </div>
 
-     <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEmployee" aria-expanded="true" aria-controls="collapseEmployee">
           <i class="fas fa-fw fa-cog"></i>
           <span>Employee</span>
         </a>
         <div id="collapseEmployee" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Employee</a>
-            <a class="collapse-item" href="cards.html">Designation</a>
-             <a class="collapse-item" href="cards.html">User Login</a>
-             <a class="collapse-item" href="cards.html">Role</a>
+            <a class="collapse-item" href="employee_list.html">Employee</a>
+            <a class="collapse-item" href="#">Designation</a>
+             <a class="collapse-item" href="#">User Login</a>
+             <a class="collapse-item" href="#">Role</a>
           </div>
         </div>
       </li>
@@ -170,15 +172,15 @@
         Accounting
       </div>
 
-     <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAccounting" aria-expanded="true" aria-controls="collapseAccounting">
           <i class="fas fa-fw fa-cog"></i>
           <span>Accounting</span>
         </a>
         <div id="collapseAccounting" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Invoice</a>
-            <a class="collapse-item" href="cards.html">Bill</a>
+            <a class="collapse-item" href="invoice_list.html">Invoice</a>
+            <a class="collapse-item" href="bill_list.html">Bill</a>
           </div>
         </div>
       </li>
@@ -442,7 +444,7 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Suppliar/Vendor List</h1>
+            <h1 class="h3 mb-0 text-gray-800">Supplier/Vendor List</h1>
 
             
             <nav class="">
@@ -461,7 +463,7 @@
             </nav>
 
 
-            <a href="create_vendor.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
+            <a href="create_vendor.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"></i>Create</a>
            
 
           </div>
@@ -473,51 +475,45 @@
           <div class="card shadow mb-4">
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0"  style="font-size: small;">
                   <thead>
                     <tr>
                       <th>Select</th>
-                      <th>Supplier/Vendor_ID</th>`
+                      <th>Vendor_ID</th>
                       <th>Name</th>
-                      <th>Address</th>
-                      <th>Contact Person</th>
+                      <th>Type</th>
+                      <th>City</th>
+                      <th>State</th>
+                      <th>Country</th>
+                      <th>Phone</th>
+                      <th>Email</th>
+                      <th>Tax ID</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td><input type="checkbox"></td>
-                      <td>VEND001</td>
-                      <td>Sujeet Corp.</td>
-                      <td>Noida</td>
-                      <td>Sujeet</td>
-                    </tr>
-                    <tr>
-                      <td><input type="checkbox"></td>
-                      <td>VEND002</td>
-                      <td>Sargam Ltd.</td>
+                      <td><input type="checkbox" /></td>
+                      <td><a href="view_vendor.html">VEN001</a></td>
+                      <td>XYS Corp</td>
+                      <td>Company</td>
                       <td>Delhi</td>
-                      <td>Ramesh</td>
+                      <td>Delhi</td>
+                      <td>India</td>
+                      <td>8667303494</td>
+                      <td>xyzcorp1986@gmail.com</td>
+                      <td>FSQT453661</td>
                     </tr>
                     <tr>
-                      <td><input type="checkbox"></td>
-                      <td>VEND003</td>
-                      <td>Mohit & Sons Ltd.</td>
-                      <td>Gurugram</td>
-                      <td>Jacob</td>
-                    </tr>
-                    <tr>
-                      <td><input type="checkbox"></td>
-                      <td>VEND004</td>
-                      <td>Masih Pvt. Ltd.</td>
-                      <td>Gurugram</td>
-                      <td>Sohan</td>
-                    </tr>
-                    <tr>
-                      <td><input type="checkbox"></td>
-                      <td>VEND005</td>
-                      <td>Free Masons</td>
-                      <td>Ghaziabad</td>
-                      <td>Alamas Jacob</td>
+                      <td><input type="checkbox" /></td>
+                      <td>VEN002</td>
+                      <td>Yogendra Singh</td>
+                      <td>Individual</td>
+                      <td>Pune</td>
+                      <td>Maharashtra</td>
+                      <td>India</td>
+                      <td>5999896565</td>
+                      <td>y.singh45@gmail.com</td>
+                      <td>CQZBYZ2695</td>
                     </tr>
                   </tbody>
                 </table>

@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Supplier/Vendor</title>
+  <title>Catalog</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -72,8 +72,8 @@
         </div>
       </li>
 
-      <li class="nav-item active">
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePurchase" aria-expanded="true" aria-controls="collapsePurchase">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePurchase" aria-expanded="true" aria-controls="collapsePurchase">
           <i class="fas fa-fw fa-cog"></i>
           <span>Purchase Order</span>
         </a>
@@ -94,15 +94,15 @@
         Catalog Management
       </div>
 
-     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
+     <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
           <i class="fas fa-fw fa-cog"></i>
           <span>Product</span>
         </a>
-        <div id="collapseProduct" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseProduct" class="collapse " aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="catalog.html">Catalog</a>
-            <a class="collapse-item " href="category.html">Category</a>
+            <a class="collapse-item " href="catalog.html">Catalog</a>
+            <a class="collapse-item" href="category.html">Category</a>
             <a class="collapse-item" href="product.html">Product</a>
             <a class="collapse-item" href="product_attribute.html">Product Attribute</a>
              <a class="collapse-item" href="uom.html">Unit Of Measure</a>
@@ -115,32 +115,30 @@
         Inventory Management
       </div>
 
-      <li class="nav-item">
+     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCompany" aria-expanded="true" aria-controls="collapseCompany">
           <i class="fas fa-fw fa-cog"></i>
           <span>Company</span>
         </a>
         <div id="collapseCompany" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="company.html">Company</a>
-            <a class="collapse-item" href="facility.html">Facility</a>
-             <a class="collapse-item" href="location.html">Location</a>
-             <a class="collapse-item" href="tray.html">Tray</a>
+            <a class="collapse-item" href="buttons.html">Company</a>
+            <a class="collapse-item" href="cards.html">Facility</a>
+             <a class="collapse-item" href="cards.html">Location</a>
+             <a class="collapse-item" href="cards.html">Tray</a>
           </div>
         </div>
       </li>
 
 
-      <li class="nav-item">
+    <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInventory" aria-expanded="true" aria-controls="collapseInventory">
           <i class="fas fa-fw fa-cog"></i>
           <span>Inventory</span>
         </a>
         <div id="collapseInventory" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="inventory.html">Inventory</a>
-            <a class="collapse-item" href="in-out-inventory.html">Inv-In-Out</a>
-            <a class="collapse-item" href="search-inventory.html">Inv-Search</a>
+            <a class="collapse-item" href="buttons.html">Inventory</a>
           </div>
         </div>
       </li>
@@ -151,17 +149,17 @@
         Human Resource
       </div>
 
-      <li class="nav-item">
+     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEmployee" aria-expanded="true" aria-controls="collapseEmployee">
           <i class="fas fa-fw fa-cog"></i>
           <span>Employee</span>
         </a>
         <div id="collapseEmployee" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="employee_list.html">Employee</a>
-            <a class="collapse-item" href="#">Designation</a>
-             <a class="collapse-item" href="#">User Login</a>
-             <a class="collapse-item" href="#">Role</a>
+            <a class="collapse-item" href="buttons.html">Employee</a>
+            <a class="collapse-item" href="cards.html">Designation</a>
+             <a class="collapse-item" href="cards.html">User Login</a>
+             <a class="collapse-item" href="cards.html">Role</a>
           </div>
         </div>
       </li>
@@ -172,15 +170,15 @@
         Accounting
       </div>
 
-      <li class="nav-item">
+     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAccounting" aria-expanded="true" aria-controls="collapseAccounting">
           <i class="fas fa-fw fa-cog"></i>
           <span>Accounting</span>
         </a>
         <div id="collapseAccounting" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="invoice_list.html">Invoice</a>
-            <a class="collapse-item" href="bill_list.html">Bill</a>
+            <a class="collapse-item" href="buttons.html">Invoice</a>
+            <a class="collapse-item" href="cards.html">Bill</a>
           </div>
         </div>
       </li>
@@ -444,215 +442,160 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Vendor</h1>
+            <h1 class="h3 mb-0 text-gray-800">Create Vendor/Suppliar</h1>
 
-            <nav class="">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Actions
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Print</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Delete</a>
-                  </div>
-                </li>
-              </ul>
-            </nav>
+            
 
-            <a href="view_vendor.html" class="btn btn-primary" role="button">Save</a>
           </div>
+
+
+
 
           <!-- DataTales Example -->
 
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-            
-              <h6 class="m-0 font-weight-bold text-primary"><a href="vendor_list.html">Vendor</a> -> Create</h6>
-
-<!--          
-                <input type="button" value="Save" class="btn btn-primary" id="save">
-                <input type="button" value="Discard" class="btn btn-secondary" id="save"> -->
-                
+              <!-- <h6 class="m-0 font-weight-bold text-primary"><a href="catalog.html">Vendor</a> -> Create</h6> -->
+              <input type="button" class="btn btn-primary" value="Save & Close" id="saveAndClose">
+              <input type="button" class="btn btn-primary" value="save & New" id="saveAndNew">
+              <input type="button" class="btn btn-secondary" value="Discard" id="discard">
             </div>
             <div class="card-body">
               <form>
                 <div class="row">
-                  <div class="col-sm-8">
-                    <div class="row">
-                      &nbsp;&nbsp; <label><input type="radio" name="optradio" >&nbsp;Individual</label>&nbsp;&nbsp;
-                      <label><input type="radio" name="optradio" checked>&nbsp;Company</label>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <label for="name">Name&nbsp;</label>
-                      </div>
-                      <div class="col-sm-9">
-                        <input  type="text" id="name" name="name" style="width: inherit;" class="form-control">
-                      </div>
-                    </div>
-                    <!-- <div class="row">
-                      <div class="col-sm-3">
-                        <label for="company">Company</label>
-                      </div>
-                      <div class="col-sm-9">
-                        <select class="form-control" id="company">
-                          <option value="IAITO">IAITO</option>
-                          <option value="MIDSKART">MIDSTKART</option>
-                          <option value="GOOGLE">GOOGLE</option>
-                        </select>
-                      </div>
-                    </div> -->
-                  </div>
-                  <div class="col-sm-4">
-                      <img class="img-profile float-right" width="120px" height="120px" src="img/placeholder.png">
-                     
-                  </div>
-                </div>
-                <div class="row">
                   <div class="col-sm-6">
+                    <legend>Vendor</legend>
                     <div class="row">
-                      <div class="col-sm-4">
-                        <label for="companyAddress">Company Address</label>
+                      <div class="col-sm-6">
+                        <label for="vendor">Vendor</label>
                       </div>
-                      <div class="col-sm-8">
-                        <input placeholder="Address Line 1"  type="text" id="name" name="name" style="width: inherit;" class="form-control">
-                        <!-- <textarea name="companyAddress" id="companyAddreaa" cols="30" rows="3" class="form-control" style="resize: none;"></textarea> -->
+                      <div class="col-sm-6">
+                        <select class="form-control" id="Vendor">
+                          <option value="Vendor One">Vendor One</option>
+                          <option value="Vendor Two">Vendor Two</option>
+                          <option value="Vendor Three">Vendor Three</option>
+                      </select>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-sm-4">
-                       
+                      <div class="col-sm-6">
+                        <label for="vendorProductName">Vendor Product Name</label>
                       </div>
-                      <div class="col-sm-8">
-                        <input placeholder="Address Line 2" type="text" id="name" name="name" style="width: inherit;" class="form-control">
-                        <!-- <textarea name="companyAddress" id="companyAddreaa" cols="30" rows="3" class="form-control" style="resize: none;"></textarea> -->
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <label for="companyAddress">City</label>
-                      </div>
-                      <div class="col-sm-8">
-                        <input type="text" id="name" name="name" class="form-control">
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" id="vendorProductName">
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-sm-4">
-                        <label for="companyAddress">Country</label>
+                      <div class="col-sm-6">
+                        <label for="vendorProductCode">Vendor Product Code</label>
                       </div>
-                      <div class="col-sm-8">
-                        <select class="form-control form-control-user" id="catalogId" >
-                          <option></option>
-                          <option>India</option>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" id="vendorProductCode">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <label for="productVarient">Product Varient</label>
+                      </div>
+                      <div class="col-sm-6">
+                        <select class="form-control" id="productVarient">
+                          <option value="Varient One">Varient One</option>
+                          <option value="Varient Two">Varient Two</option>
+                          <option value="Varient Three">Varient Three</option>
                         </select>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-sm-4">
-                        <label for="companyAddress">State</label>
+                      <div class="col-sm-6">
+                        <label for="deliveryLeadTime">Delivery Lead Time</label>
                       </div>
-                      <div class="col-sm-8">
-                        <select class="form-control form-control-user" id="catalogId" >
-                              <option></option>
-                              <option>Delhi</option>
-                              <option>Maharashtra</option>
-                              <option>Uttar Pradesh</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <label for="GSTIN">Postal Code</label>
-                      </div>
-                      <div class="col-sm-8">
-                        <input  type="text" class="form-control" id="GSTIN">
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control" id="deliveryLeadTime">
+                          </div>
+                          <div class="col-sm-4">
+                            <p>days</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
+                    <legend>Other Information</legend>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label for="company">Company</label>
+                        </div>
+                        <div class="col-sm-6">
+                          <select class="form-control" id="company">
+                            <option value="IAITO">IAITO</option>
+                            <option value="MIDSKART">MIDSTKART</option>
+                            <option value="GOOGLE">GOOGLE</option>
+                          </select>
+                        </div>
+                      </div>
+                      <br/><br/>
+                      <!-- <div class="row">
+                        <div class="col-md-4">
+                          <input type="button" value="Save & Close" class="bg-gradient-primary" id="saveAndClose">
+                        </div>
+                        <div class="col-md-4">
+                          <input type="button" value="Save & New" class="bg-gradient-primary" id="saveAndClose">
+                        </div>
+                        <div class="col-md-4">
+                          <input type="button" value="Discard" class="bg-gradient-primary" id="saveAndClose">
+                        </div>
+                      </div> -->
                   </div>
                   <div class="col-sm-6">
+                    <legend>Price List</legend>
                     <div class="row">
                       <div class="col-sm-4">
-                        <label for="phone">Phone</label>
+                        <label for="quantity">Quantity</label>
                       </div>
-                      <div class="col-sm-8">
-                        <input  type="text" class="form-control" id="phone">
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="quantity">
+                      </div>
+                      <div class="col-sm-4">
+                        Units
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-4">
-                        <label for="mobile">Mobile</label>
+                        <label for="price">Price</label>
                       </div>
-                      <div class="col-sm-8">
-                        <input  type="text" class="form-control" id="mobile">
-                      </div>
-                    </div>
-                    <div class="row">
                       <div class="col-sm-4">
-                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="quantity">
                       </div>
-                      <div class="col-sm-8">
-                        <input  type="text" class="form-control" id="mobile">
-                      </div>
-                    </div>
-                    <div class="row">
                       <div class="col-sm-4">
-                        <label for="weblink">Web Links</label>
-                      </div>
-                      <div class="col-sm-8">
-                        <input type="text" class="form-control" id="weblink">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <label for="GSTIN">GSTIN</label>
-                      </div>
-                      <div class="col-sm-8">
-                        <input type="text" class="form-control" id="GSTIN">
-                      </div>
-                    </div>
-                    <!-- <div class="row">
-                      <div class="col-sm-4">
-                        <label for="tags">Tags</label>
-                      </div>
-                      <div class="col-sm-8">
-                        <select class="form-control" id="tags">
-                          <option value="Tag One">Tag One</option>
-                          <option value="Tag Two">Tag Two</option>
-                          <option value="Tag Three">Tag Three</option>
+                        <select class="form-control" id="currncy">
+                          <option value="INR">INR</option>
+                          <option value="USD">USD</option>
+                          <option value="KPR">KPR</option>
                         </select>
                       </div>
-                    </div> -->
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="validity">Validity</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <div class="row">
+                          <div class="col-sm-5">
+                            <input type="text" class="form-control" id="validity">
+                          </div>
+                          <div class="col-sm-2">
+                            -to-
+                          </div>
+                          <div class="col-sm-5">
+                            <input type="text" class="form-control" id="validity">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <Br/>
-                
-                  <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#CA" data-toggle="pill">Contact & Address</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#SP" class="nav-link" data-toggle="pill">Purchase</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#IV" class="nav-link" data-toggle="pill">Billing</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#IN" class="nav-link" data-toggle="pill">Internal Notes</a>
-                    </li>
-                  </ul>
-                
               </form>
-              <div class="tab-content">
-                <div id="CA" class="container tab-pane active">
-                  <br/>
-                  <input type="button" value="Add" id="add" class="btn btn-primary" data-toggle="modal" data-target="#contactAndAddress"/>
-                </div>
-                <div id="SP" class="container tab-pane"><h3><br/>Purchase</h3></div>
-                <div id="IV" class="container tab-pane"><h3><br/>Billing</h3></div>
-                <div id="IN" class="container tab-pane"><h3><br/>Internal Notes</h3></div>
-              </div>
+            </form>
 
             </div>
           </div>
@@ -660,105 +603,6 @@
          
         </div>
         <!-- /.container-fluid -->
-        <div class="modal fade" id="contactAndAddress">
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-              <!-- modal Header -->
-              <div class="modal-header">
-                <h4>Create Contact</h4>
-                <button class="close" type="button" data-dismiss="modal">&times;</button>
-              </div>
-              <!-- Modal Body -->
-              <div class="modal-body">
-                <div class="container fluid">
-                  <div class="row">&nbsp;&nbsp;
-                    <label><input type="radio" name="optradio" checked>&nbsp;Contact</label>&nbsp;&nbsp;
-                    <label><input type="radio" name="optradio">&nbsp;Invoice Address</label>&nbsp;&nbsp;
-                    <label><input type="radio" name="optradio">&nbsp;Delivery Address</label>&nbsp;&nbsp;
-                    <label><input type="radio" name="optradio">&nbsp;Other Address</label>&nbsp;&nbsp;
-                    <label><input type="radio" name="optradio">&nbsp;Private Address</label>
-                  </div>  
-                  <div class="row">
-                    <div class="col-sm-5">
-                      <div class="row">
-                        <div class="col-sm-5">
-                          <label for="contactName">Contact Name</label>
-                        </div>
-                        <div class="col-sm-7">
-                          <input type="text" class="form-control" id="contacttName">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-5">
-                          <label for="contactName">Address</label>
-                        </div>
-                        <div class="col-sm-7">
-                          <input type="text" class="form-control" id="contacttName" placeholder="Address Line1">
-                          <input type="text" class="form-control" id="contacttName" placeholder="Address Line2">
-                          <input type="text" class="form-control" id="contacttName" placeholder="City">
-                          <input type="text" class="form-control" id="contacttName" placeholder="Postal Code">
-                          <select class="form-control" id="Countries">
-                            <option value="US">Select Country</option>
-                            <option value="UK">India</option>
-                          </select>
-                          <select class="form-control" id="Countries">
-                            <option value="US">Select States</option>
-                            <option value="UK">Delhi</option>
-                            <option value="RS">Maharashtra</option>
-                            <option value="RS">Uttar Pradesh</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-5">
-                          <label for="contactName">Notes</label>
-                        </div>
-                        <div class="col-sm-7">
-                          <textarea name="notes" id="notes" class="form-control" style="width: inherit; resize: none;" rows="2"></textarea>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-5">
-                      <div class="row">
-                        <div class="col-sm-3">
-                          &nbsp;<label for="email">Email</label>
-                        </div>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control" id="email">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          &nbsp;<label for="email">Phone</label>
-                        </div>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control" id="phone">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          &nbsp;<label for="email">Mobile</label>
-                        </div>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control" id="mobile">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-2">
-                      <img class="img-profile float-right" width="120px" height="120px" src="img/placeholder.png">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Modal Footer -->
-              <div class="modal-footer">  
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
-                <!-- <button type="button" class="btn btn-primary" data-dismiss="modal">Save & New</button> -->
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
-              </div>
-            </div>
-          </div>
-        </div>
 
       </div>
       <!-- End of Main Content -->

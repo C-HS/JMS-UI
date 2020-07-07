@@ -444,7 +444,7 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Vendor</h1>
+            <h1 class="h3 mb-0 text-gray-800">Vendor [VEN001]</h1>
 
             <nav class="">
               <ul class="navbar-nav ml-auto">
@@ -461,15 +461,22 @@
               </ul>
             </nav>
 
-            <a href="view_vendor.html" class="btn btn-primary" role="button">Save</a>
+            <a href="edit_vendor.html" class="btn btn-primary" role="button">Edit</a>
           </div>
+          <div class="row mb-2 ml-1">
+            <a href="#" class="btn btn-info" role="button">Purchase 1 | Rs 386250 </a> &nbsp;
+            <a href="#" class="btn btn-secondary" role="button">Bills 1</a> 
+           </div>
+
+
+
 
           <!-- DataTales Example -->
 
           <div class="card shadow mb-4">
-            <div class="card-header py-3">
+            <div class="card-header py-2">
             
-              <h6 class="m-0 font-weight-bold text-primary"><a href="vendor_list.html">Vendor</a> -> Create</h6>
+              <h6 class="m-0 font-weight-bold text-primary"><a href="vendor_list.html">Vendor</a> [VEN001] [XYS Corp]</h6>
 
 <!--          
                 <input type="button" value="Save" class="btn btn-primary" id="save">
@@ -481,15 +488,15 @@
                 <div class="row">
                   <div class="col-sm-8">
                     <div class="row">
-                      &nbsp;&nbsp; <label><input type="radio" name="optradio" >&nbsp;Individual</label>&nbsp;&nbsp;
-                      <label><input type="radio" name="optradio" checked>&nbsp;Company</label>
+                      &nbsp;&nbsp; <label><input disabled type="radio" name="optradio" >&nbsp;Individual</label>&nbsp;&nbsp;
+                      <label><input disabled type="radio" name="optradio" checked>&nbsp;Company</label>
                     </div>
                     <div class="row">
                       <div class="col-sm-3">
                         <label for="name">Name&nbsp;</label>
                       </div>
                       <div class="col-sm-9">
-                        <input  type="text" id="name" name="name" style="width: inherit;" class="form-control">
+                        <input disabled value="XYS Corp" type="text" id="name" name="name" style="width: inherit;" class="form-control">
                       </div>
                     </div>
                     <!-- <div class="row">
@@ -517,7 +524,7 @@
                         <label for="companyAddress">Company Address</label>
                       </div>
                       <div class="col-sm-8">
-                        <input placeholder="Address Line 1"  type="text" id="name" name="name" style="width: inherit;" class="form-control">
+                        <input disabled value="51A Sukhdev Vihar"  type="text" id="name" name="name" style="width: inherit;" class="form-control">
                         <!-- <textarea name="companyAddress" id="companyAddreaa" cols="30" rows="3" class="form-control" style="resize: none;"></textarea> -->
                       </div>
                     </div>
@@ -526,7 +533,7 @@
                        
                       </div>
                       <div class="col-sm-8">
-                        <input placeholder="Address Line 2" type="text" id="name" name="name" style="width: inherit;" class="form-control">
+                        <input disabled  type="text" id="name" name="name" style="width: inherit;" class="form-control">
                         <!-- <textarea name="companyAddress" id="companyAddreaa" cols="30" rows="3" class="form-control" style="resize: none;"></textarea> -->
                       </div>
                     </div>
@@ -535,7 +542,7 @@
                         <label for="companyAddress">City</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="text" id="name" name="name" class="form-control">
+                        <input disabled value="Delhi" type="text" id="name" name="name" class="form-control">
                       </div>
                     </div>
                     <div class="row">
@@ -543,9 +550,9 @@
                         <label for="companyAddress">Country</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control form-control-user" id="catalogId" >
+                        <select disabled class="form-control form-control-user" id="catalogId" >
                           <option></option>
-                          <option>India</option>
+                          <option selected>India</option>
                         </select>
                       </div>
                     </div>
@@ -554,9 +561,9 @@
                         <label for="companyAddress">State</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control form-control-user" id="catalogId" >
+                        <select disabled class="form-control form-control-user" id="catalogId" >
                               <option></option>
-                              <option>Delhi</option>
+                              <option selected>Delhi</option>
                               <option>Maharashtra</option>
                               <option>Uttar Pradesh</option>
                         </select>
@@ -567,7 +574,7 @@
                         <label for="GSTIN">Postal Code</label>
                       </div>
                       <div class="col-sm-8">
-                        <input  type="text" class="form-control" id="GSTIN">
+                        <input disabled value="110027" type="text" class="form-control" id="GSTIN">
                       </div>
                     </div>
                   </div>
@@ -577,7 +584,7 @@
                         <label for="phone">Phone</label>
                       </div>
                       <div class="col-sm-8">
-                        <input  type="text" class="form-control" id="phone">
+                        <input disabled  type="text" class="form-control" id="phone">
                       </div>
                     </div>
                     <div class="row">
@@ -585,7 +592,7 @@
                         <label for="mobile">Mobile</label>
                       </div>
                       <div class="col-sm-8">
-                        <input  type="text" class="form-control" id="mobile">
+                        <input disabled value="8667303494" type="text" class="form-control" id="mobile">
                       </div>
                     </div>
                     <div class="row">
@@ -593,7 +600,7 @@
                         <label for="email">Email</label>
                       </div>
                       <div class="col-sm-8">
-                        <input  type="text" class="form-control" id="mobile">
+                        <input disabled value="xyzcorp1986@gmail.com" type="text" class="form-control" id="mobile">
                       </div>
                     </div>
                     <div class="row">
@@ -601,7 +608,7 @@
                         <label for="weblink">Web Links</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="text" class="form-control" id="weblink">
+                        <input disabled type="text" class="form-control" id="weblink">
                       </div>
                     </div>
                     <div class="row">
@@ -609,7 +616,7 @@
                         <label for="GSTIN">GSTIN</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="text" class="form-control" id="GSTIN">
+                        <input disabled value="FSQT453661" type="text" class="form-control" id="GSTIN">
                       </div>
                     </div>
                     <!-- <div class="row">
@@ -633,6 +640,9 @@
                       <a class="nav-link active" href="#CA" data-toggle="pill">Contact & Address</a>
                     </li>
                     <li class="nav-item">
+                      <a class="nav-link" href="#PROD" data-toggle="pill">Products</a>
+                    </li>
+                    <li class="nav-item">
                       <a href="#SP" class="nav-link" data-toggle="pill">Purchase</a>
                     </li>
                     <li class="nav-item">
@@ -647,8 +657,9 @@
               <div class="tab-content">
                 <div id="CA" class="container tab-pane active">
                   <br/>
-                  <input type="button" value="Add" id="add" class="btn btn-primary" data-toggle="modal" data-target="#contactAndAddress"/>
+                  <input disabled type="button" value="Add" id="add" class="btn btn-primary" data-toggle="modal" data-target="#contactAndAddress"/>
                 </div>
+                <div id="PROD" class="container tab-pane"><h3><br/>Products</h3></div>
                 <div id="SP" class="container tab-pane"><h3><br/>Purchase</h3></div>
                 <div id="IV" class="container tab-pane"><h3><br/>Billing</h3></div>
                 <div id="IN" class="container tab-pane"><h3><br/>Internal Notes</h3></div>
