@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Product Attribute</title>
+  <title>Catalog</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -99,9 +99,9 @@
           <i class="fas fa-fw fa-cog"></i>
           <span>Product</span>
         </a>
-        <div id="collapseProduct" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseProduct" class="collapse " aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="catalog.html">Catalog</a>
+            <a class="collapse-item " href="catalog.html">Catalog</a>
             <a class="collapse-item" href="category.html">Category</a>
             <a class="collapse-item" href="product.html">Product</a>
             <a class="collapse-item" href="product_attribute.html">Product Attribute</a>
@@ -442,52 +442,88 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">User Login List</h1>
+            <h1 class="h3 mb-0 text-gray-800">Create User Login</h1>
 
             
-            <!-- <nav class="">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Action
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Delete</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Print Barcode</a>
-                  </div>
-                </li>
-              </ul>
-            </nav> -->
-
-
-            <a href="create_user_login.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
-           
 
           </div>
+
+
+
+
           <!-- DataTales Example -->
+
           <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <!-- <h6 class="m-0 font-weight-bold text-primary"><a href="catalog.html">Vendor</a> -> Create</h6> -->
+              <a href="#" class="btn btn-primary">Save & Close</a>
+              <a href="#" class="btn btn-primary">Save & New</a>
+              <a href="user_login_list.html" class="btn btn-secondary">Discard</a>
+            </div>
             <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th><input type="checkbox" /></th>
-                      <th>Name</th>
-                      <th>Email</th>
-                      <th>Contact #</th>
-                      <th>Enabled</th>
-                      <th>Locked</th>
-                      <th>Role</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                  </tbody>
-                </table>
-              </div>
+              <form>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="selectEmployee">Select Employee</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <select id="selectEmployee" class="form-control">
+                          <option value="emp1">Employee One</option>
+                          <option value="emp2">Employee Two</option>
+                          <option value="emp3">Employee Three</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row mt-1">
+                      <div class="col-sm-4">
+                        <label for="status">Select Status</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <select id="status" class="form-control">
+                          <option value="st1">Status One</option>
+                          <option value="st2">Status Two</option>
+                          <option value="st3">Status Three</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row mt-1">
+                      <div class="col-sm-4">
+                        <label for="username">Username</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control" id="username">
+                      </div>
+                    </div>
+                    <div class="row mt-1">
+                      <div class="col-sm-4">
+                        <label for="password">Password</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <input type="password" class="form-control" id="password">
+                      </div>
+                    </div>
+                    <div class="row mt-1">
+                      <div class="col-sm-4">
+                        <label for="cnfPass">Confirm Password</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <input type="password" class="form-control" id="cnfPass">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <img class="img-profile float-right" width="120px" height="120px" src="img/placeholder.png">
+                  </div>
+                </div>
+              </form>
+            </form>
+
             </div>
           </div>
 
+         
         </div>
         <!-- /.container-fluid -->
 
