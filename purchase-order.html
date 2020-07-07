@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Catalog</title>
+  <title>Purchase Order</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -72,8 +72,8 @@
         </div>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePurchase" aria-expanded="true" aria-controls="collapsePurchase">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePurchase" aria-expanded="true" aria-controls="collapsePurchase">
           <i class="fas fa-fw fa-cog"></i>
           <span>Purchase Order</span>
         </a>
@@ -94,8 +94,8 @@
         Catalog Management
       </div>
 
-     <li class="nav-item active">
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
+     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
           <i class="fas fa-fw fa-cog"></i>
           <span>Product</span>
         </a>
@@ -115,30 +115,32 @@
         Inventory Management
       </div>
 
-     <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCompany" aria-expanded="true" aria-controls="collapseCompany">
           <i class="fas fa-fw fa-cog"></i>
           <span>Company</span>
         </a>
         <div id="collapseCompany" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Company</a>
-            <a class="collapse-item" href="cards.html">Facility</a>
-             <a class="collapse-item" href="cards.html">Location</a>
-             <a class="collapse-item" href="cards.html">Tray</a>
+            <a class="collapse-item" href="company.html">Company</a>
+            <a class="collapse-item" href="facility.html">Facility</a>
+             <a class="collapse-item" href="location.html">Location</a>
+             <a class="collapse-item" href="tray.html">Tray</a>
           </div>
         </div>
       </li>
 
 
-    <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInventory" aria-expanded="true" aria-controls="collapseInventory">
           <i class="fas fa-fw fa-cog"></i>
           <span>Inventory</span>
         </a>
         <div id="collapseInventory" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Inventory</a>
+            <a class="collapse-item" href="inventory.html">Inventory</a>
+            <a class="collapse-item" href="in-out-inventory.html">Inv-In-Out</a>
+            <a class="collapse-item" href="search-inventory.html">Inv-Search</a>
           </div>
         </div>
       </li>
@@ -149,17 +151,17 @@
         Human Resource
       </div>
 
-     <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEmployee" aria-expanded="true" aria-controls="collapseEmployee">
           <i class="fas fa-fw fa-cog"></i>
           <span>Employee</span>
         </a>
         <div id="collapseEmployee" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Employee</a>
-            <a class="collapse-item" href="cards.html">Designation</a>
-             <a class="collapse-item" href="cards.html">User Login</a>
-             <a class="collapse-item" href="cards.html">Role</a>
+            <a class="collapse-item" href="employee_list.html">Employee</a>
+            <a class="collapse-item" href="#">Designation</a>
+             <a class="collapse-item" href="#">User Login</a>
+             <a class="collapse-item" href="#">Role</a>
           </div>
         </div>
       </li>
@@ -170,15 +172,15 @@
         Accounting
       </div>
 
-     <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAccounting" aria-expanded="true" aria-controls="collapseAccounting">
           <i class="fas fa-fw fa-cog"></i>
           <span>Accounting</span>
         </a>
         <div id="collapseAccounting" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Invoice</a>
-            <a class="collapse-item" href="cards.html">Bill</a>
+            <a class="collapse-item" href="invoice_list.html">Invoice</a>
+            <a class="collapse-item" href="bill_list.html">Bill</a>
           </div>
         </div>
       </li>
@@ -475,80 +477,49 @@
           <div class="card shadow mb-4">
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0" style="font-size: small;">
                   <thead>
                     <tr>
-                      <td>Select</td>
-                      <td>Reference</td>
-                      <td>Confirmation Date</td>
-                      <td>Vendor</td>
-                      <td>Purchase Representative</td>
-                      <td>Source Document</td>
-                      <td>Total</td>
-                      <td>Billing Status</td>
+                      <th>Select</th>
+                      <th>Order No</th>
+                      <th>Vendor Ref</th>
+                      <th>CNF Date</th>
+                      <th>Vendor</th>
+                      <th>Company</th>
+                      <th>Receipt Date</th>
+                      <!-- <th>Source</th> -->
+                      <th>Total (Rs)</th>
+                      <!-- <th>Status</th> -->
+                      <th>Billed</th>
                     </tr>
                   </thead>
+                  <tr>
+                    <td><input type="checkbox" ></td>
+                    <td><a href="view_purchase_order.html">PO002</a></td>
+                    <td>XYZ_SO34</td>
+                    <td>02/01/2020</td>
+                    <td>XYS Corp</td>
+                    <td>Iaito Infotech P Ltd</td>
+                    <td></td>
+                    <!-- <td></td> -->
+                    <td style="text-align: right;">121000.000</td>
+                    <!-- <td>PO</td> -->
+                    <td>Partially</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" ></td>
+                    <td>PO003</td>
+                    <td></td>
+                    <td>03/01/2020</td>
+                    <td>Yogendra Singh</td>
+                    <td>Iaito Infotech P Ltd</td>
+                    <td>03/20/2020</td>
+                    <!-- <td></td> -->
+                    <td style="text-align: right;">121000.000</td>
+                    <!-- <td>PO</td> -->
+                    <td>Fully</td>
+                  </tr>
                   <tbody>
-                    <tr>
-                      <td><input type="checkbox" /></td>
-                      <td><a href="view_purchase_order.html">P0001</a></td>
-                      <td>01/01/2020</td>
-                      <td>Some Vendor</td>
-                      <td>System</td>
-                      <td></td>
-                      <td>$101,000.00</td>
-                      <td>Nothing to Bill</td>
-                    </tr>
-                    <tr>
-                      <td><input type="checkbox" /></td>
-                      <td>P0002</td>
-                      <td>01/01/2020</td>
-                      <td>Some Vendor</td>
-                      <td>System</td>
-                      <td></td>
-                      <td>$101,000.00</td>
-                      <td>Nothing to Bill</td>
-                    </tr>
-                    <tr>
-                      <td><input type="checkbox" /></td>
-                      <td>P0003</td>
-                      <td>01/01/2020</td>
-                      <td>Some Vendor</td>
-                      <td>System</td>
-                      <td></td>
-                      <td>$101,000.00</td>
-                      <td>Nothing to Bill</td>
-                    </tr>
-                    <tr>
-                      <td><input type="checkbox" /></td>
-                      <td>P0004</td>
-                      <td>01/01/2020</td>
-                      <td>Some Vendor</td>
-                      <td>System</td>
-                      <td></td>
-                      <td>$101,000.00</td>
-                      <td>Nothing to Bill</td>
-                    </tr>
-                    <tr>
-                      <td><input type="checkbox" /></td>
-                      <td>P0005</td>
-                      <td>01/01/2020</td>
-                      <td>Some Vendor</td>
-                      <td>System</td>
-                      <td></td>
-                      <td>$101,000.00</td>
-                      <td>Nothing to Bill</td>
-                    </tr>
-                    <tr>
-                      <td><input type="checkbox" /></td>
-                      <td>P0006</td>
-                      <td>01/01/2020</td>
-                      <td>Some Vendor</td>
-                      <td>System</td>
-                      <td></td>
-                      <td>$101,000.00</td>
-                      <td>Nothing to Bill</td>
-                    </tr>
                   </tbody>
                 </table>
               </div>

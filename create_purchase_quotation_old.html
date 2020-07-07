@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Purchase Quotation</title>
+  <title>Catalog</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -27,13 +27,12 @@
         $("#addRow").click(function() {
           $('#addr' + i).html(
             "<td>" + (i + 1) + "</td>" +
-            "<td><input name='prod" + i + "' type='text' placeholder='Product' "+ i +" class='form-control input-md' style='font-size: small;'/></td>"+
-            "<td><input  name='prodDesc" + i + "' type='text' placeholder='Desc' class='form-control input-md' style='font-size: small;'></td>"+
-            "<td><input  name='scheduleDate" + i + "' type='Date'  class='form-control input-md' style='font-size: small;'></td>" +
-            "<td><input  name='quantity" + i + "' type='text' placeholder='0'  class='form-control input-md' style='font-size: small;'></td>"+
-            "<td><input  name='unitPrice" + i + "' type='text' placeholder='0'  class='form-control input-md' style='font-size: small;'></td>"+
-            "<td><input  name='taxes" + i + "' type='text' placeholder='0'  class='form-control input-md' style='font-size: small;'></td>" +
-            "<td><input  name='subTotal" + i + "' type='text' placeholder='0.0000'  class='form-control input-md' style='font-size: small;'></td>"
+            "<td><input name='prod" + i + "' type='text' placeholder='Sample Product' "+ i +" class='form-control input-md'/></td>"+
+            "<td><input  name='prodDesc" + i + "' type='text' placeholder='Sample Desc' class='form-control input-md'></td>"+
+            "<td><input  name='quantity" + i + "' type='text' placeholder='###.##'  class='form-control input-md'></td>"+
+            "<td><input  name='unitPrice" + i + "' type='text' placeholder='$$$.$$'  class='form-control input-md'></td>"+
+            "<td><input  name='taxes" + i + "' type='text' placeholder='%%.%%'  class='form-control input-md'></td>" +
+            "<td><input  name='subTotal" + i + "' type='text' placeholder='###.##'  class='form-control input-md'></td>"
           );
 
           $('#tab_logic').append('<tr id="addr' + (i + 1) + '"></tr>');
@@ -99,8 +98,8 @@
         </div>
       </li>
 
-      <li class="nav-item active">
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePurchase" aria-expanded="true" aria-controls="collapsePurchase">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePurchase" aria-expanded="true" aria-controls="collapsePurchase">
           <i class="fas fa-fw fa-cog"></i>
           <span>Purchase Order</span>
         </a>
@@ -121,15 +120,15 @@
         Catalog Management
       </div>
 
-     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
+     <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
           <i class="fas fa-fw fa-cog"></i>
           <span>Product</span>
         </a>
         <div id="collapseProduct" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="catalog.html">Catalog</a>
-            <a class="collapse-item " href="category.html">Category</a>
+            <a class="collapse-item" href="category.html">Category</a>
             <a class="collapse-item" href="product.html">Product</a>
             <a class="collapse-item" href="product_attribute.html">Product Attribute</a>
              <a class="collapse-item" href="uom.html">Unit Of Measure</a>
@@ -142,32 +141,30 @@
         Inventory Management
       </div>
 
-      <li class="nav-item">
+     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCompany" aria-expanded="true" aria-controls="collapseCompany">
           <i class="fas fa-fw fa-cog"></i>
           <span>Company</span>
         </a>
         <div id="collapseCompany" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="company.html">Company</a>
-            <a class="collapse-item" href="facility.html">Facility</a>
-             <a class="collapse-item" href="location.html">Location</a>
-             <a class="collapse-item" href="tray.html">Tray</a>
+            <a class="collapse-item" href="buttons.html">Company</a>
+            <a class="collapse-item" href="cards.html">Facility</a>
+             <a class="collapse-item" href="cards.html">Location</a>
+             <a class="collapse-item" href="cards.html">Tray</a>
           </div>
         </div>
       </li>
 
 
-      <li class="nav-item">
+    <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInventory" aria-expanded="true" aria-controls="collapseInventory">
           <i class="fas fa-fw fa-cog"></i>
           <span>Inventory</span>
         </a>
         <div id="collapseInventory" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="inventory.html">Inventory</a>
-            <a class="collapse-item" href="in-out-inventory.html">Inv-In-Out</a>
-            <a class="collapse-item" href="search-inventory.html">Inv-Search</a>
+            <a class="collapse-item" href="buttons.html">Inventory</a>
           </div>
         </div>
       </li>
@@ -178,17 +175,17 @@
         Human Resource
       </div>
 
-      <li class="nav-item">
+     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEmployee" aria-expanded="true" aria-controls="collapseEmployee">
           <i class="fas fa-fw fa-cog"></i>
           <span>Employee</span>
         </a>
         <div id="collapseEmployee" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="employee_list.html">Employee</a>
-            <a class="collapse-item" href="#">Designation</a>
-             <a class="collapse-item" href="#">User Login</a>
-             <a class="collapse-item" href="#">Role</a>
+            <a class="collapse-item" href="buttons.html">Employee</a>
+            <a class="collapse-item" href="cards.html">Designation</a>
+             <a class="collapse-item" href="cards.html">User Login</a>
+             <a class="collapse-item" href="cards.html">Role</a>
           </div>
         </div>
       </li>
@@ -199,15 +196,15 @@
         Accounting
       </div>
 
-      <li class="nav-item">
+     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAccounting" aria-expanded="true" aria-controls="collapseAccounting">
           <i class="fas fa-fw fa-cog"></i>
           <span>Accounting</span>
         </a>
         <div id="collapseAccounting" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="invoice_list.html">Invoice</a>
-            <a class="collapse-item" href="bill_list.html">Bill</a>
+            <a class="collapse-item" href="buttons.html">Invoice</a>
+            <a class="collapse-item" href="cards.html">Bill</a>
           </div>
         </div>
       </li>
@@ -471,31 +468,11 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-          <h1 class="h3 mb-0 text-gray-800">Purchase Quotation</h1>
-
-          <nav class="">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Actions
-                </a>
-                <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">PFD</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Email</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Delete</a>
-                </div>
-              </li>
-            </ul>
-          </nav>
-          
+             <h1 class="h3 mb-0 text-gray-800">Request for Quotation/New</h1>
          </div>
          <div class="row mb-2 ml-1">
-          <a href="edit_purchase_quotation.html" class="btn btn-primary" role="button">Edit</a> &nbsp;
-          <a href="purchase-quotations.html" class="btn btn-success" role="button">Confirm Order</a> 
-          <!-- <input type="button" class="btn btn-primary" value="Save">&nbsp;
-          <input type="button" class="btn btn-secondary" value="Discard"> -->
+          <a href="view_purchase_quotation.html" class="btn btn-primary mr-1">Save</a>
+          <a href="purchase-quotations.html" class="btn btn-secondary mr-1">Discard</a>
          </div>
 
 
@@ -504,49 +481,36 @@
 
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary"><a href="purchase-quotations.html">Quotation</a>[PO001]</h6>
-<!-- 
+              <!-- <h6 class="m-0 font-weight-bold text-primary"><a href="catalog.html">Catalog</a> -> Create</h6> -->
+
               <div class="row">
-                <input type="button" class="btn btn-primary" value="Send by Email">
-                &nbsp;<input type="button" class="btn btn-secondary" value="Confirm">
-                &nbsp;<input type="button" class="btn btn-secondary" value="Cancel">
-              </div> -->
+                <a href="#" class="btn btn-primary mr-1">Send by Email</a>
+                <a href="#" class="btn btn-primary mr-1">Print RFQ</a>
+                <a href="#" class="btn btn-secondary mr-1">Confirm Order</a>
+                <a href="#" class="btn btn-secondary mr-1">Cancel</a>
+              </div>
             </div>
             <div class="card-body">
               <form>
-                <div class="row">
-                  <h3> &nbsp; PO001</h3>
+                <p>Request for Quotation</p>
+                <div class="row pl-2 mb-2">
+                  <h3>New</h3>
                 </div>
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="row">
                       <div class="col-sm-4">
-                        <label for="customer">Vendor</label>
+                        <label for="customer">Customer</label>
                       </div>
                       <div class="col-sm-8">
-                        XYZ Corp, <br/>
-                        51A Sukhdev Vihar<br/>
-                        Delhi, Delhi<br/>
-                        India.
+                        <select id="customer" class="form-control">
+                          <option value="Customer One">Customer One</option>
+                          <option value="Customer Two">Customer Two</option>
+                          <option value="Customer there">Customer Three</option>
+                        </select>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-sm-4">
-                        <label for="customer">Vendor Reference</label>
-                      </div>
-                      <div class="col-sm-8">
-                        XYZ_SO28
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <label for="paymentTerms">Currency</label>
-                      </div>
-                      <div class="col-sm-8">
-                        INR
-                      </div>
-                    </div>
-                    <!-- <div class="row">
                       <div class="col-sm-4">
                         <label for="quotationTemplate">Quotation Template</label>
                       </div>
@@ -557,35 +521,34 @@
                           <option value="Template there">Template Three</option>
                         </select>
                       </div>
-                    </div> -->
+                    </div>
                   </div>
                   <div class="col-sm-6">
-
                     <div class="row">
                       <div class="col-sm-4">
-                        <label for="quotationDate">Order Date</label>
+                        <label for="expiration">Expiration</label>
                       </div>
                       <div class="col-sm-8">
-                        01/01/2020
-                        <!-- <select id="expiration" class="form-control">
+                        <select id="expiration" class="form-control">
+                          <option value="expiration one">Expiration Date One</option>
+                          <option value="expiration Two">Expiration Date Two</option>
+                          <option value="expiration there">Expiration Date Three</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="quotationDate">Quotation Date</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <select id="expiration" class="form-control">
                           <option value="qDate1">Quotation Expiration Date One</option>
                           <option value="qDate2">Quotation Expiration Date Two</option>
                           <option value="qDate3">Qoutation Expiration Date Three</option>
-                        </select> -->
-
+                        </select>
                       </div>
                     </div>
-
                     <div class="row">
-                      <div class="col-sm-4">
-                        <label for="expiration">Company</label>
-                      </div>
-                      <div class="col-sm-8">
-                        Iaito Infotech P Ltd
-                      </div>
-                    </div>
-                    
-                    <!-- <div class="row">
                       <div class="col-sm-4">
                         <label for="paymentTerms">Payment Terms</label>
                       </div>
@@ -596,128 +559,104 @@
                           <option value="pTerms3">Payment Terms Three</option>
                         </select>
                       </div>
-                    </div> -->
+                    </div>
                   </div>
                 </div>
-
                 <div class="row">
-                
-                  <div class="col-sm-4">
-                    &nbsp;
-                  </div>
-                  <div class="col-sm-8">
-                  </div>
-                </div>
-      
                   <ul class="nav nav-tabs">
                     <li class="nav-items">
                       <a href="#OL" class="nav-link active" data-toggle="pill">Order Lines</a>
                     </li>
-                    <!-- <li class="nav-items">
+                    <li class="nav-items">
                       <a href="#OP" class="nav-link"  data-toggle="pill">Optional Products</a>
-                    </li> -->
+                    </li>
                     <li class="nav-items">
                       <a href="#OI" class="nav-link" data-toggle="pill">Other Info</a>
                     </li>
-                    <!-- <li class="nav-items">
+                    <li class="nav-items">
                       <a href="#CS" class="nav-link" data-toggle="pill">Customer Signatures</a>
-                    </li> -->
+                    </li>
                   </ul>
-
+                </div>
               </form>
               <div class="tab-content mb-3">
-                <div class="row">
-                
-                  <div class="col-sm-4">
-                    &nbsp;
-                  </div>
-                  <div class="col-sm-8">
-                  </div>
-                </div>
-                <div id="OL" class="container tab-pane active">
-                  <!-- <h3>Order Line</h3> -->
+                <div id="OL" class="container tab-pane active mt-3 pt-3">
                   <table class="table table-bordered table-hover" id="tab_logic">
                     <thead>
                         <tr >
                             <th class="text-center">
-                               <small class="font-weight-bold">#</small> 
+                                #
                             </th>
                             <th class="text-center">
-                              <small class="font-weight-bold">Product</small> 
+                                Product
                             </th>
                             <th class="text-center">
-                              <small class="font-weight-bold">Description</small> 
+                                Desription
                             </th>
                             <th class="text-center">
-                              <small class="font-weight-bold">Schedule Date</small>
+                                Quantity
                             </th>
                             <th class="text-center">
-                              <small class="font-weight-bold">Quantity</small>
+                                Unit Price
                             </th>
                             <th class="text-center">
-                              <small class="font-weight-bold">Unit Price (Rs)</small>
+                                Taxes
                             </th>
                             <th class="text-center">
-                              <small class="font-weight-bold">Tax</small>
-                            </th>
-                            <th class="text-center">
-                              <small class="font-weight-bold">Sub-Total</small>
+                              Sub-Total
                             </th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr id='addr0' style="font-size: small;">
+                        <tr id='addr0'>
                             <td>
                             1
                             </td>
                             <td>
-                            [PROD_001] Neckless 232, Variant [NL_232-01]
+                            <input type="text" name='user0'  placeholder='Sample Product' class="form-control"/>
                             </td>
                             <td>
-                              [Polish : No Polish] [Stone Count :0]
+                            <input type="text" name='pass0' placeholder='Sample Desc' class="form-control"/>
                             </td>
                             <td>
-                            
+                            <input type="text" name='ip0' placeholder='Some #' class="form-control"/>
                             </td>
                             <td>
-                            4.0
+                            <input type="text" name='country0' placeholder='$$$.$$' class="form-control"/>
                             </td>
-                                <td>
-                                  115000.000
-                              </td>
                             <td>
-                            GST 3%
+                            <input type="text" name='ipDisp0' placeholder='%%.%%' class="form-control"/>
                             </td>
-                            <td style="text-align: right;">
-                              460000.000
+                            <td>
+                            <input type="text" name='ipDisp0' placeholder='###.##' class="form-control"/>
                             </td>
                         </tr>
                         <tr id='addr1'></tr>
                     </tbody>
                 </table>
-                <!-- <input type="button" class="btn btn-info" id="addRow" value="Add">
-                <input type="button" class="btn btn-danger float-right" id="deleteRow" value="Delete"> -->
+                <input type="button" class="btn btn-primary" id="addRow" value="Add Product">
+                <input type="button" class="btn btn-secondary float-right" id="deleteRow" value="Delete Product">
                 <!-- <a id="add_row" class="btn btn-default pull-left">Add Row</a><a id='delete_row' class="pull-right btn btn-default">Delete Row</a> -->
-       
+                <br/><br/>
                 <div class="row">
                   <div class="col-sm-8">
-                    <textarea disabled name="termsAndCond" placeholder="Terms and Conditions" id="termsAndCond" class="form-control form-control-user"  ></textarea>
+                    <textarea name="termsAndCond" placeholder="Terms and Consitions" id="termsAndCond"  style="resize: none;width: inherit; height: inherit;"></textarea>
                   </div>
                   <div class="col-sm-4">
                     <div class="row">
                       <div class="col-sm-6">
                         <label for="untexedAmt">Untaxed Amount</label>
                       </div>
-                      <div class="col-sm-6" style="text-align: right;">
-                        Rs 460000.000
+                      <div class="col-sm-6">
+                        $1366.00
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-6">
                         <label for="untexedAmt">Taxes</label>
                       </div>
-                      <div class="col-sm-6" style="text-align: right;">
-                        Rs 13800.000
+                      <div class="col-sm-6">
+                        $27.10
                       </div>
                     </div>
                   </div>
@@ -727,27 +666,35 @@
                   <div class="col-sm-4">
                     <div class="row border-top">
                       <div class="col-sm-6">
-                        <label for="total"><b>Total</b></label>
+                        <label for="total">Total</label>
                       </div>
-                      <div class="col-sm-6" style="text-align: right;">
-                        <b>Rs 473800.000</b>
+                      <div class="col-sm-6">
+                        $1382.10
                       </div>
                     </div>
                   </div>
                 </div>
                 </div>
-
-
+                <div id="OP" class="container tab-pane">
+                  <h3>Optional Products</h3>
+                </div>
                 <div id="OI" class="container tab-pane">
-
+                  <div class="row mt-2">
+                    <div class="col-sm-6"><h3 class="text-primary">Sales</h3></div>
+                    <div class="col-sm-6"><h3 class="text-primary">Invoicing</h3></div>
+                  </div>
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="row">
                         <div class="col-sm-4">
-                          <label for="salesPerson">Purchase Representative</label>
+                          <label for="salesPerson">Sales Person</label>
                         </div>
                         <div class="col-sm-8">
-                          Ramendra Verma
+                          <select id="salesPerson" class="form-control">
+                            <option value="sPerson1">Sales Person One</option>
+                            <option value="sPerson2">Sales Person Two</option>
+                            <option value="sPerson3">Sales Person Three</option>
+                          </select>
                         </div>
                       </div>
                     </div>
@@ -757,7 +704,11 @@
                           <label for="fiscalPosition">Fiscal Position</label>
                         </div>
                         <div class="col-sm-8">
-                          Inter State
+                          <select id="fiscalPosition" class="form-control">
+                            <option value="fPosition1">Fiscal Position One</option>
+                            <option value="fPosition2">Fiscal Position Two</option>
+                            <option value="fPosition3">Fiscal Position Three</option>
+                          </select>
                         </div>
                       </div>
                     </div>
@@ -765,6 +716,46 @@
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="row">
+                        <div class="col-sm-4">
+                          <label for="salesTeam">Sales Team</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <select id="salesTeam" class="form-control">
+                            <option value="sTeam1">Sales Team One</option>
+                            <option value="sTeam2">Sales Team Two</option>
+                            <option value="sTeam3">Sales Team Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="journal">Journal</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <select id="fiscalPosition" class="form-control">
+                            <option value="journal1">Journal One</option>
+                            <option value="journal2">Journal Two</option>
+                            <option value="journal3">Journal Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="company">Company</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <select id="company" class="form-control">
+                            <option value="company1">Company One</option>
+                            <option value="company2">Company Two</option>
+                            <option value="company3">Company Three</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
                     <div class="col-sm-6">
@@ -774,32 +765,143 @@
                     <div class="col-sm-6">
                       <div class="row">
                         <div class="col-sm-4">
-                          <label for="company">Payment Terms</label>
+                          <label for="onlineSign">Online Signature</label>
                         </div>
                         <div class="col-sm-8">
-                          30 Days
+                          <input type="checkbox" class="" id="onlineSign" checked>
                         </div>
                       </div>
                     </div>
                     <div class="col-sm-6">
                     </div>
-                  </div>
-
-
-                  <div class="row">
                   </div>
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="row">
                         <div class="col-sm-4">
-                          <label for="incoterm">Incoterm</label>
+                          <label for="onlinePayment">Online Payment</label>
                         </div>
                         <div class="col-sm-8">
-                          
+                          <input type="checkbox" class="" id="onlinePayment" checked>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="customerRef">Customer Reference</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="customerRef" checked>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col-sm-6">
+                      <h3 class="text-primary">Delivery</h3>
+                    </div>
+                    <div class="col-sm-6">
+                      <h3 class="text-primary">Reporting</h3>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="shippingPolicy">Shipping Policy</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <select id="shippingPolicy" class="form-control">
+                            <option value="asap">As Soon As Possible</option>
+                            <option value="FCFS">First Come First Serve</option>
+                            <option value="LIFO">Last In First Out</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="sourceDoc">Source Document</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="sourceDoc">
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="deliveryDate">Delivery Date</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <input type="date" class="form-control" id="deliveryDate">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="campaign">Campaign</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <select id="campaign" class="form-control">
+                            <option value="camp1">Campaign One</option>
+                            <option value="camp2">Campaign Two</option>
+                            <option value="camp3">Campaign Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="campaign">Campaign</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <select id="medium" class="form-control">
+                            <option value="med1">Medium One</option>
+                            <option value="med2">Medium Two</option>
+                            <option value="med3">Medium Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="source">Source</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <select id="source" class="form-control">
+                            <option value="source1">Source One</option>
+                            <option value="source2">Source Two</option>
+                            <option value="source3">Source Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="CS" class="container tab-pane">
+                  <h3>Customer Signature</h3>
                 </div>
               </div>
             </div>
