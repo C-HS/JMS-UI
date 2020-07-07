@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Customer</title>
+  <title>Catalog</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -62,11 +62,11 @@
           <i class="fas fa-fw fa-cog"></i>
           <span>Sales Order</span>
         </a>
-        <div id="collapseSales" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseSales" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="sales-quotations.html">Quotation</a>
             <a class="collapse-item" href="sales-order.html">Sales Order</a>
-             <a class="collapse-item active" href="customer_list.html">Customer</a>
+             <a class="collapse-item" href="customer_list.html">Customer</a>
               <a class="collapse-item" href="cards.html">Outgoing Shipment</a>
           </div>
         </div>
@@ -94,14 +94,14 @@
         Catalog Management
       </div>
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
+     <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
           <i class="fas fa-fw fa-cog"></i>
           <span>Product</span>
         </a>
-        <div id="collapseProduct" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapseProduct" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="catalog.html">Catalog</a>
+            <a class="collapse-item active" href="catalog.html">Catalog</a>
             <a class="collapse-item" href="category.html">Category</a>
             <a class="collapse-item" href="product.html">Product</a>
             <a class="collapse-item" href="product_attribute.html">Product Attribute</a>
@@ -115,32 +115,30 @@
         Inventory Management
       </div>
 
-      <li class="nav-item">
+     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCompany" aria-expanded="true" aria-controls="collapseCompany">
           <i class="fas fa-fw fa-cog"></i>
           <span>Company</span>
         </a>
         <div id="collapseCompany" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="company.html">Company</a>
-            <a class="collapse-item" href="facility.html">Facility</a>
-             <a class="collapse-item" href="location.html">Location</a>
-             <a class="collapse-item" href="tray.html">Tray</a>
+            <a class="collapse-item" href="buttons.html">Company</a>
+            <a class="collapse-item" href="cards.html">Facility</a>
+             <a class="collapse-item" href="cards.html">Location</a>
+             <a class="collapse-item" href="cards.html">Tray</a>
           </div>
         </div>
       </li>
 
 
-      <li class="nav-item">
+    <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInventory" aria-expanded="true" aria-controls="collapseInventory">
           <i class="fas fa-fw fa-cog"></i>
           <span>Inventory</span>
         </a>
         <div id="collapseInventory" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="inventory.html">Inventory</a>
-            <a class="collapse-item" href="in-out-inventory.html">Inv-In-Out</a>
-            <a class="collapse-item" href="search-inventory.html">Inv-Search</a>
+            <a class="collapse-item" href="buttons.html">Inventory</a>
           </div>
         </div>
       </li>
@@ -151,17 +149,17 @@
         Human Resource
       </div>
 
-      <li class="nav-item">
+     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEmployee" aria-expanded="true" aria-controls="collapseEmployee">
           <i class="fas fa-fw fa-cog"></i>
           <span>Employee</span>
         </a>
         <div id="collapseEmployee" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="employee_list.html">Employee</a>
-            <a class="collapse-item" href="#">Designation</a>
-             <a class="collapse-item" href="#">User Login</a>
-             <a class="collapse-item" href="#">Role</a>
+            <a class="collapse-item" href="buttons.html">Employee</a>
+            <a class="collapse-item" href="cards.html">Designation</a>
+             <a class="collapse-item" href="cards.html">User Login</a>
+             <a class="collapse-item" href="cards.html">Role</a>
           </div>
         </div>
       </li>
@@ -172,15 +170,15 @@
         Accounting
       </div>
 
-      <li class="nav-item">
+     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAccounting" aria-expanded="true" aria-controls="collapseAccounting">
           <i class="fas fa-fw fa-cog"></i>
           <span>Accounting</span>
         </a>
         <div id="collapseAccounting" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="invoice_list.html">Invoice</a>
-            <a class="collapse-item" href="bill_list.html">Bill</a>
+            <a class="collapse-item" href="buttons.html">Invoice</a>
+            <a class="collapse-item" href="cards.html">Bill</a>
           </div>
         </div>
       </li>
@@ -444,78 +442,126 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Customer List</h1>
+            <h1 class="h3 mb-0 text-gray-800">Catalog</h1>
 
-            
-            <nav class="">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Action
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Delete</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Print Barcode</a>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-
-
-            <a href="create_customer.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
+            <a href="edit_catalog.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Edit</a>
            
 
+
           </div>
+
+
+
+
           <!-- DataTales Example -->
+
           <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary"><a href="catalog.html">Catalog</a> -> <a href="view_catalog.html">CAT_001 (GOLD)</a></h6>
+            </div>
+            
+            
+
+            <div class="card-body">
+
+              <form>
+
+              <div class="row">
+                
+                
+
+                <div class="col-lg-5">
+                  <div class="p-6">
+                    
+                     
+                      <div class="form-group">
+                        <label>Catalog ID</label>
+                        <input type="text" disabled="true" class="form-control form-control-user" id="exampleInputEmail" value="CAT_001">
+                        
+                        
+                      </div>
+                      <div class="form-group">
+                        <label>Catalog Name</label>
+                        <input type="text" disabled="true" class="form-control form-control-user" id="exampleInputEmail"  value="GOLD">
+                      </div>
+                    
+                  </div>
+                </div>
+                <div class="col-lg-3">
+
+                  <div class="p-6">
+                    
+                    
+                  </div>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                  <div class="p-6">
+                    
+                    <div class="text-center border-1">
+                      <img class="img-profile" width="150" height="150" src="img/gold.jpg">
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </form>
+
+            </div>
+          </div>
+
+         
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary"><a href="catalog.html">Catalog</a> ->  <a href="view_catalog.html">CAT_001 (GOLD)</a> -> Categories</h6>
+            </div>
+            
+            
+
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
-                    <tr style="font-size: small;">
-                      <th>Select</th>
-                      <th>Customer_ID</th>`
+                    <tr>
+                      <th>Category ID</th>
                       <th>Name</th>
-                      <th>Type</th>
-                      <th>City</th>
-                      <th>State</th>
-                      <th>Country</th>
-                      <th>Phone</th>
-                      <th>Email</th>
-                      <th>Tax ID</th>
+                      <th>Date Created</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr style="font-size: small;">
-                      <td><input type="checkbox" /></td>
-                      <td><a href="view_customer.html">CUST001</a></td>
-                      <td>ABC Jwellers</td>
-                      <td>Company</td>
-                      <td>Noida</td>
-                      <td>Uttar Pradesh</td>
-                      <td>India</td>
-                      <td>9578494585</td>
-                      <td>abcjw125@gmail.com</td>
-                      <td>AXUR132654</td>
+                  <tfoot>
+                    <tr>
+                      <th>Category ID</th>
+                      <th>Name</th>
+                      <th>Date Created</th>
                     </tr>
-                    <tr style="font-size: small;">
-                      <td><input type="checkbox" /></td>
-                      <td>CUST002</td>
-                      <td>Rahul Shukla</td>
-                      <td>Individual</td>
-                      <td>Kanpur</td>
-                      <td>Uttar Pradesh</td>
-                      <td>India</td>
-                      <td>4888785454</td>
-                      <td>rahuls158@gmail.com</td>
-                      <td>BPYAXY1584</td>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td>CG_001</td>
+                      <td>Gold Necklase</td>
+                      <td>2011/04/25</td>
+                    </tr>
+                    <tr>
+                      <td>CG_002</td>
+                      <td>Gold Ring</td>
+                      <td>2011/07/25</td>
+                    </tr>
+                    <tr>
+                      <td>CG_003</td>
+                      <td>Gold Bangles</td>
+                      <td>2009/01/12</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
+
           </div>
+
+         
 
         </div>
         <!-- /.container-fluid -->

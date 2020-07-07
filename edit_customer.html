@@ -444,81 +444,324 @@
 
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Customer List</h1>
+            <h1 class="h3 mb-0 text-gray-800">Customer [CUST001]</h1>
 
-            
             <nav class="">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Action
+                    Actions
                   </a>
                   <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Delete</a>
+                    <a class="dropdown-item" href="#">Print</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Print Barcode</a>
+                    <a class="dropdown-item" href="#">Delete</a>
                   </div>
                 </li>
               </ul>
             </nav>
 
-
-            <a href="create_customer.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create</a>
-           
-
+            <a href="view_customer.html" class="btn btn-primary" role="button">Save</a>
           </div>
+          <div class="row mb-2 ml-1">
+            <!-- <a href="edit_customer.html" class="btn btn-primary" role="button">Edit</a> &nbsp; -->
+            <!-- <a href="customer_list.html" class="btn btn-secondary" role="button">Discard</a>  -->
+           </div>
+
+
+
+
           <!-- DataTales Example -->
+
           <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary"><a href="customer_list.html">Customer</a> [CUST001] [ABC Jwellers] -> Edit</h6>
+                <!-- <input type="button" value="Save" class="btn btn-primary" id="save">
+                <input type="button" value="Discard" class="btn btn-secondary" id="save"> -->
+            </div>
             <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr style="font-size: small;">
-                      <th>Select</th>
-                      <th>Customer_ID</th>`
-                      <th>Name</th>
-                      <th>Type</th>
-                      <th>City</th>
-                      <th>State</th>
-                      <th>Country</th>
-                      <th>Phone</th>
-                      <th>Email</th>
-                      <th>Tax ID</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr style="font-size: small;">
-                      <td><input type="checkbox" /></td>
-                      <td><a href="view_customer.html">CUST001</a></td>
-                      <td>ABC Jwellers</td>
-                      <td>Company</td>
-                      <td>Noida</td>
-                      <td>Uttar Pradesh</td>
-                      <td>India</td>
-                      <td>9578494585</td>
-                      <td>abcjw125@gmail.com</td>
-                      <td>AXUR132654</td>
-                    </tr>
-                    <tr style="font-size: small;">
-                      <td><input type="checkbox" /></td>
-                      <td>CUST002</td>
-                      <td>Rahul Shukla</td>
-                      <td>Individual</td>
-                      <td>Kanpur</td>
-                      <td>Uttar Pradesh</td>
-                      <td>India</td>
-                      <td>4888785454</td>
-                      <td>rahuls158@gmail.com</td>
-                      <td>BPYAXY1584</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <form>
+                <div class="row">
+                  <div class="col-sm-8">
+                    <div class="row">
+                      &nbsp;&nbsp; <label><input type="radio" name="optradio" >&nbsp;Individual</label>&nbsp;&nbsp;
+                      <label><input type="radio" name="optradio" checked>&nbsp;Company</label>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <label for="name">Name&nbsp;</label>
+                      </div>
+                      <div class="col-sm-9">
+                        <input value="ABC Jwellers" type="text" id="name" name="name" style="width: inherit;" class="form-control">
+                      </div>
+                    </div>
+                    <!-- <div class="row">
+                      <div class="col-sm-3">
+                        <label for="company">Company</label>
+                      </div>
+                      <div class="col-sm-9">
+                        <select class="form-control" id="company">
+                          <option value="IAITO">IAITO</option>
+                          <option value="MIDSKART">MIDSTKART</option>
+                          <option value="GOOGLE">GOOGLE</option>
+                        </select>
+                      </div>
+                    </div> -->
+                  </div>
+                  <div class="col-sm-4">
+                      <img class="img-profile float-right" width="120px" height="120px" src="img/placeholder.png">
+                     
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="companyAddress">Company Address</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <input value="245, Hosery Complex"  type="text" id="name" name="name" style="width: inherit;" class="form-control">
+                        <!-- <textarea name="companyAddress" id="companyAddreaa" cols="30" rows="3" class="form-control" style="resize: none;"></textarea> -->
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                       
+                      </div>
+                      <div class="col-sm-8">
+                        <input type="text" id="name" name="name" style="width: inherit;" class="form-control">
+                        <!-- <textarea name="companyAddress" id="companyAddreaa" cols="30" rows="3" class="form-control" style="resize: none;"></textarea> -->
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="companyAddress">City</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <input value="Noida" type="text" id="name" name="name" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="companyAddress">Country</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <select class="form-control form-control-user" id="catalogId" >
+                          <option></option>
+                          <option selected>India</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="companyAddress">State</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <select class="form-control form-control-user" id="catalogId" >
+                              <option></option>
+                              <option>Delhi</option>
+                              <option>Maharashtra</option>
+                              <option selected>Uttar Pradesh</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="GSTIN">Postal Code</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <input value="110025" type="text" class="form-control" id="GSTIN">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="phone">Phone</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <input  type="text" class="form-control" id="phone">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="mobile">Mobile</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <input value="9578494585" type="text" class="form-control" id="mobile">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="email">Email</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <input value="abcjw125@gmail.com" type="text" class="form-control" id="mobile">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="weblink">Web Links</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control" id="weblink">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="GSTIN">GSTIN</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <input value="AXUR132654" type="text" class="form-control" id="GSTIN">
+                      </div>
+                    </div>
+                    <!-- <div class="row">
+                      <div class="col-sm-4">
+                        <label for="tags">Tags</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <select class="form-control" id="tags">
+                          <option value="Tag One">Tag One</option>
+                          <option value="Tag Two">Tag Two</option>
+                          <option value="Tag Three">Tag Three</option>
+                        </select>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+                <Br/>
+                
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#CA" data-toggle="pill">Contact & Address</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#SP" class="nav-link" data-toggle="pill">Sales</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#IV" class="nav-link" data-toggle="pill">Invoicing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#IN" class="nav-link" data-toggle="pill">Internal Notes</a>
+                    </li>
+                  </ul>
+                
+              </form>
+              <div class="tab-content">
+                <div id="CA" class="container tab-pane active">
+                  <br/>
+                  <input type="button" value="Add" id="add" class="btn btn-primary" data-toggle="modal" data-target="#contactAndAddress"/>
+                </div>
+                <div id="SP" class="container tab-pane"><h3><br/>Sales Orders</h3></div>
+                <div id="IV" class="container tab-pane"><h3><br/>Invoices</h3></div>
+                <div id="IN" class="container tab-pane"><h3><br/>Internal Notes</h3></div>
               </div>
+
             </div>
           </div>
 
+         
         </div>
         <!-- /.container-fluid -->
+        <div class="modal fade" id="contactAndAddress">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <!-- modal Header -->
+              <div class="modal-header">
+                <h4>Create Contact</h4>
+                <button class="close" type="button" data-dismiss="modal">&times;</button>
+              </div>
+              <!-- Modal Body -->
+              <div class="modal-body">
+                <div class="container fluid">
+                  <div class="row">&nbsp;&nbsp;
+                    <label><input type="radio" name="optradio" checked>&nbsp;Contact</label>&nbsp;&nbsp;
+                    <label><input type="radio" name="optradio">&nbsp;Invoice Address</label>&nbsp;&nbsp;
+                    <label><input type="radio" name="optradio">&nbsp;Delivery Address</label>&nbsp;&nbsp;
+                    <label><input type="radio" name="optradio">&nbsp;Other Address</label>&nbsp;&nbsp;
+                    <label><input type="radio" name="optradio">&nbsp;Private Address</label>
+                  </div>  
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <label for="contactName">Contact Name</label>
+                        </div>
+                        <div class="col-sm-7">
+                          <input type="text" class="form-control" id="contacttName">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <label for="contactName">Address</label>
+                        </div>
+                        <div class="col-sm-7">
+                          <input type="text" class="form-control" id="contacttName" placeholder="Address Line1">
+                          <input type="text" class="form-control" id="contacttName" placeholder="Address Line2">
+                          <input type="text" class="form-control" id="contacttName" placeholder="City">
+                          <input type="text" class="form-control" id="contacttName" placeholder="Postal Code">
+                          <select class="form-control" id="Countries">
+                            <option value="US">Select Country</option>
+                            <option value="UK">India</option>
+                          </select>
+                          <select class="form-control" id="Countries">
+                            <option value="US">Select States</option>
+                            <option value="UK">Delhi</option>
+                            <option value="RS">Maharashtra</option>
+                            <option value="RS">Uttar Pradesh</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <label for="contactName">Notes</label>
+                        </div>
+                        <div class="col-sm-7">
+                          <textarea name="notes" id="notes" class="form-control" style="width: inherit; resize: none;" rows="2"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          &nbsp;<label for="email">Email</label>
+                        </div>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="email">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          &nbsp;<label for="email">Phone</label>
+                        </div>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="phone">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          &nbsp;<label for="email">Mobile</label>
+                        </div>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="mobile">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <img class="img-profile float-right" width="120px" height="120px" src="img/placeholder.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal Footer -->
+              <div class="modal-footer">  
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                <!-- <button type="button" class="btn btn-primary" data-dismiss="modal">Save & New</button> -->
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
       <!-- End of Main Content -->
