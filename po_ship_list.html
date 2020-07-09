@@ -482,8 +482,6 @@
                 <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#">PFD</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Email</a>
-                  <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Delete</a>
                 </div>
               </li>
@@ -506,314 +504,51 @@
             <div class="card-header py-2">
              
               <div class="row" style="float: left;">
-                <h3 class="m-0 font-weight-bold text-primary">PO002</h3>
+                <h5 class="m-0 font-weight-bold text-primary"><a href="view_purchase_order.html">PO002 </a> -> Incomming Shipments</h5>
               </div>
 
               <div class="row" style="float: right;">
-                <a href="#" class="btn btn-info" role="button">Bill <span>1</span></a> &nbsp;
-                <a href="po_ship_list.html" class="btn btn-warning" role="button">Receipt <span>1</span></a>
+                <!-- <a href="#" class="btn btn-info" role="button">Bill <span>1</span></a> &nbsp; -->
+                <a href="create_incomming_shipment.html" class="btn btn-primary" role="button">Create New</a>
               </div>
             </div>
             <div class="card-body">
-              <form>
-                
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <label for="customer">Vendor</label>
-                      </div>
-                      <div class="col-sm-8">
-                        XYZ Corp, <br/>
-                        51A Sukhdev Vihar<br/>
-                        Delhi, Delhi<br/>
-                        India.
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <label for="customer">Vendor Reference</label>
-                      </div>
-                      <div class="col-sm-8">
-                        XYZ_SO34
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <label for="paymentTerms">Currency</label>
-                      </div>
-                      <div class="col-sm-8">
-                        INR
-                      </div>
-                    </div>
-                    <!-- <div class="row">
-                      <div class="col-sm-4">
-                        <label for="quotationTemplate">Quotation Template</label>
-                      </div>
-                      <div class="col-sm-8">
-                        <select id="quotationTemplate" class="form-control">
-                          <option value="Template one">Template One</option>
-                          <option value="Template Two">Template Two</option>
-                          <option value="Template there">Template Three</option>
-                        </select>
-                      </div>
-                    </div> -->
-                  </div>
-                  <div class="col-sm-6">
 
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <label for="quotationDate">Confirmation Date</label>
-                      </div>
-                      <div class="col-sm-8">
-                        02/01/2020
-                        <!-- <select id="expiration" class="form-control">
-                          <option value="qDate1">Quotation Expiration Date One</option>
-                          <option value="qDate2">Quotation Expiration Date Two</option>
-                          <option value="qDate3">Qoutation Expiration Date Three</option>
-                        </select> -->
-
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <label for="expiration">Company</label>
-                      </div>
-                      <div class="col-sm-8">
-                        Iaito Infotech P Ltd
-                      </div>
-                    </div>
-                    
-                    <!-- <div class="row">
-                      <div class="col-sm-4">
-                        <label for="paymentTerms">Payment Terms</label>
-                      </div>
-                      <div class="col-sm-8">
-                        <select id="expiration" class="form-control">
-                          <option value="pTerms1">Payment Terms One</option>
-                          <option value="pTerms2">Payment Terms Two</option>
-                          <option value="pTerms3">Payment Terms Three</option>
-                        </select>
-                      </div>
-                    </div> -->
-                  </div>
-                </div>
-
-                <div class="row">
-                
-                  <div class="col-sm-4">
-                    &nbsp;
-                  </div>
-                  <div class="col-sm-8">
-                  </div>
-                </div>
-      
-                  <ul class="nav nav-tabs">
-                    <li class="nav-items">
-                      <a href="#OL" class="nav-link active" data-toggle="pill">Order Lines</a>
-                    </li>
-                    <!-- <li class="nav-items">
-                      <a href="#OP" class="nav-link"  data-toggle="pill">Optional Products</a>
-                    </li> -->
-                    <li class="nav-items">
-                      <a href="#OI" class="nav-link" data-toggle="pill">Other Info</a>
-                    </li>
-                    <!-- <li class="nav-items">
-                      <a href="#CS" class="nav-link" data-toggle="pill">Customer Signatures</a>
-                    </li> -->
-                  </ul>
-
-              </form>
-              <div class="tab-content mb-3">
-                <div class="row">
-                
-                  <div class="col-sm-4">
-                    &nbsp;
-                  </div>
-                  <div class="col-sm-8">
-                  </div>
-                </div>
-                <div id="OL" class="container tab-pane active">
-                  <!-- <h3>Order Line</h3> -->
-                  <table class="table table-bordered table-hover" id="tab_logic">
-                    <thead>
-                        <tr >
-                            <th class="text-center">
-                               <small class="font-weight-bold">#</small> 
-                            </th>
-                            <th class="text-center">
-                              <small class="font-weight-bold">Product</small> 
-                            </th>
-                            <th class="text-center">
-                              <small class="font-weight-bold">Description</small> 
-                            </th>
-                            <th class="text-center">
-                              <small class="font-weight-bold">Schedule Date</small>
-                            </th>
-                            <th class="text-center">
-                              <small class="font-weight-bold">Quantity</small>
-                            </th>
-                            <th class="text-center">
-                              <small class="font-weight-bold">Received</small>
-                            </th>
-                            <th class="text-center">
-                              <small class="font-weight-bold">Billed</small>
-                            </th>
-                            <th class="text-center">
-                              <small class="font-weight-bold">Unit Price (Rs)</small>
-                            </th>
-                            <th class="text-center">
-                              <small class="font-weight-bold">Tax</small>
-                            </th>
-                            <th class="text-center">
-                              <small class="font-weight-bold">Sub-Total</small>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr id='addr0' style="font-size: small;">
-                            <td>
-                            1
-                            </td>
-                            <td>
-                            [PROD_001] Neckless 232, Variant [NL_232-01]
-                            </td>
-                            <td>
-                              [Polish : No Polish] [Stone Count :0]
-                            </td>
-                            <td>
-                            
-                            </td>
-                            <td>
-                               2.0
-                            </td>
-                            <td>
-                               1.0
-                            </td>
-                            <td>
-                              1.0
-                           </td>
-                            <td>
-                              115000.000
-                            </td>
-                            <td>
-                            GST 3%
-                            </td>
-                            <td style="text-align: right;">
-                              230000.000
-                            </td>
-                        </tr>
-                        <tr id='addr1'></tr>
-                    </tbody>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0" style="font-size: small;">
+                  <thead>
+                    <tr>
+                      <th>Select</th>
+                      <th>Shipment_ID</th>
+                      <th>From</th>
+                      <th>To</th>
+                      <th>Facility</th>
+                      <th>Location</th>
+                      <th>Order</th>
+                      <th>Scheduled</th>
+                      <th>Date</th>
+                      <th>Priority</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td><input type="checkbox" ></td>
+                    <td><a href="view_po_shipment.html">WH/IN/000001</a></td>
+                    <td>XYS Corp</td>
+                    <td>Iaito Infotech P Ltd</td>
+                    <td>Warehouse A</td>
+                    <td>A5</td>
+                    <td>PO002</td>
+                    <td>02/01/2020</td>
+                    <td>02/01/2020</td>
+                    <td>Normal</td>
+                    <td>Done</td>
+                  </tr>
+                  <tbody>
+                  </tbody>
                 </table>
-                <!-- <input type="button" class="btn btn-info" id="addRow" value="Add">
-                <input type="button" class="btn btn-danger float-right" id="deleteRow" value="Delete"> -->
-                <!-- <a id="add_row" class="btn btn-default pull-left">Add Row</a><a id='delete_row' class="pull-right btn btn-default">Delete Row</a> -->
-       
-                <div class="row">
-                  <div class="col-sm-8">
-                    <textarea disabled name="termsAndCond" placeholder="Terms and Conditions" id="termsAndCond" class="form-control form-control-user"  ></textarea>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <label for="untexedAmt">Untaxed Amount</label>
-                      </div>
-                      <div class="col-sm-6" style="text-align: right;">
-                        Rs 230000.000
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <label for="untexedAmt">Taxes</label>
-                      </div>
-                      <div class="col-sm-6" style="text-align: right;">
-                        Rs 6900.000
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-8"></div>
-                  <div class="col-sm-4">
-                    <div class="row border-top">
-                      <div class="col-sm-6">
-                        <label for="total"><b>Total</b></label>
-                      </div>
-                      <div class="col-sm-6" style="text-align: right;">
-                        <b>Rs 236900.000</b>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </div>
-
-
-                <div id="OI" class="container tab-pane">
-
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <label for="salesPerson">Purchase Representative</label>
-                        </div>
-                        <div class="col-sm-8">
-                          Ramendra Verma
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <label for="fiscalPosition">Fiscal Position</label>
-                        </div>
-                        <div class="col-sm-8">
-                          Inter State
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="row">
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <label for="company">Payment Terms</label>
-                        </div>
-                        <div class="col-sm-8">
-                          30 Days
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                    </div>
-                  </div>
-
-
-                  <div class="row">
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <label for="incoterm">Incoterm</label>
-                        </div>
-                        <div class="col-sm-8">
-                           Inter State
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
+
             </div>
           </div>
         </div>
