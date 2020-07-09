@@ -472,26 +472,10 @@
           <!-- Page Heading -->
          <div class="d-sm-flex align-items-center justify-content-between mb-4">
           <h1 class="h3 mb-0 text-gray-800">Purchase Order [PO002]</h1>
-
-          <nav class="">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Actions
-                </a>
-                <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">PFD</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Delete</a>
-                </div>
-              </li>
-            </ul>
-          </nav>
-          
          </div>
          <div class="row mb-2 ml-1">
-          <!-- <a href="edit_purchase_quotation.html" class="btn btn-primary" role="button">Edit</a> &nbsp;
-          <a href="purchase-quotations.html" class="btn btn-success" role="button">Confirm Order</a>  -->
+          <!-- <a href="view_po_shipment.html" class="btn btn-primary" role="button">Save</a> &nbsp;
+          <a href="po_ship_list.html" class="btn btn-secondary" role="button">Discard</a>  -->
           <!-- <input type="button" class="btn btn-primary" value="Save">&nbsp;
           <input type="button" class="btn btn-secondary" value="Discard"> -->
          </div>
@@ -504,51 +488,403 @@
             <div class="card-header py-2">
              
               <div class="row" style="float: left;">
-                <h5 class="m-0 font-weight-bold text-primary"><a href="view_purchase_order.html">PO002 </a> -> Incomming Shipments</h5>
+                <h5 class="m-0 font-weight-bold text-primary"><a href="view_purchase_order.html">PO002 </a> -> <a href="po_ship_list.html"> Incomming Shipment</a> </h5>
               </div>
-
+<!-- 
               <div class="row" style="float: right;">
-                <!-- <a href="#" class="btn btn-info" role="button">Bill <span>1</span></a> &nbsp; -->
-                <a href="create_incomming_shipment.html" class="btn btn-primary" role="button">Create New</a>
-              </div>
+                <a href="po_ship_list.html" class="btn btn-primary" role="button">Confirm</a>
+              </div> -->
             </div>
             <div class="card-body">
+              <form>
+                <div class="row">
+                  <h3> &nbsp; WH/IN/000001</h3>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="customer">Vendor</label>
+                      </div>
+                      <div class="col-sm-8">
+                        XYZ Corp, <br/>
+                        51A Sukhdev Vihar<br/>
+                        Delhi, Delhi<br/>
+                        India.
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="expiration">Company</label>
+                      </div>
+                      <div class="col-sm-8">
+                        Iaito Infotech P Ltd
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="paymentTerms">Facility</label>
+                      </div>
+                      <div class="col-sm-8">
+                        Warehouse A
+                      </div>
+                    </div>
+                    <!-- <div class="row">
+                      <div class="col-sm-4">
+                        <label for="quotationTemplate">Quotation Template</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <select id="quotationTemplate" class="form-control">
+                          <option value="Template one">Template One</option>
+                          <option value="Template Two">Template Two</option>
+                          <option value="Template there">Template Three</option>
+                        </select>
+                      </div>
+                    </div> -->
+                  </div>
+                  <div class="col-sm-6">
 
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0" style="font-size: small;">
-                  <thead>
-                    <tr>
-                      <th>Select</th>
-                      <th>Shipment_ID</th>
-                      <th>From</th>
-                      <th>To</th>
-                      <th>Facility</th>
-                      <th>Location</th>
-                      <th>Order</th>
-                      <th>Scheduled</th>
-                      <th>Date</th>
-                      <th>Priority</th>
-                      <th>Status</th>
-                    </tr>
-                  </thead>
-                  <tr>
-                    <td><input type="checkbox" ></td>
-                    <td><a href="view_po_shipment.html">WH/IN/000001</a></td>
-                    <td>XYS Corp</td>
-                    <td>Iaito Infotech P Ltd</td>
-                    <td>Warehouse A</td>
-                    <td>A5</td>
-                    <td>PO002</td>
-                    <td>02/01/2020</td>
-                    <td>02/01/2020</td>
-                    <td>Normal</td>
-                    <td>Done</td>
-                  </tr>
-                  <tbody>
-                  </tbody>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="quotationDate">Schedule Date</label>
+                      </div>
+                      <div class="col-sm-8">
+                        02/01/2020
+
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="expiration">Source Document</label>
+                      </div>
+                      <div class="col-sm-8">
+                       
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="paymentTerms">Location</label>
+                      </div>
+                      <div class="col-sm-8">
+                        A5
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                
+                  <div class="col-sm-4">
+                    &nbsp;
+                  </div>
+                  <div class="col-sm-8">
+                  </div>
+                </div>
+      
+                  <ul class="nav nav-tabs">
+                    <li class="nav-items">
+                      <a href="#OL" class="nav-link active" data-toggle="pill">Products</a>
+                    </li>
+                    <!-- <li class="nav-items">
+                      <a href="#OP" class="nav-link"  data-toggle="pill">Optional Products</a>
+                    </li> -->
+                    <li class="nav-items">
+                      <a href="#OI" class="nav-link" data-toggle="pill">Other Info</a>
+                    </li>
+                    <!-- <li class="nav-items">
+                      <a href="#CS" class="nav-link" data-toggle="pill">Customer Signatures</a>
+                    </li> -->
+                  </ul>
+
+              </form>
+              <div class="tab-content mb-3">
+                <div class="row">
+                
+                  <div class="col-sm-4">
+                    &nbsp;
+                  </div>
+                  <div class="col-sm-8">
+                  </div>
+                </div>
+                <div id="OL" class="container tab-pane active">
+                  <!-- <h3>Order Line</h3> -->
+                  <table class="table table-bordered table-hover" id="tab_logic" style="font-size: small;">
+                    <thead>
+                        <tr >
+                            <th class="text-center">
+                               #
+                            </th>
+                            <th class="text-center">
+                              Product 
+                            </th>
+                            <th class="text-center">
+                              Description
+                            </th>
+                            <th class="text-center">
+                              Expected Date
+                            </th>
+                            <th class="text-center">
+                              Demand
+                            </th>
+                            <th class="text-center">
+                             Done
+                            </th>
+                            <th class="text-center">
+                             Unit
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id='addr0'>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                           <a href="view_incomming_shipment_product.html"> [PROD_001] Neckless 232, Variant [NL_232-01]</a>
+                            </td>
+                            <td>
+                            [Polish : No Polish] [Stone Count :0]
+                            </td>
+                            <td>
+                              02/01/2020
+                            </td>
+                            <td>
+                            1.0
+                            </td>
+                            <td>
+                            1.0
+                            </td>
+                            <td>
+                            Unit
+                            </td>
+                        </tr>
+                        <tr id='addr1'></tr>
+                    </tbody>
                 </table>
-              </div>
+                <!-- <input type="button" class="btn btn-info" id="addRow" value="Add">
+                <input type="button" class="btn btn-danger float-right" id="deleteRow" value="Delete"> -->
+                <!-- <a id="add_row" class="btn btn-default pull-left">Add Row</a><a id='delete_row' class="pull-right btn btn-default">Delete Row</a> -->
+                <!-- <br/><br/> -->
+                <!-- <div class="row">
+                  <div class="col-sm-8">
+                    <textarea name="termsAndCond" placeholder="Terms and Conditions" id="termsAndCond" class="form-control form-control-user"  ></textarea>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <label for="untexedAmt">Untaxed Amount</label>
+                      </div>
+                      <div class="col-sm-6">
+                        Rs 0.000
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <label for="untexedAmt">Taxes</label>
+                      </div>
+                      <div class="col-sm-6">
+                        Rs 0.000
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <div class="row">
+                  <div class="col-sm-8"></div>
+                  <div class="col-sm-4">
+                    <div class="row border-top">
+                      <div class="col-sm-6">
+                        <label for="total"><b>Total</b></label>
+                      </div>
+                      <div class="col-sm-6">
+                        <b>Rs 0.000</b>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                </div>
+                <div id="OP" class="container tab-pane">
+                  <h3>Optional Products</h3>
+                </div>
+                <div id="OI" class="container tab-pane" style="font-size: small;">
+                  <!-- <div class="row mt-2">
+                    <div class="col-sm-6"><h3 class="text-primary">Sales</h3></div>
+                    <div class="col-sm-6"><h3 class="text-primary">Invoicing</h3></div>
+                  </div> -->
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="salesPerson">Responsible</label>
+                        </div>
+                        <div class="col-sm-8">
+                          Ramendra Verma
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="fiscalPosition">Priority</label>
+                        </div>
+                        <div class="col-sm-8">
+                          Normal
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br/>
+                  <div class="row">
+                      
+                        <div class="col-sm-2">
+                          <label for="salesPerson">Notes</label>
+                        </div>
+                        <div class="col-sm-10">
+                          <textarea disabled id="salesPerson" class="form-control"></textarea>
+                        </div>
+                      
+                    
+                  </div>
 
+            
+<br/>
+                  
+
+                  <div class="row mt-2">
+                    <div class="col-sm-6">
+                      <h3 class="text-primary">Transport Details</h3>
+                    </div>
+                  
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="shippingPolicy">Transporter</label>
+                        </div>
+                        <div class="col-sm-8">
+                         
+                            
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="sourceDoc">Document Number</label>
+                        </div>
+                        <div class="col-sm-8">
+                         
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="incoterm">Vehicle No</label>
+                        </div>
+                        <div class="col-sm-8">
+                         
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="sourceDoc">Tracking Link</label>
+                        </div>
+                        <div class="col-sm-8">
+                          
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="deliveryDate">Tracking Number</label>
+                        </div>
+                        <div class="col-sm-8">
+                         
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="deliveryDate">Contact Person</label>
+                        </div>
+                        <div class="col-sm-8">
+                         
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="deliveryDate">Phone Number</label>
+                        </div>
+                        <div class="col-sm-8">
+                         
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="deliveryDate">Email</label>
+                        </div>
+                        <div class="col-sm-8">
+                        
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="deliveryDate">Mobile Number</label>
+                        </div>
+                        <div class="col-sm-8">
+                         
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="deliveryDate">Website</label>
+                        </div>
+                        <div class="col-sm-8">
+                         
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+         
+
+                </div>
+                <!-- <div id="CS" class="container tab-pane">
+                  <h3>Customer Signature</h3>
+                </div> -->
+              </div>
             </div>
           </div>
         </div>
