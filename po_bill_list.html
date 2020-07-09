@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Purchase Order Shipment</title>
+  <title>Purchase Order Bill</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -504,12 +504,12 @@
             <div class="card-header py-2">
              
               <div class="row" style="float: left;">
-                <h5 class="m-0 font-weight-bold text-primary"><a href="view_purchase_order.html">PO002 </a> -> Incomming Shipments</h5>
+                <h5 class="m-0 font-weight-bold text-primary"><a href="view_purchase_order.html">PO002 </a> -> Bills</h5>
               </div>
 
               <div class="row" style="float: right;">
                 <!-- <a href="#" class="btn btn-info" role="button">Bill <span>1</span></a> &nbsp; -->
-                <a href="create_incomming_shipment.html" class="btn btn-primary" role="button">Create New</a>
+                <a href="create_po_bill.html" class="btn btn-primary" role="button" style="font-size: small;">Create New</a>
               </div>
             </div>
             <div class="card-body">
@@ -519,30 +519,34 @@
                   <thead>
                     <tr>
                       <th>Select</th>
-                      <th>Shipment_ID</th>
-                      <th>From</th>
-                      <th>To</th>
-                      <th>Facility</th>
-                      <th>Location</th>
-                      <th>Order</th>
-                      <th>Scheduled</th>
-                      <th>Date</th>
-                      <th>Priority</th>
+                      <th>Bill No</th>
+                      <th>Reference</th>
+                      <th>Order No</th>
+                      <th>Source</th>
+                      <th>Vendor</th>
+                      <th>Company</th>
+                      <th>Bill Date</th>
+                      <th>Due Date</th>
+                      <th>Total</th>
+                      <!-- <th>Amount Due</th> -->
                       <th>Status</th>
+                      <th>Payment</th>
                     </tr>
                   </thead>
                   <tr>
                     <td><input type="checkbox" ></td>
-                    <td><a href="view_po_shipment.html">WH/IN/000001</a></td>
+                    <td><a href="view_po_bill.html">​BILL/2020/0001</a></td>
+                    <td>XYS_SO1</td>
+                    <td>PO002</td>
+                    <td>Inv 125</td>
                     <td>XYS Corp</td>
                     <td>Iaito Infotech P Ltd</td>
-                    <td>Warehouse A</td>
-                    <td>A5</td>
-                    <td>PO002</td>
                     <td>02/01/2020</td>
-                    <td>02/01/2020</td>
-                    <td>Normal</td>
-                    <td>Done</td>
+                    <td>03/01/2020</td>
+                    <td style="text-align: right;">236900.000</td>
+                    <!-- <td>236900.000</td> -->
+                    <td>Posted</td>
+                    <td>Not Paid</td>
                   </tr>
                   <tbody>
                   </tbody>
