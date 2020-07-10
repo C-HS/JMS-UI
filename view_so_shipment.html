@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Sales Order</title>
+  <title>Sales Order Shipment</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -24,23 +24,24 @@
     <script type="text/javascript">
     $(document).ready(function(){
         var i = 1;
-        $("#addRow").click(function() {
-          $('#addr' + i).html(
+        $("#addBox").click(function() {
+          $('#row' + i).html(
             "<td>" + (i + 1) + "</td>" +
-            "<td><input name='prod" + i + "' type='text' placeholder='Sample Product' "+ i +" class='form-control input-md'/></td>"+
-            "<td><input  name='prodDesc" + i + "' type='text' placeholder='Sample Desc' class='form-control input-md'></td>"+
-            "<td><input  name='quantity" + i + "' type='text' placeholder='###.##'  class='form-control input-md'></td>"+
-            "<td><input  name='unitPrice" + i + "' type='text' placeholder='$$$.$$'  class='form-control input-md'></td>"+
-            "<td><input  name='taxes" + i + "' type='text' placeholder='%%.%%'  class='form-control input-md'></td>" +
-            "<td><input  name='subTotal" + i + "' type='text' placeholder='###.##'  class='form-control input-md'></td>"
+            "<td><input name='prod" + i + "' type='text'  "+ i +" class='form-control input-md' style='font-size: small;'/></td>"+
+            "<td><input  name='prodDesc" + i + "' type='text' class='form-control input-md' style='font-size: small;'></td>"+
+            "<td><input  name='scheduleDate" + i + "' type='text'  class='form-control input-md' style='font-size: small;'></td>" +
+            "<td><input  name='quantity" + i + "' type='text'   class='form-control input-md' style='font-size: small;'></td>"+
+            "<td><input  name='unitPrice" + i + "' type='text'  class='form-control input-md' style='font-size: small;'></td>"+
+            "<td><textarea  name='taxes" + i + "' type='text'   class='form-control input-md' style='font-size: small;'></textarea></td>" +
+            "<td><input  name='subTotal" + i + "' type='text'   class='form-control input-md' style='font-size: small;'></td>"
           );
 
-          $('#tab_logic').append('<tr id="addr' + (i + 1) + '"></tr>');
+          $('#box_table').append('<tr id="row' + (i + 1) + '"></tr>');
           i++;
         });
-        $("#deleteRow").click(function() {
+        $("#deleteBox").click(function() {
           if (i > 1) {
-            $("#addr" + (i - 1)).html('');
+            $("#row" + (i - 1)).html('');
             i--;
           }
         });
@@ -82,8 +83,7 @@
       <div class="sidebar-heading">
         Order Management
       </div>
-
-     <li class="nav-item active">
+      <li class="nav-item active">
         <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseSales" aria-expanded="true" aria-controls="collapseSales">
           <i class="fas fa-fw fa-cog"></i>
           <span>Sales Order</span>
@@ -128,7 +128,7 @@
         <div id="collapseProduct" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="catalog.html">Catalog</a>
-            <a class="collapse-item" href="category.html">Category</a>
+            <a class="collapse-item " href="category.html">Category</a>
             <a class="collapse-item" href="product.html">Product</a>
             <a class="collapse-item" href="product_attribute.html">Product Attribute</a>
              <a class="collapse-item" href="uom.html">Unit Of Measure</a>
@@ -140,7 +140,6 @@
      <div class="sidebar-heading">
         Inventory Management
       </div>
-
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCompany" aria-expanded="true" aria-controls="collapseCompany">
@@ -482,19 +481,17 @@
                 <div class="dropdown-menu dropdown-menu-right animated--fade-in" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#">PFD</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Email</a>
-                  <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Delete</a>
                 </div>
               </li>
             </ul>
           </nav>
 
-
          </div>
          <div class="row mb-2 ml-1">
-          <!-- <a href="edit_sales_quotation.html" class="btn btn-primary" role="button">Edit</a> &nbsp;
-          <a href="#" class="btn btn-success" role="button">Confirm</a>  -->
+          <!-- <a href="view_so_shipment.html" class="btn btn-primary" role="button" style="font-size: small;">Save</a> &nbsp;
+          <a href="view_so_shipment.html" class="btn btn-info" role="button" style="font-size: small;">Ready</a> &nbsp;
+          <a href="so_ship_list.html" class="btn btn-secondary" role="button" style="font-size: small;">Discard</a>  -->
           <!-- <input type="button" class="btn btn-primary" value="Save">&nbsp;
           <input type="button" class="btn btn-secondary" value="Discard"> -->
          </div>
@@ -505,42 +502,46 @@
 
           <div class="card shadow mb-4">
             <div class="card-header py-2">
-              
+             
               <div class="row" style="float: left;">
-                <h3 class="m-0 font-weight-bold text-primary">SO0002</h3>
+                <h5 class="m-0 font-weight-bold text-primary"><a href="view_sales_order.html">SO0002 </a> -> <a href="so_ship_list.html"> Outgoing Shipment</a>  [WH/OUT/000005]</h5>
               </div>
 
               <div class="row" style="float: right;">
-                <!-- <h6 class="m-0 font-weight-bold text-primary"><a href="sales-order.html">Sales Order</a> [SO0002]</h6> -->
-                <a href="so_invoice_list.html" class="btn btn-info" role="button" style="font-size: small;">Invoice <span>1</span></a> &nbsp;
-                <a href="so_ship_list.html" class="btn btn-warning" role="button" style="font-size: small;">Delivery <span>1</span></a>
+                <!-- <a href="#" class="btn btn-info" role="button">Bill <span>1</span></a> &nbsp; -->
+                <!-- <a href="view_so_shipment.html" class="btn btn-primary" role="button" style="font-size: small;">Done</a> -->
               </div>
-                
-  
             </div>
-
             <div class="card-body">
               <form>
-            
+                <div class="row" style="font-size: small;">
+                  <h3> &nbsp;WH/OUT/000005</h3>
+                </div>
                 <div class="row" style="font-size: small;">
                   <div class="col-sm-6">
                     <div class="row">
                       <div class="col-sm-4">
-                        <label for="customer">Customer</label>
+                        <label for="customer">Delivery Address</label>
                       </div>
                       <div class="col-sm-8">
-                        ABC Jwellers, <Br/>
-                        245, Hosery Complex,
-                        Noida, Uttar Pradesh-110025,
-                        India.
+                        ABC Jwellers, 245, Hosery Complex, Noida, Uttar Pradesh-110025, India
+                        
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-4">
-                        <label for="paymentTerms">Payment Terms</label>
+                        <label for="expiration">Company</label>
                       </div>
                       <div class="col-sm-8">
-                        15 Days After Receiving Goods</option>
+                        Iaito Infotech P Ltd
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="paymentTerms">Facility</label>
+                      </div>
+                      <div class="col-sm-8">
+                        Warehouse A
                       </div>
                     </div>
                     <!-- <div class="row">
@@ -560,46 +561,31 @@
 
                     <div class="row">
                       <div class="col-sm-4">
-                        <label for="quotationDate">Order Date</label>
+                        <label for="quotationDate">Schedule Date</label>
                       </div>
                       <div class="col-sm-8">
-                        01/01/2020
-                        <!-- <select id="expiration" class="form-control">
-                          <option value="qDate1">Quotation Expiration Date One</option>
-                          <option value="qDate2">Quotation Expiration Date Two</option>
-                          <option value="qDate3">Qoutation Expiration Date Three</option>
-                        </select> -->
+                        02/01/2020
 
                       </div>
                     </div>
 
                     <div class="row">
                       <div class="col-sm-4">
-                        <label for="expiration">Expiration Date</label>
+                        <label for="expiration">Source Document</label>
                       </div>
                       <div class="col-sm-8">
-
-                        02/01/2020
-                        <!-- <select id="expiration" class="form-control">
-                          <option value="expiration one">Expiration Date One</option>
-                          <option value="expiration Two">Expiration Date Two</option>
-                          <option value="expiration there">Expiration Date Three</option>
-                        </select> -->
+                        <!-- <input type="text"  class="form-control form-control-user" style="font-size: small;"> -->
                       </div>
                     </div>
                     
-                    <!-- <div class="row">
+                    <div class="row">
                       <div class="col-sm-4">
-                        <label for="paymentTerms">Payment Terms</label>
+                        <label for="paymentTerms">Location</label>
                       </div>
                       <div class="col-sm-8">
-                        <select id="expiration" class="form-control">
-                          <option value="pTerms1">Payment Terms One</option>
-                          <option value="pTerms2">Payment Terms Two</option>
-                          <option value="pTerms3">Payment Terms Three</option>
-                        </select>
+                        A7
                       </div>
-                    </div> -->
+                    </div>
                   </div>
                 </div>
 
@@ -614,17 +600,23 @@
       
                   <ul class="nav nav-tabs">
                     <li class="nav-items">
-                      <a href="#OL" class="nav-link active" data-toggle="pill">Order Lines</a>
+                      <a href="#OL" class="nav-link active" data-toggle="pill">Products</a>
                     </li>
-                    <!-- <li class="nav-items">
-                      <a href="#OP" class="nav-link"  data-toggle="pill">Optional Products</a>
-                    </li> -->
                     <li class="nav-items">
                       <a href="#OI" class="nav-link" data-toggle="pill">Other Info</a>
                     </li>
-                    <!-- <li class="nav-items">
-                      <a href="#CS" class="nav-link" data-toggle="pill">Customer Signatures</a>
-                    </li> -->
+                    <li class="nav-items">
+                      <a href="#PL" class="nav-link"  data-toggle="pill">Picklist</a>
+                    </li>
+                    <li class="nav-items">
+                      <a href="#VP" class="nav-link" data-toggle="pill">Verify Picklist</a>
+                    </li>
+                    <li class="nav-items">
+                      <a href="#PK" class="nav-link" data-toggle="pill">Packaging</a>
+                    </li>
+                    <li class="nav-items">
+                      <a href="#TD" class="nav-link" data-toggle="pill">Transport</a>
+                    </li>
                   </ul>
 
               </form>
@@ -639,347 +631,681 @@
                 </div>
                 <div id="OL" class="container tab-pane active">
                   <!-- <h3>Order Line</h3> -->
-                  <table class="table table-bordered table-hover" id="tab_logic">
+                  <table class="table table-bordered table-hover" id="tab_logic" style="font-size: small;">
                     <thead>
-                      <tr >
-                        <th class="text-center" style="font-size: small;">
-                            #
-                        </th>
-                        <th class="text-center" style="font-size: small;">
-                          Product
-                        </th>
-                        <th class="text-center" style="font-size: small;">
-                         Description
-                        </th>
-                        <th class="text-center" style="font-size: small;">
-                          Quantity
-                        </th>
-                        <th class="text-center" style="font-size: small;">
-                          Delivered
-                        </th>
-                        <th class="text-center" style="font-size: small;">
-                          Invoiced
-                        </th>
-                        <th class="text-center" style="font-size: small;">
-                          Unit Price (Rs)
-                        </th>
-                        <th class="text-center" style="font-size: small;">
-                        Tax
-                        </th>
-                        <th class="text-center" style="font-size: small;">
-                         Disc.%
-                        </th>
-                        <th class="text-center" style="font-size: small;">
-                          Sub-Total
-                        </th>
-                    </tr>
+                        <tr >
+                            <th class="text-center">
+                               #
+                            </th>
+                            <th class="text-center">
+                              Product 
+                            </th>
+                            <th class="text-center">
+                              Description
+                            </th>
+                            <th class="text-center">
+                              Expected Date
+                            </th>
+                            <th class="text-center">
+                              Demand
+                            </th>
+                            <th class="text-center">
+                             Done
+                            </th>
+                            <th class="text-center">
+                             Unit
+                            </th>
+                            <th class="text-center">
+                              Available
+                             </th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr id='addr0'>
-                            <td style="font-size: small;">
+                            <td>
                             1
                             </td>
-                            <td style="font-size: small;">
-                              [PROD_001] Neckless 232, Variant[NL_232-01]
+                            <td>
+                            [PROD_001] Neckless 232, Variant [NL_232-01]
                             </td>
-                            <td style="font-size: small;">
-                              [Polish : No Polish] [Stone Count :0]
+                            <td>
+                            [Polish : No Polish] [Stone Count :0]
                             </td>
-                            <td style="font-size: small;">
+                            <td>
+                            <!-- <input type="Date" name='ip0'  class="form-control" style="font-size: small;"/> -->
+                            </td>
+                            <td>
+                            3.0
+                            </td>
+                            <td>
+                              1.0
+                            </td>
+                            <td>
+                            Unit
+                            </td>
+                            <td>
                               3.0
-                            </td>
-                            <td style="font-size: small;">
-                              1.0
-                            </td>
-                            <td style="font-size: small;">
-                              1.0
-                            </td>
-                            <td style="font-size: small;">
-                              125000.000
-                            </td>
-                            <td style="font-size: small;">
-                             GST 3%
-                            </td>
-                            <td style="font-size: small;">
-                              0%
-                             </td>
-                            <td style="font-size: small;">
-                              375000.000
-                            </td>
+                              </td>
                         </tr>
                         <tr id='addr1'></tr>
                     </tbody>
                 </table>
-                <!-- <input type="button" class="btn btn-primary" id="addRow" value="Add Product">
-                <input type="button" class="btn btn-secondary float-right" id="deleteRow" value="Delete Product"> -->
+                <!-- <input type="button" class="btn btn-info" id="addRow" value="Add">
+                <input type="button" class="btn btn-danger float-right" id="deleteRow" value="Delete"> -->
                 <!-- <a id="add_row" class="btn btn-default pull-left">Add Row</a><a id='delete_row' class="pull-right btn btn-default">Delete Row</a> -->
-           
-                <div class="row" style="font-size: small;">
+                <!-- <br/><br/> -->
+                <!-- <div class="row">
                   <div class="col-sm-8">
-                    <textarea style="font-size: small;" disabled name="termsAndCond" placeholder="Terms and Conditions" id="termsAndCond" class="form-control form-control-user"  ></textarea>
+                    <textarea name="termsAndCond" placeholder="Terms and Conditions" id="termsAndCond" class="form-control form-control-user"  ></textarea>
                   </div>
                   <div class="col-sm-4">
                     <div class="row">
                       <div class="col-sm-6">
                         <label for="untexedAmt">Untaxed Amount</label>
                       </div>
-                      <div class="col-sm-6" style="text-align: right">
-                        Rs 375000.000
+                      <div class="col-sm-6">
+                        Rs 0.000
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-6">
                         <label for="untexedAmt">Taxes</label>
                       </div>
-                      <div class="col-sm-6" style="text-align: right">
-                        Rs 11250.000
+                      <div class="col-sm-6">
+                        Rs 0.000
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="row" style="font-size: small;">
+                </div> -->
+                <!-- <div class="row">
                   <div class="col-sm-8"></div>
                   <div class="col-sm-4">
                     <div class="row border-top">
                       <div class="col-sm-6">
-                        <label for="total" style="font-weight: bold;">Total</label>
+                        <label for="total"><b>Total</b></label>
                       </div>
-                      <div class="col-sm-6" style="text-align: right; font-weight: bold;">
-                        Rs 386250.000
+                      <div class="col-sm-6">
+                        <b>Rs 0.000</b>
                       </div>
                     </div>
                   </div>
-                </div>
-                </div>
-                <!-- <div id="OP" class="container tab-pane">
-                  <h3>Optional Products</h3>
                 </div> -->
-                <div id="OI" class="container tab-pane">
-                  <div class="row mt-2">
+                </div>
+                
+                <div id="OI" class="container tab-pane"  style="font-size: small;">
+                  <!-- <div class="row mt-2">
                     <div class="col-sm-6"><h3 class="text-primary">Sales</h3></div>
                     <div class="col-sm-6"><h3 class="text-primary">Invoicing</h3></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <label for="salesPerson">Sales Person</label>
-                        </div>
-                        <div class="col-sm-8">
-                            Ankit Tripathi
-                            <!-- <option value="sPerson3">Sales Person Three</option> -->
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <label for="fiscalPosition">Fiscal Position</label>
-                        </div>
-                        <div class="col-sm-8">
-                           Inter State
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="row">
-                        <!-- <div class="col-sm-4">
-                          <label for="salesTeam">Sales Team</label>
-                        </div>
-                        <div class="col-sm-8">
-                          <select id="salesTeam" class="form-control">
-                            <option value="sTeam1">Sales Team One</option>
-                            <option value="sTeam2">Sales Team Two</option>
-                            <option value="sTeam3">Sales Team Three</option>
-                          </select>
-                        </div> -->
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <!-- <div class="row">
-                        <div class="col-sm-4">
-                          <label for="journal">Journal</label>
-                        </div>
-                        <div class="col-sm-8">
-                          <select id="fiscalPosition" class="form-control">
-                            <option value="journal1">Journal One</option>
-                            <option value="journal2">Journal Two</option>
-                            <option value="journal3">Journal Three</option>
-                          </select>
-                        </div>
-                      </div> -->
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <label for="company">Company</label>
-                        </div>
-                        <div class="col-sm-8">
-                            Iaito Infotech P Ltd
-                            <!-- <option value="company2">Company Two</option>
-                            <option value="company3">Company Three</option> -->
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                    </div>
-                  </div>
-                  <!-- <div class="row">
-                    <div class="col-sm-6">
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <label for="onlineSign">Online Signature</label>
-                        </div>
-                        <div class="col-sm-8">
-                          <input type="checkbox" class="" id="onlineSign" checked>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                    </div>
                   </div> -->
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="row">
                         <div class="col-sm-4">
-                          <label for="onlinePayment">Payment Mode</label>
+                          <label for="salesPerson">Responsible</label>
                         </div>
                         <div class="col-sm-8">
+                          Ankit Tripathi
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="fiscalPosition">Priority</label>
+                        </div>
+                        <div class="col-sm-8">
+                          Normal
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br/>
+                  <div class="row">
+                      
+                        <div class="col-sm-2">
+                          <label for="salesPerson">Notes</label>
+                        </div>
+                        <div class="col-sm-10">
+                          <textarea  disabled id="salesPerson" class="form-control"  style="font-size: small;"></textarea>
+                        </div>
+                      
+                  </div>
+
+
+                </div>
+              <div id="PL" class="container tab-pane">
+                  <!-- <a href="#" class="btn btn-primary" role="button" style="font-size: small;">Create</a> -->
+
+                  <div class="row" style="font-size: small;">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6>PickList No : </h6>
+                        </div>
+                        <div class="col-sm-6">
+                              5656565
                           
                         </div>
                       </div>
                     </div>
                     <div class="col-sm-6">
+                      
                     </div>
                   </div>
-                  <div class="row">
+
+                  <Br/>
+                  
+
+                  <div class="row" style="font-size: small;">
                     <div class="col-sm-6">
                       <div class="row">
-                        <div class="col-sm-4">
-                          <label for="customerRef">Customer Reference</label>
+                        <div class="col-sm-2">
+                          <label for="salesPerson">Product 1  </label>
                         </div>
-                        <div class="col-sm-8">
-                          PO5120
+                        <div class="col-sm-10">
+                          [PROD_001] Neckless 232, Variant [NL_232-01] <br/>
+                          [Polish : No Polish] [Stone Count :0]
                         </div>
                       </div>
                     </div>
                     <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-2">
+                          <label for="fiscalPosition">Picking Rule</label>
+                        </div>
+                        <div class="col-sm-10">
+                          <select disabled id="fiscalPosition" class="form-control"  style="font-size: small;">
+                            <option selected value="fPosition1"></option>
+                            <option value="fPosition1">FIFO</option>
+                            <option value="fPosition2">LIFO</option>
+                            <option value="fPosition2">DOM ASC</option>
+                            <option value="fPosition2">DOM DEC</option>
+                          </select>
+                        </div>
+                      </div>
                     </div>
                   </div>
+            
+
+                  <table class="table table-bordered table-hover" id="tab_logic" style="font-size: small;">
+                    <thead>
+                        <tr >
+                            <th class="text-center">
+                               #
+                            </th>
+                            <th class="text-center">
+                              Inventory Item Id 
+                            </th>
+                            <th class="text-center">
+                              Lot No
+                            </th>
+                            <th class="text-center">
+                              Serial No
+                            </th>
+                            <th class="text-center">
+                              Facility
+                            </th>
+                            <th class="text-center">
+                             Location
+                            </th>
+                            <th class="text-center">
+                              Quantity
+                             </th>
+                             <th class="text-center">
+                              Availability
+                             </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id='addr0'>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                              11023
+                            </td>
+                            <td>
+                              LOT025
+                            </td>
+                            <td>
+                              IA12458334
+                            </td>
+                            <td>
+                              Warehouse A
+                            </td>
+                            <td>
+                              A1AS1S1L3P2
+                            </td>
+                            <td>
+                             1.0
+                            </td>
+                            <td>
+                              Available
+                            </td>
+                        </tr>
+                        <tr id='addr1'></tr>
+                    </tbody>
+                </table>
+
+                <br/>
+                <div class="row" style="font-size: small;">
+                  <div class="col-sm-6">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <label for="salesPerson">Assign Picker</label>
+                      </div>
+                      <div class="col-sm-6">
+                        Ankit Tripathi
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="row">
+                      <div class="col-sm-8">
+                        
+                      </div>
+                      <div class="col-sm-2" style="text-align: right;">
+                         <a href="#" class="btn btn-danger" role="button" style="font-size: small;">PDF</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+               
+                </div>
+                <div id="VP" class="container tab-pane">
+                  
+             
+
+                  <div class="row" style="font-size: small;">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6>PickList No : </h6>
+                        </div>
+                        <div class="col-sm-6">
+                         5656565
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="fiscalPosition">Status</label>
+                        </div>
+                        <div class="col-sm-6">
+                          Verified
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <Br/>
+
+                  <div class="row" style="font-size: small;">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label for="salesPerson">Product 1</label>
+                        </div>
+                        <div class="col-sm-9">
+                          [PROD_001] Neckless 232, Variant [NL_232-01]
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="fiscalPosition">Description</label>
+                        </div>
+                        <div class="col-sm-6">
+                          [Polish : No Polish] [Stone Count :0]
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+
+                  <table class="table table-bordered table-hover" id="tab_logic" style="font-size: small;">
+                    <thead>
+                        <tr >
+                            <th class="text-center">
+                               #
+                            </th>
+                            <th class="text-center">
+                              Inventory Item Id 
+                            </th>
+                            <th class="text-center">
+                              Lot No
+                            </th>
+                            <th class="text-center">
+                              Serial No
+                            </th>
+                            <th class="text-center">
+                              Facility
+                            </th>
+                            <th class="text-center">
+                             Location
+                            </th>
+                            <th class="text-center">
+                              Quantity
+                             </th>
+                             <th class="text-center">
+                              Check
+                             </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id='addr0'>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                              11023
+                            </td>
+                            <td>
+                              LOT025 
+                            </td>
+                            <td>
+                              IA12458334 
+                            </td>
+                            <td>
+                              Warehouse A
+                            </td>
+                            <td>
+                              A1AS1S1L3P2 
+                            </td>
+                            <td>
+                              1.0 
+                            </td>
+                            <td>
+                              Verified
+                            </td>
+                        </tr>
+                        <tr id='addr1'></tr>
+                    </tbody>
+                </table>
+
+                  
+
+                <br/>
+                <div class="row" style="font-size: small;">
+                  <div class="col-sm-6">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <label for="salesPerson">Verified By</label>
+                      </div>
+                      <div class="col-sm-6">
+                        Ramendra Verma
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- <div class="row">
+                      <div class="col-sm-10">
+                        
+                      </div>
+                      <div class="col-sm-2" style="text-align: right;">
+                         <a href="#" class="btn btn-success" role="button" style="font-size: small;">Verify</a>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+                </div>
+                <div id="PK" class="container tab-pane">
+                  <!-- <a href="#" class="btn btn-warning" role="button" style="font-size: small;">Create Package</a> -->
+  
+                  <div class="row" style="font-size: small;">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6>Package No : </h6>
+                        </div>
+                        <div class="col-sm-6">
+                          PACK0545
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-10">
+                          
+                        </div>
+                        <div class="col-sm-2">
+                          <a href="#" class="btn btn-danger" role="button" style="font-size: small; float: right;">PDF</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <br/>
+
+                  <table class="table table-bordered table-hover" id="box_table" style="font-size: small;">
+                    <thead>
+                        <tr >
+                            <th class="text-center">
+                               #
+                            </th>
+                            <th class="text-center">
+                              Box Id 
+                            </th>
+                            <th class="text-center">
+                              Length (cm)
+                            </th>
+                            <th class="text-center">
+                              Bredth (cm)
+                            </th>
+                            <th class="text-center">
+                              Height (cm)
+                            </th>
+                            <th class="text-center">
+                              Weight (kg)
+                             </th>
+                            <th class="text-center">
+                              Items
+                             </th>
+                             <th class="text-center">
+                              Item Count
+                             </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id='row0'>
+                            <td>
+                            1
+                            </td>
+                            <td>
+                              BOX0101
+                            </td>
+                            <td>
+                              12
+                            </td>
+                            <td>
+                             15
+                            </td>
+                            <td>
+                              15
+                            </td>
+                            <td>
+                              0.400
+                            </td>
+                            <td>
+                              <textarea disabled class="form-control" style="font-size: small;">11023</textarea>
+                            </td>
+                            <td>
+                             1.0
+                            </td>
+                        </tr>
+                        <tr id='row1'></tr>
+                    </tbody>
+                </table>
+
+                
+               
+                 <!-- <input type="button" class="btn btn-primary" id="addBox" value="Add Box" style="font-size: small;">
+                <input type="button" class="btn btn-secondary float-right" id="deleteBox" value="Delete Box" style="font-size: small;">
+                -->
+             
+               <!-- <br/> <br/> -->
+
+                <div class="row" style="font-size: small;">
+                  <div class="col-sm-10">
+                    <div class="row">
+                      <div class="col-sm-1">
+                        <label for="salesPerson">Note</label>
+                      </div>
+                      <div class="col-sm-11">
+                        <textarea disabled class="form-control" style="font-size: small;"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="row">
+                      <div class="col-sm-8">
+                        
+                      </div>
+                      <div class="col-sm-2" style="text-align: right;">
+                         <!-- <a href="#" class="btn btn-danger" role="button" style="font-size: small;">PDF</a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div id="TD" class="container tab-pane"  style="font-size: small;">
                   <div class="row mt-2">
                     <div class="col-sm-6">
-                      <h3 class="text-primary">Delivery</h3>
+                      <h3 class="text-primary">Transport Details</h3>
                     </div>
-                    <!-- <div class="col-sm-6">
-                      <h3 class="text-primary">Reporting</h3>
-                    </div> -->
+                  
                   </div>
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="row">
                         <div class="col-sm-4">
-                          <label for="shippingPolicy">Shipping Policy</label>
+                          <label for="shippingPolicy">Transporter</label>
                         </div>
                         <div class="col-sm-8">
-                          As Soon As Possible
+                          <!-- <input type="text" id="shippingPolicy" class="form-control"  style="font-size: small;"> -->
+                            
                         </div>
                       </div>
                     </div>
-                    <!-- <div class="col-sm-6">
+                    <div class="col-sm-6">
                       <div class="row">
                         <div class="col-sm-4">
-                          <label for="sourceDoc">Source Document</label>
+                          <label for="sourceDoc">Document Number</label>
                         </div>
                         <div class="col-sm-8">
-                          <input type="text" class="form-control" id="sourceDoc">
+                          <!-- <input type="text" class="form-control" id="sourceDoc"  style="font-size: small;"> -->
                         </div>
                       </div>
-                    </div> -->
+                      
+                    </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="row">
                         <div class="col-sm-4">
-                          <label for="incoterm">Incoterm</label>
+                          <label for="incoterm">Vehicle No</label>
                         </div>
                         <div class="col-sm-8">
+                          <!-- <input type="text" class="form-control" id="sourceDoc"  style="font-size: small;"> -->
+                        </div>
+                      </div>
+                    </div>
 
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="sourceDoc">Tracking Link</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <!-- <input type="text" class="form-control" id="sourceDoc"  style="font-size: small;"> -->
                         </div>
                       </div>
+                      
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="row">
                         <div class="col-sm-4">
-                          <label for="deliveryDate">Delivery Date</label>
+                          <label for="deliveryDate">Tracking Number</label>
                         </div>
                         <div class="col-sm-8">
-                         
+                          <!-- <input type="Text" class="form-control" id="deliveryDate"  style="font-size: small;"> -->
                         </div>
                       </div>
                     </div>
-                    <!-- <div class="col-sm-6">
+
+                    <div class="col-sm-6">
                       <div class="row">
                         <div class="col-sm-4">
-                          <label for="campaign">Campaign</label>
+                          <label for="deliveryDate">Contact Person</label>
                         </div>
                         <div class="col-sm-8">
-                          <select id="campaign" class="form-control">
-                            <option value="camp1">Campaign One</option>
-                            <option value="camp2">Campaign Two</option>
-                            <option value="camp3">Campaign Three</option>
-                          </select>
+                          <!-- <input type="Text" class="form-control" id="deliveryDate"  style="font-size: small;"> -->
                         </div>
                       </div>
-                    </div> -->
+                    </div>
+
                   </div>
-                  <!-- <div class="row">
-                    <div class="col-sm-6">
-                    </div>
+                  <div class="row">
                     <div class="col-sm-6">
                       <div class="row">
                         <div class="col-sm-4">
-                          <label for="campaign">Campaign</label>
+                          <label for="deliveryDate">Phone Number</label>
                         </div>
                         <div class="col-sm-8">
-                          <select id="medium" class="form-control">
-                            <option value="med1">Medium One</option>
-                            <option value="med2">Medium Two</option>
-                            <option value="med3">Medium Three</option>
-                          </select>
+                          <!-- <input type="Text" class="form-control" id="deliveryDate"  style="font-size: small;"> -->
                         </div>
                       </div>
                     </div>
-                  </div> -->
-                  <!-- <div class="row">
-                    <div class="col-sm-6">
-                    </div>
+
                     <div class="col-sm-6">
                       <div class="row">
                         <div class="col-sm-4">
-                          <label for="source">Source</label>
+                          <label for="deliveryDate">Email</label>
                         </div>
                         <div class="col-sm-8">
-                          <select id="source" class="form-control">
-                            <option value="source1">Source One</option>
-                            <option value="source2">Source Two</option>
-                            <option value="source3">Source Three</option>
-                          </select>
+                          <!-- <input type="Text" class="form-control" id="deliveryDate"  style="font-size: small;"> -->
                         </div>
                       </div>
                     </div>
-                  </div> -->
+
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="deliveryDate">Mobile Number</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <!-- <input type="Text" class="form-control" id="deliveryDate"  style="font-size: small;"> -->
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="deliveryDate">Website</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <!-- <input type="Text" class="form-control" id="deliveryDate"  style="font-size: small;"> -->
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+         
+
                 </div>
-                <!-- <div id="CS" class="container tab-pane">
-                  <h3>Customer Signature</h3>
-                </div> -->
               </div>
             </div>
           </div>
