@@ -150,17 +150,15 @@
         Human Resource
       </div>
 
-     <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEmployee" aria-expanded="true" aria-controls="collapseEmployee">
           <i class="fas fa-fw fa-cog"></i>
           <span>Employee</span>
         </a>
         <div id="collapseEmployee" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Employee</a>
-            <a class="collapse-item" href="cards.html">Designation</a>
-             <a class="collapse-item" href="cards.html">User Login</a>
-             <a class="collapse-item" href="cards.html">Role</a>
+            <a class="collapse-item" href="employee_list.html">Employee</a>
+            <a class="collapse-item" href="#">Designation</a>
           </div>
         </div>
       </li>
@@ -178,8 +176,8 @@
         </a>
         <div id="collapseAccounting" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Invoice</a>
-            <a class="collapse-item" href="cards.html">Bill</a>
+            <a class="collapse-item" href="invoice_list.html">Invoice</a>
+            <a class="collapse-item" href="bill_list.html">Bill</a>
           </div>
         </div>
       </li>
@@ -197,7 +195,7 @@
         </a>
         <div id="collapseReports" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Analytics</a>
+            <a class="collapse-item" href="#">Analytics</a>
           </div>
         </div>
       </li>
@@ -217,9 +215,11 @@
         <div id="collapseSecurity" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Security Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Security Group</a>
-            <a class="collapse-item" href="cards.html">Permission</a>
-            <a class="collapse-item" href="cards.html">Access Right</a>
+            <a class="collapse-item" href="user_login_list.html">User Login</a>
+            <a class="collapse-item" href="user_role_list.html">Role</a>
+            <!-- <a class="collapse-item" href="#">Security Group</a> -->
+            <a class="collapse-item" href="user_permission_list.html">Permission</a>
+            <!-- <a class="collapse-item" href="#">Access Right</a> -->
           </div>
         </div>
       </li>
@@ -232,8 +232,8 @@
         <div id="collapseSettings" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Setting Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Currency</a>
-            <a class="collapse-item" href="cards.html">Payment Terms</a>
+            <a class="collapse-item" href="#">Currency</a>
+            <a class="collapse-item" href="#">Payment Terms</a>
           </div>
         </div>
       </li>
@@ -444,7 +444,7 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Product Variant [NL_232-01]</h1>
-            <a href="edit_product_variant.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Edit</a>
+            <a href="edit_product_variant.html" style="font-size: small;" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Edit</a>
           </div>
 
           <!-- Content Row -->
@@ -454,7 +454,7 @@
             <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary"><a href="product.html">Product</a> -> <a href="view_product.html">PROD_001 (Neckless 232)</a> -> Product Variant -> NL_232-01 </h6>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="font-size: small;">
 
               <form>
 
@@ -471,7 +471,7 @@
                           <div class="p-6">                    
                             <div class="form-group">
                               <label>Product ID</label>
-                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="PROD_001">
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="PROD_001" style="font-size: small;">
                             </div>
                           </div>
                         </div>
@@ -479,7 +479,7 @@
                           <div class="p-6">
                             <div class="form-group">
                               <label>Product Name</label>
-                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Neckless 232">
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Neckless 232" style="font-size: small;">
                             </div>
                           </div>
                         </div>
@@ -494,7 +494,7 @@
                           
                           <div class="form-group">
                             <label>Internal Reference</label>
-                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="NL_232-01"  >
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="NL_232-01"  style="font-size: small;">
       
                           </div>
                           
@@ -506,7 +506,7 @@
                           
                           <div class="form-group">
                             <label>Weight (Gram)</label>
-                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="29.52" >
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="29.52" style="font-size: small;">
       
                           </div>
                           
@@ -522,7 +522,7 @@
                                 
                                 <div class="form-group">
                                   <label>Sales Price (Rs)</label>
-                                  <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="125000.000" >
+                                  <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="125000.000" style="font-size: small;">
             
                                 </div>
                                 
@@ -533,7 +533,7 @@
                               <div class="p-6">                    
                                 <div class="form-group">
                                   <label>Cost Price (Rs)</label>
-                                  <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="100000.000" >
+                                  <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="100000.000" style="font-size: small;">
                                 </div>
                               </div>
                             </div>
@@ -547,7 +547,7 @@
                             <div class="p-6">                    
                               <div class="form-group">
                                 <label>QOH</label>
-                                <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="3" >
+                                <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="3" style="font-size: small;">
                               </div>
                             </div>
                           </div>
@@ -556,7 +556,7 @@
                             <div class="p-6">                    
                               <div class="form-group">
                                 <label>Description</label>
-                                <textarea disabled class="form-control" aria-label="Large">Neckless 232</textarea>
+                                <textarea disabled class="form-control" aria-label="Large" style="font-size: small;">Neckless 232</textarea>
                               </div>
                             </div>
                           </div>
@@ -595,7 +595,7 @@
                    
 
 
-          <div class="tab-content mb-3">
+          <div class="tab-content mb-3" style="font-size: small;">
 
               <div id="variant_attribute" class="card-body tab-pane active">
                       
@@ -623,7 +623,7 @@
                                               1
                                               </td>
                                               <td>
-                                                <select disabled class="form-control" id="unitId">
+                                                <select disabled class="form-control" id="unitId" style="font-size: small;">
                                                   <option>Select Attribute</option>
                                                   <option selected>Polish</option>
                                                   <option>Color</option>
@@ -637,10 +637,10 @@
                                                 </select>
                                               </td>
                                               <td>
-                                              <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="No Polish"/>
+                                              <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="No Polish" style="font-size: small;"/>
                                               </td>
                                               <td>
-                                                <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="No Unit"/>
+                                                <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="No Unit" style="font-size: small;"/>
                                               </td>
                                           </tr>
                                           <tr id='addr1'>
@@ -648,7 +648,7 @@
                                            2
                                             </td>
                                             <td>
-                                              <select disabled class="form-control" id="unitId">
+                                              <select disabled class="form-control" id="unitId" style="font-size: small;">
                                                 <option>Select Attribute</option>
                                                 <option>Polish</option>
                                                 <option>Color</option>
@@ -662,10 +662,10 @@
                                               </select>
                                             </td>
                                             <td>
-                                            <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="0"/>
+                                            <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="0" style="font-size: small;"/>
                                             </td>
                                             <td>
-                                              <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="Piece"/>
+                                              <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="Piece" style="font-size: small;"/>
                                             </td>
                                         </tr>
                                           <tr id='addr2'></tr>
@@ -743,16 +743,16 @@
                                 1
                                 </td>
                                 <td>
-                                  <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="ABC Jwellers"/>
+                                  <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="ABC Jwellers" style="font-size: small;"/>
                                   </td>
                                 <td>
-                                <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="Company"/>
+                                <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="Company" style="font-size: small;"/>
                                 </td>
                                 <td>
-                                  <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="125000.000"/>
+                                  <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="125000.000" style="font-size: small;"/>
                                 </td>
                                 <td>
-                                  <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="INR"/>
+                                  <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="INR" style="font-size: small;"/>
                                 </td>
                           </tr>
                           <tr id='addr1'>
@@ -760,16 +760,16 @@
                           2
                             </td>
                             <td>
-                              <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="Rahul"/>
+                              <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="Rahul" style="font-size: small;"/>
                               </td>
                             <td>
-                            <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="Individual"/>
+                            <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="Individual" style="font-size: small;"/>
                             </td>
                             <td>
-                              <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="125000.000"/>
+                              <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="125000.000" style="font-size: small;"/>
                             </td>
                             <td>
-                              <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="INR"/>
+                              <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="INR" style="font-size: small;"/>
                             </td>
                         </tr>
                           <tr id='addr2'></tr>
@@ -807,16 +807,16 @@
                             1
                             </td>
                             <td>
-                              <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="XYS Corp"/>
+                              <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="XYS Corp" style="font-size: small;"/>
                               </td>
                             <td>
-                            <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="Company"/>
+                            <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="Company" style="font-size: small;"/>
                             </td>
                             <td>
-                              <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="115000.000"/>
+                              <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="115000.000" style="font-size: small;"/>
                             </td>
                             <td>
-                              <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="INR"/>
+                              <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="INR" style="font-size: small;"/>
                             </td>
                       </tr>
                       <tr id='addr1'>
@@ -824,16 +824,16 @@
                       2
                         </td>
                         <td>
-                          <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="Yogendra Singh"/>
+                          <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="Yogendra Singh" style="font-size: small;"/>
                           </td>
                         <td>
-                        <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="Individual"/>
+                        <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="Individual" style="font-size: small;"/>
                         </td>
                         <td>
-                          <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="110000.000"/>
+                          <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="110000.000" style="font-size: small;"/>
                         </td>
                         <td>
-                          <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="INR"/>
+                          <input disabled type="text" name='pass0' placeholder='Sample Desc' class="form-control" value="INR" style="font-size: small;"/>
                         </td>
                     </tr>
                       <tr id='addr2'></tr>

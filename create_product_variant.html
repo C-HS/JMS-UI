@@ -245,17 +245,15 @@
         Human Resource
       </div>
 
-     <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEmployee" aria-expanded="true" aria-controls="collapseEmployee">
           <i class="fas fa-fw fa-cog"></i>
           <span>Employee</span>
         </a>
         <div id="collapseEmployee" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Employee</a>
-            <a class="collapse-item" href="cards.html">Designation</a>
-             <a class="collapse-item" href="cards.html">User Login</a>
-             <a class="collapse-item" href="cards.html">Role</a>
+            <a class="collapse-item" href="employee_list.html">Employee</a>
+            <a class="collapse-item" href="#">Designation</a>
           </div>
         </div>
       </li>
@@ -273,8 +271,8 @@
         </a>
         <div id="collapseAccounting" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Invoice</a>
-            <a class="collapse-item" href="cards.html">Bill</a>
+            <a class="collapse-item" href="invoice_list.html">Invoice</a>
+            <a class="collapse-item" href="bill_list.html">Bill</a>
           </div>
         </div>
       </li>
@@ -292,7 +290,7 @@
         </a>
         <div id="collapseReports" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Analytics</a>
+            <a class="collapse-item" href="#">Analytics</a>
           </div>
         </div>
       </li>
@@ -312,9 +310,11 @@
         <div id="collapseSecurity" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Security Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Security Group</a>
-            <a class="collapse-item" href="cards.html">Permission</a>
-            <a class="collapse-item" href="cards.html">Access Right</a>
+            <a class="collapse-item" href="user_login_list.html">User Login</a>
+            <a class="collapse-item" href="user_role_list.html">Role</a>
+            <!-- <a class="collapse-item" href="#">Security Group</a> -->
+            <a class="collapse-item" href="user_permission_list.html">Permission</a>
+            <!-- <a class="collapse-item" href="#">Access Right</a> -->
           </div>
         </div>
       </li>
@@ -327,8 +327,8 @@
         <div id="collapseSettings" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Setting Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Currency</a>
-            <a class="collapse-item" href="cards.html">Payment Terms</a>
+            <a class="collapse-item" href="#">Currency</a>
+            <a class="collapse-item" href="#">Payment Terms</a>
           </div>
         </div>
       </li>
@@ -539,7 +539,7 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Product Variant</h1>
-            <a href="view_product_variant.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Save</a>
+            <a href="view_product_variant.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="font-size: small;"><i class=" text-white-50"></i> Save</a>
           </div>
 
           <!-- Content Row -->
@@ -549,7 +549,7 @@
             <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary"><a href="product.html">Product</a> -> <a href="view_product.html">PROD_001 (Neckless 232)</a> -> Create Variant </h6>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="font-size: small;">
 
               <form>
 
@@ -566,7 +566,7 @@
                           <div class="p-6">                    
                             <div class="form-group">
                               <label>Product ID</label>
-                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="PROD_001">
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="PROD_001" style="font-size: small;">
                             </div>
                           </div>
                         </div>
@@ -574,7 +574,7 @@
                           <div class="p-6">
                             <div class="form-group">
                               <label>Product Name</label>
-                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Neckless 232">
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Neckless 232" style="font-size: small;">
                             </div>
                           </div>
                         </div>
@@ -589,7 +589,7 @@
                           
                           <div class="form-group">
                             <label>Internal Reference</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail" >
+                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail" style="font-size: small;">
       
                           </div>
                           
@@ -601,7 +601,7 @@
                           
                           <div class="form-group">
                             <label>Weight (Gram)</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail" style="font-size: small;" >
       
                           </div>
                           
@@ -617,7 +617,7 @@
                                 
                                 <div class="form-group">
                                   <label>Sales Price (Rs)</label>
-                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail" >
+                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail" style="font-size: small;">
             
                                 </div>
                                 
@@ -628,7 +628,7 @@
                               <div class="p-6">                    
                                 <div class="form-group">
                                   <label>Cost Price (Rs)</label>
-                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail" >
+                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail" style="font-size: small;">
                                 </div>
                               </div>
                             </div>
@@ -642,7 +642,7 @@
                             <div class="p-6">                    
                               <div class="form-group">
                                 <label>QOH</label>
-                                <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="0" >
+                                <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="0" style="font-size: small;">
                               </div>
                             </div>
                           </div>
@@ -651,7 +651,7 @@
                             <div class="p-6">                    
                               <div class="form-group">
                                 <label>Description</label>
-                                <textarea class="form-control" aria-label="Large"></textarea>
+                                <textarea class="form-control" aria-label="Large" style="font-size: small;"></textarea>
                               </div>
                             </div>
                           </div>
@@ -691,12 +691,12 @@
                    
 
 
-          <div class="tab-content mb-3">
+          <div class="tab-content mb-3" style="font-size: small;">
 
               <div id="variant_attribute" class="card-body tab-pane active">
                       
                           
-                                  <table class="table table-bordered table-hover"  id="variant_table">
+                                  <table class="table table-bordered table-hover"  id="variant_table" style="font-size: small;">
                                       <thead>
                                           <tr >
                                               <th class="text-center">
@@ -719,7 +719,7 @@
                                               1
                                               </td>
                                               <td>
-                                                <select  class="form-control" name="attribute1">
+                                                <select  class="form-control" name="attribute1" style="font-size: small;">
                                                   <option>Select Attribute</option>
                                                   <option>Polish</option>
                                                   <option>Color</option>
@@ -733,25 +733,25 @@
                                                 </select>
                                               </td>
                                               <td>
-                                              <input  type="text" name='attributeValue1'  class="form-control" />
+                                              <input  type="text" name='attributeValue1'  class="form-control" style="font-size: small;" />
                                               </td>
                                               <td>
-                                                <input disabled type="text" name='unit1'  class="form-control"/>
+                                                <input disabled type="text" name='unit1'  class="form-control" style="font-size: small;"/>
                                               </td>
                                           </tr>
                                           <tr id='attributeRow2'></tr>
                                       </tbody>
                                   </table>
                                
-                                  <input type="button" class="btn btn-primary" id="addAttributeRow" value="Add Row">
-                                  <input type="button" class="btn btn-secondary float-right" id="deleteAttributeRow" value="Delete Row">
+                                  <input type="button" class="btn btn-primary" id="addAttributeRow" value="Add Row" style="font-size: small;">
+                                  <input type="button" class="btn btn-secondary float-right" id="deleteAttributeRow" value="Delete Row" style="font-size: small;">
                                  
                            
                </div>
 
-              <div id="customers" class="card-body tab-pane">
+              <div id="customers" class="card-body tab-pane" style="font-size: small;">
 
-                    <table class="table table-bordered table-hover"  id="customer_table">
+                    <table class="table table-bordered table-hover"  id="customer_table" style="font-size: small;">
                       <thead>
                           <tr >
                               <th class="text-center">
@@ -780,23 +780,23 @@
                                 1
                                 </td>
                                 <td>
-                                  <input type="text" name='customerName1' placeholder='Customer' class="form-control" />
+                                  <input type="text" name='customerName1' placeholder='Customer' class="form-control" style="font-size: small;" />
                                   </td>
                                 <td>
-                                <input type="text" name='customerType1' placeholder='Company/Individual' class="form-control"/>
+                                <input type="text" name='customerType1' placeholder='Company/Individual' class="form-control" style="font-size: small;"/>
                                 </td>
                                 <td>
-                                  <input type="text" name='price1' placeholder='Price' class="form-control"/>
+                                  <input type="text" name='price1' placeholder='Price' class="form-control" style="font-size: small;"/>
                                 </td>
                                 <td>
-                                  <select  class="form-control" name="currency1">
+                                  <select  class="form-control" name="currency1" style="font-size: small;">
                                       <option>Select</option>
                                       <option>INR</option>
                                       <option>USD</option>
                                    </select>
                                 </td>
                                 <td>
-                                  <input type="checkbox" name='customerCheckbox1'  class="form-control" />
+                                  <input type="checkbox" name='customerCheckbox1'  class="form-control" style="font-size: small;"/>
                                 </td>
                           </tr>
                           
@@ -804,16 +804,16 @@
                       </tbody>
                   </table>
 
-                  <input type="button" class="btn btn-primary" id="addCustomerRow" value="Add Customer">
-                  <input type="button" class="btn btn-secondary float-right" id="deleteCustomerRow" value="Remove Customer">
+                  <input type="button" class="btn btn-primary" id="addCustomerRow" value="Add Customer" style="font-size: small;">
+                  <input type="button" class="btn btn-secondary float-right" id="deleteCustomerRow" value="Remove Customer" style="font-size: small;">
                  
               
                 </div>
 
               
-              <div id="vendors" class="card-body tab-pane">
+              <div id="vendors" class="card-body tab-pane" style="font-size: small;">
                 
-                <table class="table table-bordered table-hover"  id="vendor_table">
+                <table class="table table-bordered table-hover"  id="vendor_table" style="font-size: small;">
                   <thead>
                       <tr >
                           <th class="text-center">
@@ -842,24 +842,24 @@
                             1
                             </td>
                             <td>
-                              <input type="text" name='vendorName1' placeholder='Vendor' class="form-control" />
+                              <input type="text" name='vendorName1' placeholder='Vendor' class="form-control" style="font-size: small;" />
                               </td>
                             <td>
-                            <input type="text" name='vendorType1' placeholder='Company/Individual' class="form-control" />
+                            <input type="text" name='vendorType1' placeholder='Company/Individual' class="form-control" style="font-size: small;" />
                             </td>
                             <td>
-                              <input type="text" name='costPrice1' placeholder='Cost Price' class="form-control" />
+                              <input type="text" name='costPrice1' placeholder='Cost Price' class="form-control"  style="font-size: small;"/>
                             </td>
                             <td>
                              
-                              <select  class="form-control" name="costCurrency1">
+                              <select  class="form-control" name="costCurrency1" style="font-size: small;">
                                 <option>Select</option>
                                 <option>INR</option>
                                 <option>USD</option>
                              </select>
                             </td>
                             <td>
-                              <input type="checkbox" name='vendorCheckbox1'  class="form-control" />
+                              <input type="checkbox" name='vendorCheckbox1'  class="form-control" style="font-size: small;"/>
                             </td>
                       </tr>
 
@@ -867,8 +867,8 @@
                   </tbody>
               </table>
 
-              <input type="button" class="btn btn-primary" id="addVendorRow" value="Add Vendor">
-                  <input type="button" class="btn btn-secondary float-right" id="deleteVendorRow" value="Remove Vendor">
+              <input type="button" class="btn btn-primary" id="addVendorRow" value="Add Vendor" style="font-size: small;">
+                  <input type="button" class="btn btn-secondary float-right" id="deleteVendorRow" value="Remove Vendor" style="font-size: small;">
               </div>
                   
        </div>

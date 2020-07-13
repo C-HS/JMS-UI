@@ -160,8 +160,6 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="employee_list.html">Employee</a>
             <a class="collapse-item" href="#">Designation</a>
-             <a class="collapse-item" href="#">User Login</a>
-             <a class="collapse-item" href="#">Role</a>
           </div>
         </div>
       </li>
@@ -172,7 +170,7 @@
         Accounting
       </div>
 
-      <li class="nav-item">
+     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAccounting" aria-expanded="true" aria-controls="collapseAccounting">
           <i class="fas fa-fw fa-cog"></i>
           <span>Accounting</span>
@@ -198,7 +196,7 @@
         </a>
         <div id="collapseReports" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Analytics</a>
+            <a class="collapse-item" href="#">Analytics</a>
           </div>
         </div>
       </li>
@@ -218,9 +216,11 @@
         <div id="collapseSecurity" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Security Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Security Group</a>
-            <a class="collapse-item" href="cards.html">Permission</a>
-            <a class="collapse-item" href="cards.html">Access Right</a>
+            <a class="collapse-item" href="user_login_list.html">User Login</a>
+            <a class="collapse-item" href="user_role_list.html">Role</a>
+            <!-- <a class="collapse-item" href="#">Security Group</a> -->
+            <a class="collapse-item" href="user_permission_list.html">Permission</a>
+            <!-- <a class="collapse-item" href="#">Access Right</a> -->
           </div>
         </div>
       </li>
@@ -233,8 +233,8 @@
         <div id="collapseSettings" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Setting Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Currency</a>
-            <a class="collapse-item" href="cards.html">Payment Terms</a>
+            <a class="collapse-item" href="#">Currency</a>
+            <a class="collapse-item" href="#">Payment Terms</a>
           </div>
         </div>
       </li>
@@ -461,7 +461,7 @@
               </ul>
             </nav>
 
-            <a href="view_customer.html" class="btn btn-primary" role="button">Save</a>
+            <a href="view_customer.html" class="btn btn-primary" role="button" style="font-size: small;">Save</a>
           </div>
           <div class="row mb-2 ml-1">
             <!-- <a href="edit_customer.html" class="btn btn-primary" role="button">Edit</a> &nbsp; -->
@@ -479,7 +479,7 @@
                 <!-- <input type="button" value="Save" class="btn btn-primary" id="save">
                 <input type="button" value="Discard" class="btn btn-secondary" id="save"> -->
             </div>
-            <div class="card-body">
+            <div class="card-body" style="font-size: small;">
               <form>
                 <div class="row">
                   <div class="col-sm-8">
@@ -492,7 +492,7 @@
                         <label for="name">Name&nbsp;</label>
                       </div>
                       <div class="col-sm-9">
-                        <input value="ABC Jwellers" type="text" id="name" name="name" style="width: inherit;" class="form-control">
+                        <input value="ABC Jwellers" type="text" id="name" name="name" class="form-control" style="font-size: small;">
                       </div>
                     </div>
                     <!-- <div class="row">
@@ -520,7 +520,7 @@
                         <label for="companyAddress">Company Address</label>
                       </div>
                       <div class="col-sm-8">
-                        <input value="245, Hosery Complex"  type="text" id="name" name="name" style="width: inherit;" class="form-control">
+                        <input value="245, Hosery Complex"  type="text" id="name" name="name" class="form-control" style="font-size: small;">
                         <!-- <textarea name="companyAddress" id="companyAddreaa" cols="30" rows="3" class="form-control" style="resize: none;"></textarea> -->
                       </div>
                     </div>
@@ -529,7 +529,7 @@
                        
                       </div>
                       <div class="col-sm-8">
-                        <input type="text" id="name" name="name" style="width: inherit;" class="form-control">
+                        <input type="text" id="name" name="name"  class="form-control" style="font-size: small;">
                         <!-- <textarea name="companyAddress" id="companyAddreaa" cols="30" rows="3" class="form-control" style="resize: none;"></textarea> -->
                       </div>
                     </div>
@@ -538,7 +538,7 @@
                         <label for="companyAddress">City</label>
                       </div>
                       <div class="col-sm-8">
-                        <input value="Noida" type="text" id="name" name="name" class="form-control">
+                        <input value="Noida" type="text" id="name" name="name" class="form-control" style="font-size: small;">
                       </div>
                     </div>
                     <div class="row">
@@ -546,7 +546,7 @@
                         <label for="companyAddress">Country</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control form-control-user" id="catalogId" >
+                        <select class="form-control form-control-user" id="catalogId" style="font-size: small;">
                           <option></option>
                           <option selected>India</option>
                         </select>
@@ -557,7 +557,7 @@
                         <label for="companyAddress">State</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control form-control-user" id="catalogId" >
+                        <select class="form-control form-control-user" id="catalogId" style="font-size: small;">
                               <option></option>
                               <option>Delhi</option>
                               <option>Maharashtra</option>
@@ -570,7 +570,7 @@
                         <label for="GSTIN">Postal Code</label>
                       </div>
                       <div class="col-sm-8">
-                        <input value="110025" type="text" class="form-control" id="GSTIN">
+                        <input value="110025" type="text" class="form-control" id="GSTIN" style="font-size: small;">
                       </div>
                     </div>
                   </div>
@@ -580,7 +580,7 @@
                         <label for="phone">Phone</label>
                       </div>
                       <div class="col-sm-8">
-                        <input  type="text" class="form-control" id="phone">
+                        <input  type="text" class="form-control" id="phone" style="font-size: small;">
                       </div>
                     </div>
                     <div class="row">
@@ -588,7 +588,7 @@
                         <label for="mobile">Mobile</label>
                       </div>
                       <div class="col-sm-8">
-                        <input value="9578494585" type="text" class="form-control" id="mobile">
+                        <input value="9578494585" type="text" class="form-control" id="mobile" style="font-size: small;">
                       </div>
                     </div>
                     <div class="row">
@@ -596,7 +596,7 @@
                         <label for="email">Email</label>
                       </div>
                       <div class="col-sm-8">
-                        <input value="abcjw125@gmail.com" type="text" class="form-control" id="mobile">
+                        <input value="abcjw125@gmail.com" type="text" class="form-control" id="mobile" style="font-size: small;">
                       </div>
                     </div>
                     <div class="row">
@@ -604,7 +604,7 @@
                         <label for="weblink">Web Links</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="text" class="form-control" id="weblink">
+                        <input type="text" class="form-control" id="weblink" style="font-size: small;">
                       </div>
                     </div>
                     <div class="row">
@@ -612,7 +612,7 @@
                         <label for="GSTIN">GSTIN</label>
                       </div>
                       <div class="col-sm-8">
-                        <input value="AXUR132654" type="text" class="form-control" id="GSTIN">
+                        <input value="AXUR132654" type="text" class="form-control" id="GSTIN" style="font-size: small;">
                       </div>
                     </div>
                     <!-- <div class="row">
@@ -648,9 +648,9 @@
                 
               </form>
               <div class="tab-content">
-                <div id="CA" class="container tab-pane active">
+                <div id="CA" class="container tab-pane active"> 
                   <br/>
-                  <input type="button" value="Add" id="add" class="btn btn-primary" data-toggle="modal" data-target="#contactAndAddress"/>
+                  <input type="button" value="Add" id="add" class="btn btn-primary" data-toggle="modal" data-target="#contactAndAddress" style="font-size: small;"/>
                 </div>
                 <div id="SP" class="container tab-pane"><h3><br/>Sales Orders</h3></div>
                 <div id="IV" class="container tab-pane"><h3><br/>Invoices</h3></div>
@@ -663,7 +663,7 @@
          
         </div>
         <!-- /.container-fluid -->
-        <div class="modal fade" id="contactAndAddress">
+        <div class="modal fade" id="contactAndAddress" style="font-size: small;">
           <div class="modal-dialog modal-xl">
             <div class="modal-content">
               <!-- modal Header -->
@@ -688,7 +688,7 @@
                           <label for="contactName">Contact Name</label>
                         </div>
                         <div class="col-sm-7">
-                          <input type="text" class="form-control" id="contacttName">
+                          <input type="text" class="form-control" id="contacttName" style="font-size: small;">
                         </div>
                       </div>
                       <div class="row">
@@ -696,15 +696,15 @@
                           <label for="contactName">Address</label>
                         </div>
                         <div class="col-sm-7">
-                          <input type="text" class="form-control" id="contacttName" placeholder="Address Line1">
-                          <input type="text" class="form-control" id="contacttName" placeholder="Address Line2">
-                          <input type="text" class="form-control" id="contacttName" placeholder="City">
-                          <input type="text" class="form-control" id="contacttName" placeholder="Postal Code">
-                          <select class="form-control" id="Countries">
+                          <input type="text" class="form-control" id="contacttName" placeholder="Address Line1" style="font-size: small;">
+                          <input type="text" class="form-control" id="contacttName" placeholder="Address Line2" style="font-size: small;">
+                          <input type="text" class="form-control" id="contacttName" placeholder="City" style="font-size: small;">
+                          <input type="text" class="form-control" id="contacttName" placeholder="Postal Code" style="font-size: small;">
+                          <select class="form-control" id="Countries" style="font-size: small;">
                             <option value="US">Select Country</option>
                             <option value="UK">India</option>
                           </select>
-                          <select class="form-control" id="Countries">
+                          <select class="form-control" id="Countries" style="font-size: small;">
                             <option value="US">Select States</option>
                             <option value="UK">Delhi</option>
                             <option value="RS">Maharashtra</option>
@@ -717,7 +717,7 @@
                           <label for="contactName">Notes</label>
                         </div>
                         <div class="col-sm-7">
-                          <textarea name="notes" id="notes" class="form-control" style="width: inherit; resize: none;" rows="2"></textarea>
+                          <textarea name="notes" id="notes" class="form-control" style="width: inherit; resize: none;" rows="2" style="font-size: small;"></textarea>
                         </div>
                       </div>
                     </div>
@@ -727,7 +727,7 @@
                           &nbsp;<label for="email">Email</label>
                         </div>
                         <div class="col-sm-9">
-                          <input type="text" class="form-control" id="email">
+                          <input type="text" class="form-control" id="email" style="font-size: small;">
                         </div>
                       </div>
                       <div class="row">
@@ -735,7 +735,7 @@
                           &nbsp;<label for="email">Phone</label>
                         </div>
                         <div class="col-sm-9">
-                          <input type="text" class="form-control" id="phone">
+                          <input type="text" class="form-control" id="phone" style="font-size: small;">
                         </div>
                       </div>
                       <div class="row">
@@ -743,7 +743,7 @@
                           &nbsp;<label for="email">Mobile</label>
                         </div>
                         <div class="col-sm-9">
-                          <input type="text" class="form-control" id="mobile">
+                          <input type="text" class="form-control" id="mobile" style="font-size: small;">
                         </div>
                       </div>
                     </div>
@@ -755,9 +755,9 @@
               </div>
               <!-- Modal Footer -->
               <div class="modal-footer">  
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" style="font-size: small;">Save</button>
                 <!-- <button type="button" class="btn btn-primary" data-dismiss="modal">Save & New</button> -->
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-size: small;">Discard</button>
               </div>
             </div>
           </div>

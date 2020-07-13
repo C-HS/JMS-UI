@@ -177,17 +177,15 @@
         Human Resource
       </div>
 
-     <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEmployee" aria-expanded="true" aria-controls="collapseEmployee">
           <i class="fas fa-fw fa-cog"></i>
           <span>Employee</span>
         </a>
         <div id="collapseEmployee" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Employee</a>
-            <a class="collapse-item" href="cards.html">Designation</a>
-             <a class="collapse-item" href="cards.html">User Login</a>
-             <a class="collapse-item" href="cards.html">Role</a>
+            <a class="collapse-item" href="employee_list.html">Employee</a>
+            <a class="collapse-item" href="#">Designation</a>
           </div>
         </div>
       </li>
@@ -205,8 +203,8 @@
         </a>
         <div id="collapseAccounting" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Invoice</a>
-            <a class="collapse-item" href="cards.html">Bill</a>
+            <a class="collapse-item" href="invoice_list.html">Invoice</a>
+            <a class="collapse-item" href="bill_list.html">Bill</a>
           </div>
         </div>
       </li>
@@ -224,7 +222,7 @@
         </a>
         <div id="collapseReports" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Analytics</a>
+            <a class="collapse-item" href="#">Analytics</a>
           </div>
         </div>
       </li>
@@ -244,9 +242,11 @@
         <div id="collapseSecurity" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Security Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Security Group</a>
-            <a class="collapse-item" href="cards.html">Permission</a>
-            <a class="collapse-item" href="cards.html">Access Right</a>
+            <a class="collapse-item" href="user_login_list.html">User Login</a>
+            <a class="collapse-item" href="user_role_list.html">Role</a>
+            <!-- <a class="collapse-item" href="#">Security Group</a> -->
+            <a class="collapse-item" href="user_permission_list.html">Permission</a>
+            <!-- <a class="collapse-item" href="#">Access Right</a> -->
           </div>
         </div>
       </li>
@@ -259,8 +259,8 @@
         <div id="collapseSettings" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Setting Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Currency</a>
-            <a class="collapse-item" href="cards.html">Payment Terms</a>
+            <a class="collapse-item" href="#">Currency</a>
+            <a class="collapse-item" href="#">Payment Terms</a>
           </div>
         </div>
       </li>
@@ -491,7 +491,7 @@
                 &nbsp;<input type="button" class="btn btn-secondary" value="Cancel">
               </div> -->
             </div>
-            <div class="card-body">
+            <div class="card-body" style="font-size: small;">
               <form>
                 <!-- <div class="row">
                   <h3>New</h3>
@@ -503,7 +503,7 @@
                         <label for="customer">Inventory Item Id</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                        <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  style="font-size: small;">
                       </div>
                     </div>
                     <div class="row">
@@ -511,7 +511,7 @@
                         <label for="customer">Lot Id</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                        <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  style="font-size: small;">
                       </div>
                     </div>
                     <div class="row">
@@ -519,7 +519,7 @@
                         <label for="customer">Category</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control form-control-user" id="catalogId" >
+                        <select class="form-control form-control-user" id="catalogId" style="font-size: small;">
                           <option>All</option>
                           <option>Gold Necklase</option>
                           <option>Gold Ring</option>
@@ -534,7 +534,7 @@
                         <label for="quotationTemplate">Product</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                        <input type="text"  class="form-control form-control-user" id="exampleInputEmail" style="font-size: small;" >
                       </div>
                     </div>
                     <div class="row">
@@ -542,7 +542,7 @@
                         <label for="quotationTemplate">Company</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control form-control-user" id="catalogId" >
+                        <select class="form-control form-control-user" id="catalogId" style="font-size: small;" >
                           <option>All</option>
                           <option>Iaito Infotech P Ltd</option>
                         </select>
@@ -553,7 +553,7 @@
                         <label for="quotationTemplate">Location</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control form-control-user" id="catalogId" >
+                        <select class="form-control form-control-user" id="catalogId" style="font-size: small;">
                           <option>All</option>
                           <option>A1AS1S1L3P2</option>
                           <option>A1AS3S2L5P1</option>
@@ -570,7 +570,7 @@
                         <label for="expiration">Inventory Item Status</label>
                       </div>
                       <div class="col-sm-8">
-                        <select id="expiration" class="form-control">
+                        <select id="expiration" class="form-control" style="font-size: small;">
                           <option value="expiration one">All</option>
                           <option value="expiration Two">Available</option>
                           <option value="expiration there">Dispatched</option>
@@ -582,7 +582,7 @@
                         <label for="customer">Serial Number</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  >
+                        <input type="text"  class="form-control form-control-user" id="exampleInputEmail"  style="font-size: small;">
                       </div>
                     </div>
                     <div class="row">
@@ -590,7 +590,7 @@
                         <label for="quotationDate">Sale/Purchase</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control form-control-user" id="catalogId" >
+                        <select class="form-control form-control-user" id="catalogId" style="font-size: small;">
                           <option>All</option>
                           <option>Sale</option>
                           <option>Purchase</option>
@@ -602,7 +602,7 @@
                         <label for="paymentTerms">Traceability</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control form-control-user" id="catalogId" >
+                        <select class="form-control form-control-user" id="catalogId" style="font-size: small;" >
                           <option>All</option>
                           <option>Serialized</option>
                           <option>Non Serialized</option>
@@ -614,7 +614,7 @@
                         <label for="quotationTemplate">Facility</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control form-control-user" id="catalogId" >
+                        <select class="form-control form-control-user" id="catalogId" style="font-size: small;" >
                           <option>All</option>
                           <option>Warehouse A</option>
                           <option>Warehouse B</option>
@@ -627,7 +627,7 @@
                         <label for="quotationTemplate">Tray</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control form-control-user" id="catalogId" >
+                        <select class="form-control form-control-user" id="catalogId" style="font-size: small;">
                           <option>All</option>
                           <option>TRAY001</option>
                           <option>TRAY002</option>
@@ -659,7 +659,7 @@
                     <div class="p-6"> 
   
                       <div class="text-center">
-                        <a href="#" class="btn btn-primary">
+                        <a href="#" class="btn btn-primary" style="font-size: small;">
                           Search
                         </a>
                       </div>
@@ -675,7 +675,7 @@
 
 
 
-            <div class="card-body">
+            <div class="card-body" style="font-size: small;">
               <div class="table-responsive">
 
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">

@@ -150,17 +150,15 @@
         Human Resource
       </div>
 
-     <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEmployee" aria-expanded="true" aria-controls="collapseEmployee">
           <i class="fas fa-fw fa-cog"></i>
           <span>Employee</span>
         </a>
         <div id="collapseEmployee" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Employee</a>
-            <a class="collapse-item" href="cards.html">Designation</a>
-             <a class="collapse-item" href="cards.html">User Login</a>
-             <a class="collapse-item" href="cards.html">Role</a>
+            <a class="collapse-item" href="employee_list.html">Employee</a>
+            <a class="collapse-item" href="#">Designation</a>
           </div>
         </div>
       </li>
@@ -178,8 +176,8 @@
         </a>
         <div id="collapseAccounting" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Invoice</a>
-            <a class="collapse-item" href="cards.html">Bill</a>
+            <a class="collapse-item" href="invoice_list.html">Invoice</a>
+            <a class="collapse-item" href="bill_list.html">Bill</a>
           </div>
         </div>
       </li>
@@ -197,7 +195,7 @@
         </a>
         <div id="collapseReports" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Analytics</a>
+            <a class="collapse-item" href="#">Analytics</a>
           </div>
         </div>
       </li>
@@ -217,9 +215,11 @@
         <div id="collapseSecurity" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Security Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Security Group</a>
-            <a class="collapse-item" href="cards.html">Permission</a>
-            <a class="collapse-item" href="cards.html">Access Right</a>
+            <a class="collapse-item" href="user_login_list.html">User Login</a>
+            <a class="collapse-item" href="user_role_list.html">Role</a>
+            <!-- <a class="collapse-item" href="#">Security Group</a> -->
+            <a class="collapse-item" href="user_permission_list.html">Permission</a>
+            <!-- <a class="collapse-item" href="#">Access Right</a> -->
           </div>
         </div>
       </li>
@@ -232,8 +232,8 @@
         <div id="collapseSettings" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Setting Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Currency</a>
-            <a class="collapse-item" href="cards.html">Payment Terms</a>
+            <a class="collapse-item" href="#">Currency</a>
+            <a class="collapse-item" href="#">Payment Terms</a>
           </div>
         </div>
       </li>
@@ -444,7 +444,7 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Product</h1>
-            <a href="edit_product.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Edit</a>
+            <a href="edit_product.html" style="font-size: small;" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Edit</a>
           </div>
 
           <!-- Content Row -->
@@ -455,7 +455,7 @@
               <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
+                    <div class="col mr-2" style="font-size: small;">
                       <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Purchased</div>
                       <div class="h6 mb-0 font-weight-bold text-gray-800">12.00 Units</div>
                     </div>
@@ -470,7 +470,7 @@
               <div class="card border-left-success shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
+                    <div class="col mr-2" style="font-size: small;">
                       <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Sold</div>
                       <div class="h6 mb-0 font-weight-bold text-gray-800">7.00 Units</div>
                     </div>
@@ -484,7 +484,7 @@
               <div class="card border-left-info shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
+                    <div class="col mr-2" style="font-size: small;">
                       <div class="text-xs font-weight-bold text-info text-uppercase mb-1">On Hand</div>
                       <div class="h6 mb-0 mr-3 font-weight-bold text-gray-800">5.00 Units</div>
                     </div>
@@ -498,7 +498,7 @@
               <div class="card border-left-warning shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
+                    <div class="col mr-2" style="font-size: small;">
                       <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Customers</div>
                       <div class="h6 mb-0 font-weight-bold text-gray-800">3</div>
                     </div>
@@ -511,7 +511,7 @@
               <div class="card border-left-danger shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
+                    <div class="col mr-2" style="font-size: small;">
                       <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Vendors</div>
                       <div class="h6 mb-0 font-weight-bold text-gray-800">1</div>
                     </div>
@@ -531,7 +531,7 @@
             <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary"><a href="product.html">Product</a> -> PROD_001 (Neckless 232)</h6>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="font-size: small;">
 
               <form>
 
@@ -548,7 +548,7 @@
                           <div class="p-6">                    
                             <div class="form-group">
                               <label>Product ID</label>
-                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="PROD_001">
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="PROD_001" style="font-size: small;">
                             </div>
                           </div>
                         </div>
@@ -556,7 +556,7 @@
                           <div class="p-6">
                             <div class="form-group">
                               <label>Product Name</label>
-                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Neckless 232">
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Neckless 232" style="font-size: small;">
                             </div>
                           </div>
                         </div>
@@ -595,7 +595,7 @@
                         <div class="p-6">
                           <div class="form-group">
                             <label>Product Type</label>
-                            <select disabled class="form-control form-control-user" id="productTypeId" >
+                            <select disabled class="form-control form-control-user" id="productTypeId" style="font-size: small;">
                               <option>Select Type</option>
                               <option selected>Storable</option>
                               <option>Consumable</option>
@@ -614,7 +614,7 @@
                           
                           <div class="form-group">
                             <label>Internal Reference</label>
-                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="NL_232"  >
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="NL_232" style="font-size: small;" >
       
                           </div>
                           
@@ -625,7 +625,7 @@
                         <div class="p-6">                    
                           <div class="form-group">
                             <label>Category</label>
-                            <select disabled class="form-control form-control-user" id="catalogId" >
+                            <select disabled class="form-control form-control-user" id="catalogId" style="font-size: small;">
                               <option>Select Category</option>
                               <option selected>Gold Necklase</option>
                               <option>Gold Ring</option>
@@ -645,7 +645,7 @@
                                     
                                     <div class="form-group">
                                       <label>HSN/SAC Code</label>
-                                      <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="71131930" >
+                                      <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="71131930" style="font-size: small;">
                 
                                     </div>
                                     
@@ -656,7 +656,7 @@
                                   <div class="p-6">                    
                                     <div class="form-group">
                                       <label>HSN/SAC Description</label>
-                                      <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="HS Code 71131930" >
+                                      <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="HS Code 71131930" style="font-size: small;" >
                                     </div>
                                   </div>
                                 </div>
@@ -668,7 +668,7 @@
                                 
                                 <div class="form-group">
                                   <label>Sales Price (Rs)</label>
-                                  <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="125000.000" >
+                                  <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="125000.000" style="font-size: small;" >
             
                                 </div>
                                 
@@ -679,7 +679,7 @@
                               <div class="p-6">                    
                                 <div class="form-group">
                                   <label>Cost Price (Rs)</label>
-                                  <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="100000.000" >
+                                  <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="100000.000" style="font-size: small;" >
                                 </div>
                               </div>
                             </div>
@@ -692,7 +692,7 @@
                                     
                                     <div class="form-group">
                                       <label>Unit Of Measure</label>
-                                      <select disabled class="form-control form-control-user" id="unitId" >
+                                      <select disabled class="form-control form-control-user" id="unitId" style="font-size: small;">
                                         <option>Select Unit</option>
                                         <option selected>Unit</option>
                                         <option>No Unit</option>
@@ -714,7 +714,7 @@
                                   <div class="p-6">                    
                                     <div class="form-group">
                                       <label>Company</label>
-                                      <select disabled class="form-control form-control-user" id="unitId">
+                                      <select disabled class="form-control form-control-user" id="unitId" style="font-size: small;">
                                         <option>Select</option>
                                         <option selected>Iaito Infotech Pvt Ltd</option>
                                       </select>
@@ -730,7 +730,7 @@
                               
                               <div class="form-group">
                                 <label>Tax</label>
-                                <select disabled class="form-control" id="unitId" multiple>
+                                <select disabled class="form-control" id="unitId" multiple style="font-size: small;">
                                   <option>Select Tax</option>
                                   <option selected>Cess 0.5%</option>
                                   <option>GST 0%</option>
@@ -750,7 +750,7 @@
                             <div class="p-6">                    
                               <div class="form-group">
                                 <label>Description</label>
-                                <textarea disabled class="form-control" aria-label="Large">Neckless 232</textarea>
+                                <textarea disabled class="form-control" aria-label="Large" style="font-size: small;">Neckless 232</textarea>
                               </div>
                             </div>
                           </div>
@@ -763,7 +763,7 @@
                             
                             <div class="form-group">
                               <label>Weight (Gram)</label>
-                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="29.52" >
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="29.52" style="font-size: small;">
         
                             </div>
                             
@@ -837,7 +837,7 @@
             </nav>
 
 
-            <a href="create_product_variant.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Create New Variant</a>
+            <a href="create_product_variant.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="font-size: small;"><i class=" text-white-50"></i> Create New Variant</a>
           </div>
 
 
@@ -848,7 +848,7 @@
             
             
 
-            <div class="card-body">
+            <div class="card-body" style="font-size: small;">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>

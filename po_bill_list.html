@@ -187,8 +187,6 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="employee_list.html">Employee</a>
             <a class="collapse-item" href="#">Designation</a>
-             <a class="collapse-item" href="#">User Login</a>
-             <a class="collapse-item" href="#">Role</a>
           </div>
         </div>
       </li>
@@ -199,7 +197,7 @@
         Accounting
       </div>
 
-      <li class="nav-item">
+     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAccounting" aria-expanded="true" aria-controls="collapseAccounting">
           <i class="fas fa-fw fa-cog"></i>
           <span>Accounting</span>
@@ -225,7 +223,7 @@
         </a>
         <div id="collapseReports" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Analytics</a>
+            <a class="collapse-item" href="#">Analytics</a>
           </div>
         </div>
       </li>
@@ -245,9 +243,11 @@
         <div id="collapseSecurity" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Security Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Security Group</a>
-            <a class="collapse-item" href="cards.html">Permission</a>
-            <a class="collapse-item" href="cards.html">Access Right</a>
+            <a class="collapse-item" href="user_login_list.html">User Login</a>
+            <a class="collapse-item" href="user_role_list.html">Role</a>
+            <!-- <a class="collapse-item" href="#">Security Group</a> -->
+            <a class="collapse-item" href="user_permission_list.html">Permission</a>
+            <!-- <a class="collapse-item" href="#">Access Right</a> -->
           </div>
         </div>
       </li>
@@ -260,8 +260,8 @@
         <div id="collapseSettings" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Setting Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Currency</a>
-            <a class="collapse-item" href="cards.html">Payment Terms</a>
+            <a class="collapse-item" href="#">Currency</a>
+            <a class="collapse-item" href="#">Payment Terms</a>
           </div>
         </div>
       </li>
@@ -512,10 +512,10 @@
                 <a href="create_po_bill.html" class="btn btn-primary" role="button" style="font-size: small;">Create New</a>
               </div>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="font-size: small;">
 
               <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0" style="font-size: small;">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0" >
                   <thead>
                     <tr>
                       <th>Select</th>

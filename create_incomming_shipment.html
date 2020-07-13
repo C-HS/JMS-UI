@@ -187,8 +187,6 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="employee_list.html">Employee</a>
             <a class="collapse-item" href="#">Designation</a>
-             <a class="collapse-item" href="#">User Login</a>
-             <a class="collapse-item" href="#">Role</a>
           </div>
         </div>
       </li>
@@ -199,7 +197,7 @@
         Accounting
       </div>
 
-      <li class="nav-item">
+     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAccounting" aria-expanded="true" aria-controls="collapseAccounting">
           <i class="fas fa-fw fa-cog"></i>
           <span>Accounting</span>
@@ -225,7 +223,7 @@
         </a>
         <div id="collapseReports" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Analytics</a>
+            <a class="collapse-item" href="#">Analytics</a>
           </div>
         </div>
       </li>
@@ -245,9 +243,11 @@
         <div id="collapseSecurity" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Security Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Security Group</a>
-            <a class="collapse-item" href="cards.html">Permission</a>
-            <a class="collapse-item" href="cards.html">Access Right</a>
+            <a class="collapse-item" href="user_login_list.html">User Login</a>
+            <a class="collapse-item" href="user_role_list.html">Role</a>
+            <!-- <a class="collapse-item" href="#">Security Group</a> -->
+            <a class="collapse-item" href="user_permission_list.html">Permission</a>
+            <!-- <a class="collapse-item" href="#">Access Right</a> -->
           </div>
         </div>
       </li>
@@ -260,8 +260,8 @@
         <div id="collapseSettings" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Setting Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Currency</a>
-            <a class="collapse-item" href="cards.html">Payment Terms</a>
+            <a class="collapse-item" href="#">Currency</a>
+            <a class="collapse-item" href="#">Payment Terms</a>
           </div>
         </div>
       </li>
@@ -474,8 +474,8 @@
           <h1 class="h3 mb-0 text-gray-800">Purchase Order [PO002]</h1>
          </div>
          <div class="row mb-2 ml-1">
-          <a href="view_po_shipment.html" class="btn btn-primary" role="button">Save</a> &nbsp;
-          <a href="po_ship_list.html" class="btn btn-secondary" role="button">Discard</a> 
+          <a href="view_po_shipment.html" class="btn btn-primary" role="button" style="font-size: small;">Save</a> &nbsp;
+          <a href="po_ship_list.html" class="btn btn-secondary" role="button" style="font-size: small;">Discard</a> 
           <!-- <input type="button" class="btn btn-primary" value="Save">&nbsp;
           <input type="button" class="btn btn-secondary" value="Discard"> -->
          </div>
@@ -493,10 +493,10 @@
 
               <div class="row" style="float: right;">
                 <!-- <a href="#" class="btn btn-info" role="button">Bill <span>1</span></a> &nbsp; -->
-                <a href="view_po_shipment.html" class="btn btn-primary" role="button">Confirm</a>
+                <a href="view_po_shipment.html" class="btn btn-primary" role="button" style="font-size: small;">Confirm</a>
               </div>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="font-size: small;">
               <form>
                 <!-- <div class="row">
                   <h3> &nbsp; New</h3>
@@ -508,7 +508,7 @@
                         <label for="customer">Vendor</label>
                       </div>
                       <div class="col-sm-8">
-                        <select id="customer" class="form-control">
+                        <select id="customer" class="form-control" style="font-size: small;">
                           <option value="Customer One"></option>
                           <option value="Customer One">XYS Corp</option>
                           <option value="Customer Two">Yogendra Singh</option>
@@ -520,7 +520,7 @@
                         <label for="expiration">Company</label>
                       </div>
                       <div class="col-sm-8">
-                        <select id="expiration" class="form-control">
+                        <select id="expiration" class="form-control" style="font-size: small;">
                           <option value="expiration one">Iaito Infotech P Ltd</option>
                         </select>
                       </div>
@@ -530,7 +530,7 @@
                         <label for="paymentTerms">Facility</label>
                       </div>
                       <div class="col-sm-8">
-                        <select id="expiration" class="form-control">
+                        <select id="expiration" class="form-control" style="font-size: small;">
                           <option value="pTerms1"></option>
                           <option value="pTerms2">Warehouse A</option>
                           <option value="pTerms3">Warehouse B</option>
@@ -558,7 +558,7 @@
                         <label for="quotationDate">Schedule Date</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="date" class="form-control form-control-user" id="quotationDate" name="birthday">
+                        <input type="date" class="form-control form-control-user" id="quotationDate" name="birthday" style="font-size: small;">
                         <!-- <select id="expiration" class="form-control">
                           <option value="qDate1">Quotation Expiration Date One</option>
                           <option value="qDate2">Quotation Expiration Date Two</option>
@@ -573,7 +573,7 @@
                         <label for="expiration">Source Document</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="text"  class="form-control form-control-user">
+                        <input type="text"  class="form-control form-control-user" style="font-size: small;">
                       </div>
                     </div>
                     
@@ -582,7 +582,7 @@
                         <label for="paymentTerms">Location</label>
                       </div>
                       <div class="col-sm-8">
-                        <select id="expiration" class="form-control">
+                        <select id="expiration" class="form-control" style="font-size: small;">
                           <option value="pTerms1"></option>
                           <option value="pTerms2">A1AS1S1L3P2</option>
                           <option value="pTerms3">A1AS3S2L5P1</option>
@@ -628,7 +628,7 @@
                   <div class="col-sm-8">
                   </div>
                 </div>
-                <div id="OL" class="container tab-pane active">
+                <div id="OL" class="container tab-pane active" style="font-size: small;">
                   <!-- <h3>Order Line</h3> -->
                   <table class="table table-bordered table-hover" id="tab_logic" style="font-size: small;">
                     <thead>
@@ -724,7 +724,7 @@
                   </div>
                 </div> -->
                 </div>
-                <div id="OP" class="container tab-pane">
+                <div id="OP" class="container tab-pane" style="font-size: small;">
                   <h3>Optional Products</h3>
                 </div>
                 <div id="OI" class="container tab-pane"  style="font-size: small;">

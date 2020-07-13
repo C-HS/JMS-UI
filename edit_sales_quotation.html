@@ -188,8 +188,6 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="employee_list.html">Employee</a>
             <a class="collapse-item" href="#">Designation</a>
-             <a class="collapse-item" href="#">User Login</a>
-             <a class="collapse-item" href="#">Role</a>
           </div>
         </div>
       </li>
@@ -200,7 +198,7 @@
         Accounting
       </div>
 
-      <li class="nav-item">
+     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAccounting" aria-expanded="true" aria-controls="collapseAccounting">
           <i class="fas fa-fw fa-cog"></i>
           <span>Accounting</span>
@@ -226,7 +224,7 @@
         </a>
         <div id="collapseReports" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Analytics</a>
+            <a class="collapse-item" href="#">Analytics</a>
           </div>
         </div>
       </li>
@@ -246,9 +244,11 @@
         <div id="collapseSecurity" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Security Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Security Group</a>
-            <a class="collapse-item" href="cards.html">Permission</a>
-            <a class="collapse-item" href="cards.html">Access Right</a>
+            <a class="collapse-item" href="user_login_list.html">User Login</a>
+            <a class="collapse-item" href="user_role_list.html">Role</a>
+            <!-- <a class="collapse-item" href="#">Security Group</a> -->
+            <a class="collapse-item" href="user_permission_list.html">Permission</a>
+            <!-- <a class="collapse-item" href="#">Access Right</a> -->
           </div>
         </div>
       </li>
@@ -261,8 +261,8 @@
         <div id="collapseSettings" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Setting Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Currency</a>
-            <a class="collapse-item" href="cards.html">Payment Terms</a>
+            <a class="collapse-item" href="#">Currency</a>
+            <a class="collapse-item" href="#">Payment Terms</a>
           </div>
         </div>
       </li>
@@ -475,8 +475,8 @@
           <h1 class="h3 mb-0 text-gray-800">Sales Quotation</h1>
          </div>
          <div class="row mb-2 ml-1">
-          <a href="view_sales_quotation.html" class="btn btn-primary" role="button">Save</a> &nbsp;
-          <a href="view_sales_quotation.html" class="btn btn-secondary" role="button">Discard</a> 
+          <a href="view_sales_quotation.html" class="btn btn-primary" role="button" style="font-size: small;">Save</a> &nbsp;
+          <a href="view_sales_quotation.html" class="btn btn-secondary" role="button" style="font-size: small;">Discard</a> 
           <!-- <input type="button" class="btn btn-primary" value="Save">&nbsp;
           <input type="button" class="btn btn-secondary" value="Discard"> -->
          </div>
@@ -495,7 +495,7 @@
                 &nbsp;<input type="button" class="btn btn-secondary" value="Cancel">
               </div> -->
             </div>
-            <div class="card-body">
+            <div class="card-body" style="font-size: small;">
               <form>
                 <div class="row">
                   <h3> &nbsp; SO0001</h3>
@@ -507,7 +507,7 @@
                         <label for="customer">Customer</label>
                       </div>
                       <div class="col-sm-8">
-                        <select id="customer" class="form-control">
+                        <select id="customer" class="form-control" style="font-size: small;">
                           <option value="Customer One"></option>
                           <option selected value="Customer One">ABC Jwellers</option>
                           <option value="Customer Two">Rahul</option>
@@ -519,7 +519,7 @@
                         <label for="paymentTerms">Payment Terms</label>
                       </div>
                       <div class="col-sm-8">
-                        <select id="expiration" class="form-control">
+                        <select id="expiration" class="form-control" style="font-size: small;">
                           <option value="pTerms1"></option>
                           <option selected value="pTerms2">15 Days After Receiving Goods</option>
                           <option value="pTerms3">30% Advance and 70% On Receiving Goods</option>
@@ -546,7 +546,7 @@
                         <label for="quotationDate">Quotation Date</label>
                       </div>
                       <div class="col-sm-8">
-                        <input value="2020-01-01" type="date" class="form-control form-control-user" id="quotationDate">
+                        <input value="2020-01-01" type="date" class="form-control form-control-user" id="quotationDate" style="font-size: small;">
                         <!-- <select id="expiration" class="form-control">
                           <option value="qDate1">Quotation Expiration Date One</option>
                           <option value="qDate2">Quotation Expiration Date Two</option>
@@ -562,7 +562,7 @@
                       </div>
                       <div class="col-sm-8">
 
-                        <input value="2020-02-01"  type="date" class="form-control form-control-user" id="expiration" name="birthday">
+                        <input value="2020-02-01"  type="date" class="form-control form-control-user" id="expiration" name="birthday" style="font-size: small;">
                         <!-- <select id="expiration" class="form-control">
                           <option value="expiration one">Expiration Date One</option>
                           <option value="expiration Two">Expiration Date Two</option>
@@ -681,13 +681,13 @@
                         <tr id='addr1'></tr>
                     </tbody>
                 </table>
-                <input type="button" class="btn btn-info" id="addRow" value="Add">
-                <input type="button" class="btn btn-danger float-right" id="deleteRow" value="Delete">
+                <input type="button" class="btn btn-info" id="addRow" value="Add" style="font-size: small;">
+                <input type="button" class="btn btn-danger float-right" id="deleteRow" value="Delete" style="font-size: small;">
                 <!-- <a id="add_row" class="btn btn-default pull-left">Add Row</a><a id='delete_row' class="pull-right btn btn-default">Delete Row</a> -->
                 <br/><br/>
                 <div class="row">
                   <div class="col-sm-8">
-                    <textarea name="termsAndCond" placeholder="Terms and Conditions" id="termsAndCond" class="form-control form-control-user"  ></textarea>
+                    <textarea name="termsAndCond" placeholder="Terms and Conditions" id="termsAndCond" class="form-control form-control-user" style="font-size: small;" ></textarea>
                   </div>
                   <div class="col-sm-4">
                     <div class="row">
@@ -737,7 +737,7 @@
                           <label for="salesPerson">Sales Person</label>
                         </div>
                         <div class="col-sm-8">
-                          <select id="salesPerson" class="form-control">
+                          <select id="salesPerson" class="form-control" style="font-size: small;">
                             <option value="sPerson1"></option>
                             <option selected value="sPerson1">Ankit Tripathi</option>
                             <option value="sPerson2">Ramendra Verma</option>
@@ -752,7 +752,7 @@
                           <label for="fiscalPosition">Fiscal Position</label>
                         </div>
                         <div class="col-sm-8">
-                          <select id="fiscalPosition" class="form-control">
+                          <select id="fiscalPosition" class="form-control" style="font-size: small;">
                             <option value="fPosition1"></option>
                             <option value="fPosition1">Within State</option>
                             <option selected value="fPosition2">Inter State</option>
@@ -799,7 +799,7 @@
                           <label for="company">Company</label>
                         </div>
                         <div class="col-sm-8">
-                          <select id="company" class="form-control">
+                          <select id="company" class="form-control" style="font-size: small;">
                             <option value="company1">Iaito Infotech P Ltd</option>
                             <!-- <option value="company2">Company Two</option>
                             <option value="company3">Company Three</option> -->
@@ -831,7 +831,7 @@
                           <label for="onlinePayment">Payment Mode</label>
                         </div>
                         <div class="col-sm-8">
-                          <input type="Text" class="form-control" id="onlinePayment" checked>
+                          <input type="Text" class="form-control" id="onlinePayment" style="font-size: small;" >
                         </div>
                       </div>
                     </div>
@@ -845,7 +845,7 @@
                           <label for="customerRef">Customer Reference</label>
                         </div>
                         <div class="col-sm-8">
-                          <input type="text" class="form-control" id="customerRef" value="PO5095">
+                          <input type="text" class="form-control" id="customerRef" value="PO5095" style="font-size: small;">
                         </div>
                       </div>
                     </div>
@@ -867,7 +867,7 @@
                           <label for="shippingPolicy">Shipping Policy</label>
                         </div>
                         <div class="col-sm-8">
-                          <select id="shippingPolicy" class="form-control">
+                          <select id="shippingPolicy" class="form-control" style="font-size: small;">
                             <option value="asap"></option>
                             <option selected value="asap">As Soon As Possible</option>
                             <option value="FCFS">When All Products Are Ready</option>
@@ -893,7 +893,7 @@
                           <label for="incoterm">Incoterm</label>
                         </div>
                         <div class="col-sm-8">
-                          <select id="incoterm" class="form-control">
+                          <select id="incoterm" class="form-control" style="font-size: small;">
                             <option value="asap"></option>
                             <option value="asap">Free On Board</option>
                             <option value="FCFS">Cost And Freight</option>
@@ -910,7 +910,7 @@
                           <label for="deliveryDate">Delivery Date</label>
                         </div>
                         <div class="col-sm-8">
-                          <input type="date" class="form-control" id="deliveryDate">
+                          <input type="date" class="form-control" id="deliveryDate" style="font-size: small;">
                         </div>
                       </div>
                     </div>

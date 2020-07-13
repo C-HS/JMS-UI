@@ -151,17 +151,15 @@
         Human Resource
       </div>
 
-     <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEmployee" aria-expanded="true" aria-controls="collapseEmployee">
           <i class="fas fa-fw fa-cog"></i>
           <span>Employee</span>
         </a>
         <div id="collapseEmployee" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Employee</a>
-            <a class="collapse-item" href="cards.html">Designation</a>
-             <a class="collapse-item" href="cards.html">User Login</a>
-             <a class="collapse-item" href="cards.html">Role</a>
+            <a class="collapse-item" href="employee_list.html">Employee</a>
+            <a class="collapse-item" href="#">Designation</a>
           </div>
         </div>
       </li>
@@ -179,8 +177,8 @@
         </a>
         <div id="collapseAccounting" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Invoice</a>
-            <a class="collapse-item" href="cards.html">Bill</a>
+            <a class="collapse-item" href="invoice_list.html">Invoice</a>
+            <a class="collapse-item" href="bill_list.html">Bill</a>
           </div>
         </div>
       </li>
@@ -198,7 +196,7 @@
         </a>
         <div id="collapseReports" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Analytics</a>
+            <a class="collapse-item" href="#">Analytics</a>
           </div>
         </div>
       </li>
@@ -218,9 +216,11 @@
         <div id="collapseSecurity" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Security Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Security Group</a>
-            <a class="collapse-item" href="cards.html">Permission</a>
-            <a class="collapse-item" href="cards.html">Access Right</a>
+            <a class="collapse-item" href="user_login_list.html">User Login</a>
+            <a class="collapse-item" href="user_role_list.html">Role</a>
+            <!-- <a class="collapse-item" href="#">Security Group</a> -->
+            <a class="collapse-item" href="user_permission_list.html">Permission</a>
+            <!-- <a class="collapse-item" href="#">Access Right</a> -->
           </div>
         </div>
       </li>
@@ -233,8 +233,8 @@
         <div id="collapseSettings" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Setting Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Currency</a>
-            <a class="collapse-item" href="cards.html">Payment Terms</a>
+            <a class="collapse-item" href="#">Currency</a>
+            <a class="collapse-item" href="#">Payment Terms</a>
           </div>
         </div>
       </li>
@@ -462,7 +462,7 @@
             </nav>
 
 
-            <a href="edit_company.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Edit</a>
+            <a href="edit_company.html" style="font-size: small;" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class=" text-white-50"></i> Edit</a>
            
 
             
@@ -478,7 +478,7 @@
             <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary"><a href="company.html">Company</a> [IAITO INFOTECH P LTD]</h6>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="font-size: small;">
 
               <form>
 
@@ -495,7 +495,7 @@
                           <div class="p-6">                    
                             <div class="form-group">
                               <label>Company ID</label>
-                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="COM_001">
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="COM_001" style="font-size: small;">
                             </div>
                           </div>
                         </div>
@@ -503,7 +503,7 @@
                           <div class="p-6">
                             <div class="form-group">
                               <label>Company Name</label>
-                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="IAITO INFOTECH P LTD" >
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="IAITO INFOTECH P LTD" style="font-size: small;">
                             </div>
                           </div>
                         </div>
@@ -517,7 +517,7 @@
                             
                             <div class="form-group">
                               <label>Address Line 1</label>
-                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="LIG-124, Maharshi Dayanand Vihar">
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="LIG-124, Maharshi Dayanand Vihar" style="font-size: small;">
         
                             </div>
                             
@@ -528,7 +528,7 @@
                           <div class="p-6">                    
                             <div class="form-group">
                               <label>Address Line 2</label>
-                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="Kalyanpur" >
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="Kalyanpur" style="font-size: small;">
                             </div>
                           </div>
                         </div>
@@ -544,7 +544,7 @@
                           
                           <div class="form-group">
                             <label>City</label>
-                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="Kanpur" >
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="Kanpur" style="font-size: small;">
       
                           </div>
                           
@@ -555,7 +555,7 @@
                         <div class="p-6">                    
                           <div class="form-group">
                             <label>Country</label>
-                            <select disabled class="form-control form-control-user" id="catalogId" >
+                            <select disabled class="form-control form-control-user" id="catalogId"  style="font-size: small;">
                               <option>Select Country</option>
                               <option selected>India</option>
                             </select>
@@ -571,7 +571,7 @@
                         <div class="p-6">                    
                           <div class="form-group">
                             <label>State</label>
-                            <select disabled class="form-control form-control-user" id="catalogId" >
+                            <select disabled class="form-control form-control-user" id="catalogId" style="font-size: small;" >
                               <option>Select State</option>
                               <option>Delhi</option>
                               <option>Maharashtra</option>
@@ -585,7 +585,7 @@
                         <div class="p-6">                    
                           <div class="form-group">
                             <label>Postal Code</label>
-                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="208017">
+                            <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="208017" style="font-size: small;">
                           </div>
                         </div>
                       </div>
@@ -599,7 +599,7 @@
                                       
                                 <div class="form-group">
                                       <label>Phone Number</label>
-                                      <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="512-" >
+                                      <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="512-" style="font-size: small;">
                 
                                     </div>
                                     
@@ -611,7 +611,7 @@
                                     
                                     <div class="form-group">
                                           <label>Email</label>
-                                          <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="info@iaito.co.in" >
+                                          <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="info@iaito.co.in" style="font-size: small;" >
                     
                                         </div>
                                         
@@ -626,7 +626,7 @@
                                 
                           <div class="form-group">
                                 <label>Mobile</label>
-                                <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="+91-" >
+                                <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="+91-" style="font-size: small;">
           
                               </div>
                               
@@ -638,7 +638,7 @@
                               
                             <div class="form-group">
                                   <label>Website</label>
-                                  <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="http://www.iaito.co.in" >
+                                  <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="http://www.iaito.co.in" style="font-size: small;">
             
                                 </div>
                                 
@@ -654,7 +654,7 @@
                                 
                           <div class="form-group">
                                 <label>GSTIN</label>
-                                <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="" >
+                                <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="" style="font-size: small;">
           
                               </div>
                               
@@ -666,7 +666,7 @@
                               
                             <div class="form-group">
                                   <label>Registration</label>
-                                  <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="" >
+                                  <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="" style="font-size: small;">
             
                                 </div>
                                 
@@ -681,7 +681,7 @@
                                     
                                     <div class="form-group">
                                       <label>Currency</label>
-                                      <select disabled class="form-control form-control-user" id="unitId" >
+                                      <select disabled class="form-control form-control-user" id="unitId" style="font-size: small;">
                                         <option>Select Currency</option>
                                         <option selected>INR</option>
                                         <option>USD</option>
@@ -698,7 +698,7 @@
                                   <div class="p-6">                    
                                     <div class="form-group">
                                       <label>Parent Company (If Any)</label>
-                                      <select disabled class="form-control form-control-user" id="unitId">
+                                      <select disabled class="form-control form-control-user" id="unitId" style="font-size: small;">
                                         <option>Select</option>
                                       </select>
                                     </div>
@@ -754,7 +754,7 @@
             
             
 
-            <div class="card-body">
+            <div class="card-body" style="font-size: small;">
               <div class="table-responsive">
 
 

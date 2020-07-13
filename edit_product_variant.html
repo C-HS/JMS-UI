@@ -245,17 +245,15 @@
         Human Resource
       </div>
 
-     <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEmployee" aria-expanded="true" aria-controls="collapseEmployee">
           <i class="fas fa-fw fa-cog"></i>
           <span>Employee</span>
         </a>
         <div id="collapseEmployee" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Employee</a>
-            <a class="collapse-item" href="cards.html">Designation</a>
-             <a class="collapse-item" href="cards.html">User Login</a>
-             <a class="collapse-item" href="cards.html">Role</a>
+            <a class="collapse-item" href="employee_list.html">Employee</a>
+            <a class="collapse-item" href="#">Designation</a>
           </div>
         </div>
       </li>
@@ -273,8 +271,8 @@
         </a>
         <div id="collapseAccounting" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Invoice</a>
-            <a class="collapse-item" href="cards.html">Bill</a>
+            <a class="collapse-item" href="invoice_list.html">Invoice</a>
+            <a class="collapse-item" href="bill_list.html">Bill</a>
           </div>
         </div>
       </li>
@@ -292,7 +290,7 @@
         </a>
         <div id="collapseReports" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Analytics</a>
+            <a class="collapse-item" href="#">Analytics</a>
           </div>
         </div>
       </li>
@@ -312,9 +310,11 @@
         <div id="collapseSecurity" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Security Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Security Group</a>
-            <a class="collapse-item" href="cards.html">Permission</a>
-            <a class="collapse-item" href="cards.html">Access Right</a>
+            <a class="collapse-item" href="user_login_list.html">User Login</a>
+            <a class="collapse-item" href="user_role_list.html">Role</a>
+            <!-- <a class="collapse-item" href="#">Security Group</a> -->
+            <a class="collapse-item" href="user_permission_list.html">Permission</a>
+            <!-- <a class="collapse-item" href="#">Access Right</a> -->
           </div>
         </div>
       </li>
@@ -327,8 +327,8 @@
         <div id="collapseSettings" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Setting Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Currency</a>
-            <a class="collapse-item" href="cards.html">Payment Terms</a>
+            <a class="collapse-item" href="#">Currency</a>
+            <a class="collapse-item" href="#">Payment Terms</a>
           </div>
         </div>
       </li>
@@ -549,7 +549,7 @@
             <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary"><a href="product.html">Product</a> -> <a href="view_product.html">PROD_001 (Neckless 232)</a> -> Product Variant -> <a href="view_product_variant.html">NL_232-01</a> ->Edit</h6>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="font-size: small;">
 
               <form>
 
@@ -566,7 +566,7 @@
                           <div class="p-6">                    
                             <div class="form-group">
                               <label>Product ID</label>
-                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="PROD_001">
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="PROD_001" style="font-size: small;">
                             </div>
                           </div>
                         </div>
@@ -574,7 +574,7 @@
                           <div class="p-6">
                             <div class="form-group">
                               <label>Product Name</label>
-                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Neckless 232">
+                              <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail"  value="Neckless 232" style="font-size: small;">
                             </div>
                           </div>
                         </div>
@@ -589,7 +589,7 @@
                           
                           <div class="form-group">
                             <label>Internal Reference</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="NL_232-01"  >
+                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="NL_232-01"  style="font-size: small;">
       
                           </div>
                           
@@ -601,7 +601,7 @@
                           
                           <div class="form-group">
                             <label>Weight (Gram)</label>
-                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="29.52" >
+                            <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="29.52" style="font-size: small;">
       
                           </div>
                           
@@ -617,7 +617,7 @@
                                 
                                 <div class="form-group">
                                   <label>Sales Price (Rs)</label>
-                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="125000.000" >
+                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="125000.000" style="font-size: small;">
             
                                 </div>
                                 
@@ -628,7 +628,7 @@
                               <div class="p-6">                    
                                 <div class="form-group">
                                   <label>Cost Price (Rs)</label>
-                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="100000.000" >
+                                  <input type="text"  class="form-control form-control-user" id="exampleInputEmail" value="100000.000" style="font-size: small;">
                                 </div>
                               </div>
                             </div>
@@ -642,7 +642,7 @@
                             <div class="p-6">                    
                               <div class="form-group">
                                 <label>QOH</label>
-                                <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="3" >
+                                <input disabled type="text"  class="form-control form-control-user" id="exampleInputEmail" value="3" style="font-size: small;">
                               </div>
                             </div>
                           </div>
@@ -651,7 +651,7 @@
                             <div class="p-6">                    
                               <div class="form-group">
                                 <label>Description</label>
-                                <textarea class="form-control" aria-label="Large">Neckless 232</textarea>
+                                <textarea class="form-control" aria-label="Large" style="font-size: small;">Neckless 232</textarea>
                               </div>
                             </div>
                           </div>
@@ -691,7 +691,7 @@
                    
 
 
-          <div class="tab-content mb-3">
+          <div class="tab-content mb-3" style="font-size: small;">
 
               <div id="variant_attribute" class="card-body tab-pane active">
                       
@@ -719,7 +719,7 @@
                                               1
                                               </td>
                                               <td>
-                                                <select  class="form-control" name="attribute1">
+                                                <select  class="form-control" name="attribute1" style="font-size: small;">
                                                   <option>Select Attribute</option>
                                                   <option selected>Polish</option>
                                                   <option>Color</option>
@@ -733,10 +733,10 @@
                                                 </select>
                                               </td>
                                               <td>
-                                              <input  type="text" name='attributeValue1'  class="form-control" value="No Polish"/>
+                                              <input  type="text" name='attributeValue1'  class="form-control" value="No Polish" style="font-size: small;"/>
                                               </td>
                                               <td>
-                                                <input disabled type="text" name='unit1'  class="form-control" value="No Unit"/>
+                                                <input disabled type="text" name='unit1'  class="form-control" value="No Unit" style="font-size: small;"/>
                                               </td>
                                           </tr>
                                           <tr id='attributeRow2'>
@@ -744,7 +744,7 @@
                                            2
                                             </td>
                                             <td>
-                                              <select class="form-control" id="attribute2">
+                                              <select class="form-control" id="attribute2" style="font-size: small;">
                                                 <option>Select Attribute</option>
                                                 <option>Polish</option>
                                                 <option>Color</option>
@@ -758,18 +758,18 @@
                                               </select>
                                             </td>
                                             <td>
-                                            <input type="text" name='attributeValue2' placeholder='Sample Desc' class="form-control" value="0"/>
+                                            <input type="text" name='attributeValue2' placeholder='Sample Desc' class="form-control" value="0" style="font-size: small;"/>
                                             </td>
                                             <td>
-                                              <input disabled type="text" name='unit2' placeholder='Sample Desc' class="form-control" value="Piece"/>
+                                              <input disabled type="text" name='unit2' placeholder='Sample Desc' class="form-control" value="Piece" style="font-size: small;"/>
                                             </td>
                                         </tr>
                                           <tr id='attributeRow3'></tr>
                                       </tbody>
                                   </table>
                                
-                                  <input type="button" class="btn btn-primary" id="addAttributeRow" value="Add Row">
-                                  <input type="button" class="btn btn-secondary float-right" id="deleteAttributeRow" value="Delete Row">
+                                  <input type="button" class="btn btn-primary" id="addAttributeRow" value="Add Row" style="font-size: small;">
+                                  <input type="button" class="btn btn-secondary float-right" id="deleteAttributeRow" value="Delete Row" style="font-size: small;">
                                  
                            
                </div>
@@ -805,23 +805,23 @@
                                 1
                                 </td>
                                 <td>
-                                  <input type="text" name='customerName1' placeholder='Sample Desc' class="form-control" value="ABC Jwellers"/>
+                                  <input type="text" name='customerName1' placeholder='Sample Desc' class="form-control" value="ABC Jwellers" style="font-size: small;"/>
                                   </td>
                                 <td>
-                                <input type="text" name='customerType1' placeholder='Sample Desc' class="form-control" value="Company"/>
+                                <input type="text" name='customerType1' placeholder='Sample Desc' class="form-control" value="Company" style="font-size: small;"/>
                                 </td>
                                 <td>
-                                  <input type="text" name='price1' placeholder='Sample Desc' class="form-control" value="125000.000"/>
+                                  <input type="text" name='price1' placeholder='Sample Desc' class="form-control" value="125000.000" style="font-size: small;"/>
                                 </td>
                                 <td>
-                                  <select  class="form-control" name="currency1">
+                                  <select  class="form-control" name="currency1" style="font-size: small;">
                                       <option>Select</option>
                                       <option selected>INR</option>
                                       <option>USD</option>
                                    </select>
                                 </td>
                                 <td>
-                                  <input type="checkbox" name='customerCheckbox1'  class="form-control" />
+                                  <input type="checkbox" name='customerCheckbox1'  class="form-control" style="font-size: small;"/>
                                 </td>
                           </tr>
                           <tr id='customerRow2'>
@@ -829,13 +829,13 @@
                           2
                             </td>
                             <td>
-                              <input type="text" name='customerName2' placeholder='Sample Desc' class="form-control" value="Rahul"/>
+                              <input type="text" name='customerName2' placeholder='Sample Desc' class="form-control" value="Rahul" style="font-size: small;"/>
                               </td>
                             <td>
-                            <input type="text" name='customerType2' placeholder='Sample Desc' class="form-control" value="Individual"/>
+                            <input type="text" name='customerType2' placeholder='Sample Desc' class="form-control" value="Individual" style="font-size: small;"/>
                             </td>
                             <td>
-                              <input type="text" name='price2' placeholder='Sample Desc' class="form-control" value="125000.000"/>
+                              <input type="text" name='price2' placeholder='Sample Desc' class="form-control" value="125000.000" style="font-size: small;"/>
                             </td>
                             <td>
                               <select  class="form-control" name="currency2">
@@ -845,15 +845,15 @@
                              </select>
                             </td>
                             <td>
-                              <input type="checkbox" name='customerCheckbox2'  class="form-control" />
+                              <input type="checkbox" name='customerCheckbox2'  class="form-control" style="font-size: small;"/>
                             </td>
                         </tr>
                           <tr id='customerRow3'></tr>
                       </tbody>
                   </table>
 
-                  <input type="button" class="btn btn-primary" id="addCustomerRow" value="Add Customer">
-                  <input type="button" class="btn btn-secondary float-right" id="deleteCustomerRow" value="Remove Customer">
+                  <input type="button" class="btn btn-primary" id="addCustomerRow" value="Add Customer" style="font-size: small;">
+                  <input type="button" class="btn btn-secondary float-right" id="deleteCustomerRow" value="Remove Customer" style="font-size: small;">
                  
               
                 </div>
@@ -890,24 +890,24 @@
                             1
                             </td>
                             <td>
-                              <input type="text" name='vendorName1' placeholder='Sample Desc' class="form-control" value="XYS Corp"/>
+                              <input type="text" name='vendorName1' placeholder='Sample Desc' class="form-control" value="XYS Corp" style="font-size: small;"/>
                               </td>
                             <td>
-                            <input type="text" name='vendorType1' placeholder='Sample Desc' class="form-control" value="Company"/>
+                            <input type="text" name='vendorType1' placeholder='Sample Desc' class="form-control" value="Company" style="font-size: small;"/>
                             </td>
                             <td>
-                              <input type="text" name='costPrice1' placeholder='Sample Desc' class="form-control" value="115000.000"/>
+                              <input type="text" name='costPrice1' placeholder='Sample Desc' class="form-control" value="115000.000" style="font-size: small;"/>
                             </td>
                             <td>
                              
-                              <select  class="form-control" name="costCurrency1">
+                              <select  class="form-control" name="costCurrency1" style="font-size: small;">
                                 <option>Select</option>
                                 <option selected>INR</option>
                                 <option>USD</option>
                              </select>
                             </td>
                             <td>
-                              <input type="checkbox" name='vendorCheckbox1'  class="form-control" />
+                              <input type="checkbox" name='vendorCheckbox1'  class="form-control" style="font-size: small;"/>
                             </td>
                       </tr>
                       <tr id='vendorRow2'>
@@ -915,31 +915,31 @@
                       2
                         </td>
                         <td>
-                          <input type="text" name='vendorName2' placeholder='Sample Desc' class="form-control" value="Yogendra Singh"/>
+                          <input type="text" name='vendorName2' placeholder='Sample Desc' class="form-control" value="Yogendra Singh" style="font-size: small;"/>
                           </td>
                         <td>
-                        <input type="text" name='vendorType2' placeholder='Sample Desc' class="form-control" value="Individual"/>
+                        <input type="text" name='vendorType2' placeholder='Sample Desc' class="form-control" value="Individual" style="font-size: small;"/>
                         </td>
                         <td>
-                          <input type="text" name='costPrice2' placeholder='Sample Desc' class="form-control" value="110000.000"/>
+                          <input type="text" name='costPrice2' placeholder='Sample Desc' class="form-control" value="110000.000" style="font-size: small;"/>
                         </td>
                         <td>
-                          <select  class="form-control" name="costCurrency2">
+                          <select  class="form-control" name="costCurrency2" style="font-size: small;">
                             <option>Select</option>
                             <option selected>INR</option>
                             <option>USD</option>
                          </select>
                         </td>
                         <td>
-                          <input type="checkbox" name='vendorCheckbox2'  class="form-control" />
+                          <input type="checkbox" name='vendorCheckbox2'  class="form-control" style="font-size: small;" />
                         </td>
                     </tr>
                       <tr id='vendorRow3'></tr>
                   </tbody>
               </table>
 
-              <input type="button" class="btn btn-primary" id="addVendorRow" value="Add Vendor">
-                  <input type="button" class="btn btn-secondary float-right" id="deleteVendorRow" value="Remove Vendor">
+              <input type="button" class="btn btn-primary" id="addVendorRow" value="Add Vendor" style="font-size: small;">
+                  <input type="button" class="btn btn-secondary float-right" id="deleteVendorRow" value="Remove Vendor" style="font-size: small;">
               </div>
                   
        </div>

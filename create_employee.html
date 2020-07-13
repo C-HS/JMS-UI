@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Catalog</title>
+  <title>Employee</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -120,8 +120,8 @@
         Catalog Management
       </div>
 
-     <li class="nav-item active">
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
+     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseProduct">
           <i class="fas fa-fw fa-cog"></i>
           <span>Product</span>
         </a>
@@ -141,30 +141,32 @@
         Inventory Management
       </div>
 
-     <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCompany" aria-expanded="true" aria-controls="collapseCompany">
           <i class="fas fa-fw fa-cog"></i>
           <span>Company</span>
         </a>
         <div id="collapseCompany" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Company</a>
-            <a class="collapse-item" href="cards.html">Facility</a>
-             <a class="collapse-item" href="cards.html">Location</a>
-             <a class="collapse-item" href="cards.html">Tray</a>
+            <a class="collapse-item" href="company.html">Company</a>
+            <a class="collapse-item" href="facility.html">Facility</a>
+             <a class="collapse-item" href="location.html">Location</a>
+             <a class="collapse-item" href="tray.html">Tray</a>
           </div>
         </div>
       </li>
 
 
-    <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInventory" aria-expanded="true" aria-controls="collapseInventory">
           <i class="fas fa-fw fa-cog"></i>
           <span>Inventory</span>
         </a>
         <div id="collapseInventory" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Inventory</a>
+            <a class="collapse-item" href="inventory.html">Inventory</a>
+            <a class="collapse-item" href="in-out-inventory.html">Inv-In-Out</a>
+            <a class="collapse-item" href="search-inventory.html">Inv-Search</a>
           </div>
         </div>
       </li>
@@ -175,8 +177,8 @@
         Human Resource
       </div>
 
-     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEmployee" aria-expanded="true" aria-controls="collapseEmployee">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseEmployee" aria-expanded="true" aria-controls="collapseEmployee">
           <i class="fas fa-fw fa-cog"></i>
           <span>Employee</span>
         </a>
@@ -184,8 +186,6 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item active" href="employee_list.html">Employee</a>
             <a class="collapse-item" href="#">Designation</a>
-             <a class="collapse-item" href="#">User Login</a>
-             <a class="collapse-item" href="#">Role</a>
           </div>
         </div>
       </li>
@@ -203,8 +203,8 @@
         </a>
         <div id="collapseAccounting" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Invoice</a>
-            <a class="collapse-item" href="cards.html">Bill</a>
+            <a class="collapse-item" href="invoice_list.html">Invoice</a>
+            <a class="collapse-item" href="bill_list.html">Bill</a>
           </div>
         </div>
       </li>
@@ -222,7 +222,7 @@
         </a>
         <div id="collapseReports" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Analytics</a>
+            <a class="collapse-item" href="#">Analytics</a>
           </div>
         </div>
       </li>
@@ -242,9 +242,11 @@
         <div id="collapseSecurity" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Security Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Security Group</a>
-            <a class="collapse-item" href="cards.html">Permission</a>
-            <a class="collapse-item" href="cards.html">Access Right</a>
+            <a class="collapse-item" href="user_login_list.html">User Login</a>
+            <a class="collapse-item" href="user_role_list.html">Role</a>
+            <!-- <a class="collapse-item" href="#">Security Group</a> -->
+            <a class="collapse-item" href="user_permission_list.html">Permission</a>
+            <!-- <a class="collapse-item" href="#">Access Right</a> -->
           </div>
         </div>
       </li>
@@ -257,8 +259,8 @@
         <div id="collapseSettings" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Setting Controls:</h6>
-            <a class="collapse-item" href="buttons.html">Currency</a>
-            <a class="collapse-item" href="cards.html">Payment Terms</a>
+            <a class="collapse-item" href="#">Currency</a>
+            <a class="collapse-item" href="#">Payment Terms</a>
           </div>
         </div>
       </li>
@@ -478,12 +480,12 @@
          <!-- Card -->
           <div class="card shadow mb-4">
             <!-- Card Header -->
-            <div class="card-header py-3">
-              <a href="view_employee.html" class="btn btn-primary mr-1">Save</a>
-              <a href="employee_list.html" class="btn btn-secondary mr-1">Discard</a>
+            <div class="card-header py-2">
+              <a href="view_employee.html" class="btn btn-primary mr-1" style="font-size: small;">Save</a>
+              <a href="employee_list.html" class="btn btn-secondary mr-1" style="font-size: small;">Discard</a>
             </div>
             <!-- Card Body -->
-            <div class="card-body">
+            <div class="card-body" style="font-size: small;">
               <div class="row">
                 <div class="col-sm-8">
                   <div class="row">
@@ -491,7 +493,7 @@
                       <label for="name">Name</label>
                     </div>
                     <div class="col-sm-8">
-                      <input type="text" class="form-control" id="name">
+                      <input type="text" class="form-control" id="name" style="font-size: small;">
                     </div>
                   </div>
                   <div class="row">
@@ -499,7 +501,7 @@
                       <label for="workEmail">Work Email</label>
                     </div>
                     <div class="col-sm-8">
-                      <input type="text" class="form-control" id="workEmail">
+                      <input type="text" class="form-control" id="workEmail" style="font-size: small;">
                     </div>
                   </div>
                   <div class="row">
@@ -507,7 +509,7 @@
                       <label for="workPhone">Work Phone</label>
                     </div>
                     <div class="col-sm-8">
-                      <input type="text" class="form-control" id="workkPhone">
+                      <input type="text" class="form-control" id="workkPhone" style="font-size: small;">
                     </div>
                   </div>
                 </div>
@@ -515,18 +517,19 @@
                   <img class="img-profile float-right" width="120px" height="120px" src="img/placeholder.png">
                 </div>
               </div>
-              <div class="row">
+              
+
                 <ul class="nav nav-tabs">
                   <li class="nav-item">
                     <a class="nav-link active" href="#publicInformation" data-toggle="pill">Public Information</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#personalInformation" class="nav-link" data-toggle="pill">Personal Infrmation</a>
+                    <a href="#personalInformation" class="nav-link" data-toggle="pill">Personal Information</a>
                   </li>
                 </ul>
-              </div>
+              
             </div>
-            <div class="tab-content mb-3">
+            <div class="tab-content mb-3" style="font-size: small;">
               <div class="container tab-pane active" id="publicInformation">
                 <div class="row">
                   <div class="col-sm-6">
@@ -543,7 +546,7 @@
                         <label for="workingAddress">Working Address</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control" id="workingAddress">
+                        <select class="form-control" id="workingAddress" style="font-size: small;">
                           <option value="CompAdd1">Company Address One</option>
                           <option value="CompAdd2">Company Address Two</option>
                           <option value="CompAdd3">Company Address Three</option>
@@ -557,7 +560,7 @@
                         <label for="department">Department</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control" id="department">
+                        <select class="form-control" id="department" style="font-size: small;">
                           <option value="dept1">Department One</option>
                           <option value="dept2">Department Two</option>
                           <option value="dept3">Department Three</option>
@@ -573,7 +576,7 @@
                         <label for="workMobile">Work Mobile</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="text" class="form-control" id="workMobile">
+                        <input type="text" class="form-control" id="workMobile" style="font-size: small;">
                       </div>
                     </div>
                   </div>
@@ -583,7 +586,7 @@
                         <label for="jobTitle">Job Title</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control" id="department">
+                        <select class="form-control" id="department" style="font-size: small;">
                           <option value="jt1">Job Title One</option>
                           <option value="jt2">Job Title Two</option>
                           <option value="jt3">Job title Three</option>
@@ -599,7 +602,7 @@
                         <label for="officeLocation">Office Location</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="text" class="form-control" id="workMobile">
+                        <input type="text" class="form-control" id="workMobile" style="font-size: small;">
                       </div>
                     </div>
                   </div>
@@ -609,7 +612,7 @@
                         <label for="manager">Manager</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control" id="manager">
+                        <select class="form-control" id="manager" style="font-size: small;">
                           <option value="manager1">Manager One</option>
                           <option value="manager2">Manager Two</option>
                           <option value="manager3">Manager Three</option>
@@ -627,7 +630,7 @@
                         <label for="coach">Coach</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control" id="coach">
+                        <select class="form-control" id="coach" style="font-size: small;">
                           <option value="coach1">Coach One</option>
                           <option value="coach2">Coach Two</option>
                           <option value="coach3">Coach Three</option>
@@ -645,7 +648,7 @@
                         <label for="isAManager">Is a Manager</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="checkbox" id="isAManager">
+                        <input type="checkbox" id="isAManager" style="font-size: small;">
                       </div>
                     </div>
                   </div>
@@ -657,7 +660,7 @@
                         <label for="company">Company</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control" id="company">
+                        <select class="form-control" id="company" style="font-size: small;">
                           <option value="comp1">Company One</option>
                           <option value="comp2">Company Two</option>
                           <option value="comp3">Company Three</option>
@@ -675,7 +678,7 @@
                         <label for="relatedUser">Related User</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control" id="relatedUser">
+                        <select class="form-control" id="relatedUser" style="font-size: small;">
                           <option value="relatedUser1">Related User One</option>
                           <option value="relatedUser2">Related User Two</option>
                           <option value="relatedUser3">Related User Three</option>
@@ -688,7 +691,7 @@
                 </div>
                 <div class="row mt-3">
                   <div class="col-sm-12">
-                    <textarea name="otherInformation" class="form-control" id="otherInfo" rows="4" style="width: inherit;resize: none;" placeholder="Other Information"></textarea>
+                    <textarea  name="otherInformation" class="form-control" id="otherInfo" rows="4" style="width: inherit;resize: none;" placeholder="Other Information" style="font-size: small;"></textarea>
                   </div>
                 </div>
               </div>
@@ -709,7 +712,7 @@
                         <label for="nationality">Nationality</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control" id="nationality">
+                        <select class="form-control" id="nationality" style="font-size: small;">
                           <option value="US">United States</option>
                           <option value="UK">United Kingdom</option>
                           <option value="RS">Russia</option>
@@ -723,7 +726,7 @@
                         <label for="homeAddress">Home Address</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control" id="homeAddress">
+                        <select class="form-control" id="homeAddress" style="font-size: small;">
                           <option value="homeAddr1">Home Address One</option>
                           <option value="homeAddr2">Home Address Two</option>
                           <option value="homeAddr3">Home Address Three</option>
@@ -739,7 +742,7 @@
                         <label for="identificationNumber">Identification Number</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="text" class="form-control" id="identificationNumber">
+                        <input type="text" class="form-control" id="identificationNumber" style="font-size: small;">
                       </div>
                     </div>
                   </div>
@@ -753,7 +756,7 @@
                         <label for="passportNumber">Passport Number</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="text" class="form-control" id="passportNumber">
+                        <input type="text" class="form-control" id="passportNumber" style="font-size: small;">
                       </div>
                     </div>
                   </div>
@@ -767,7 +770,7 @@
                         <label for="accountNumber">Account Number</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="text" class="form-control" id="accountNumber">
+                        <input type="text" class="form-control" id="accountNumber" style="font-size: small;">
                       </div>
                     </div>
                   </div>
@@ -781,7 +784,7 @@
                         <label for="otherID">Other Identification</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control" id="otherID">
+                        <select class="form-control" id="otherID" style="font-size: small;">
                           <option value="otherID1">Other ID One</option>
                           <option value="otherID2">Other ID Two</option>
                           <option value="otherID3">Other ID Three</option>
@@ -807,7 +810,7 @@
                         <label for="gender">Gender</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control" id="gender">
+                        <select class="form-control" id="gender" style="font-size: small;">
                           <option value="gender1">Male</option>
                           <option value="gender2">Female</option>
                           <option value="gender3">Other</option>
@@ -821,7 +824,7 @@
                         <label for="dob">Date of Birth</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="date" class="form-control" id="dob">
+                        <input type="date" class="form-control" id="dob" style="font-size: small;">
                       </div>
                     </div>
                   </div>
@@ -833,7 +836,7 @@
                         <label for="mStatus">Marital Status</label>
                       </div>
                       <div class="col-sm-8">
-                        <select class="form-control" id="mStatus">
+                        <select class="form-control" id="mStatus" style="font-size: small;">
                           <option value="mStatus1">Married</option>
                           <option value="mStatus2">Engadged</option>
                           <option value="mStatus3">Committed</option>
@@ -848,7 +851,7 @@
                         <label for="pob">Place of Birth</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="text" class="form-control" id="pob">
+                        <input type="text" class="form-control" id="pob" style="font-size: small;">
                       </div>
                     </div>
                   </div>
@@ -860,7 +863,7 @@
                         <label for="numberOfChildren">Number of Children</label>
                       </div>
                       <div class="col-sm-8">
-                        <input type="text" class="form-control" id="numberOfChildren">
+                        <input type="text" class="form-control" id="numberOfChildren" style="font-size: small;">
                       </div>
                     </div>
                   </div>
