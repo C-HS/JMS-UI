@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<h2>MCF Manufacturing Process</h2>
+<p>Tree View</p>
+<p>For manufacturing 50 coaches of "Coach_T1"</p>
+
+<ul id="myUL">
+  <li><span class="caret" style="color:blue">Coach_T1 [50/20]</span>
+    <ul class="nested">
+      <li><span class="caret" style="color:blue">Left [50/25]</span>
+          <ul class="nested">
+              <li><span class="caret" style="color:blue">C1 [100/60]</span>
+                <ul class="nested">
+                  <li><span class="caret" style="color:blue">C4 [400/300]</span>
+                       <ul class="nested">
+                        <li><span class="caret" style="color:blue"> C16 [800/600]</span></li>
+                        <li><span class="caret" style="color:brown">C17 [400/360]</span></li>
+                        <li><span class="caret" style="color:blue">C18 [400/320]</span></li>
+                        <li><span class="caret" style="color:blue">C19 [400/310]</span></li>
+                      </ul>
+                  </li>
+                  <li><span class="caret" style="color:brown">C5 [400/370]</span></li>
+                  <li><span class="caret" style="color:blue">C6 [800/750]</span></li>
+                  <li><span class="caret" style="color:green">C7 [400/400]</span></li>
+                </ul>
+               </li>
+               <li><span class="caret" style="color:blue">C2 [150/95]</span>
+                <ul class="nested">
+                  <li><span class="caret" style="color:green">C8 [300/300]</span></li>
+                  <li><span class="caret" style="color:blue">C9 [150/145]</span></li>
+                  <li><span class="caret" style="color:blue">C10 [150/148]</span></li>
+                  <li><span class="caret" style="color:blue">C11 [400/145]</span></li>
+                </ul>
+              </li>
+              <li><span class="caret" style="color:green">C3 [50/50]</span>
+                <ul class="nested">
+                  <li><span class="caret" style="color:green">C12 [100/100]</span></li>
+                  <li><span class="caret" style="color:green">C13 [50/50]</span></li>
+                  <li><span class="caret" style="color:green">C14 [150/150]</span></li>
+                  <li><span class="caret" style="color:green">C15 [50/50]</span></li>
+                </ul>
+              </li>
+              
+            </ul>
+      </li>
+      <li><span class="caret" style="color:blue">Right [50/22]</span></li>
+      <li><span class="caret" style="color:blue">Top [50/24]</span></li>
+      <li><span class="caret" style="color:blue">Botton [50/20]</span></li>
+      <li><span class="caret" style="color:blue">Front [50/25]</span></li>
+      <li><span class="caret" style="color:blue">Back [50/27]</span></li> 
+    </ul>
+  </li>
+</ul>
+
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+
+</body>
+</html>
