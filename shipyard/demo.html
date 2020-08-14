@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Leaflet sample</title>
+      <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+      <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+   </head>
+
+   <body>
+      <div id = "map" style = "width: 900px; height: 580px"></div>
+      <script>
+         // Creating map options             center: [17.385044, 78.486671],
+         var mapOptions = {
+            center: [17.385044, 78.486671],
+            zoom: 10
+         }
+         var iconOptionsMultiContainer = {
+	   iconUrl: 'containers.png',
+	   iconSize: [50, 50]
+	 }
+	 var iconOptionsSingleContainer = {
+	   iconUrl: 'container.png',
+	   iconSize: [50, 50]
+	 }
+
+	// Creating a custom icon
+	var customIconMulti = L.icon(iconOptionsMultiContainer);
+	var customIconSingle = L.icon(iconOptionsSingleContainer);
+         var markerOptionsMultiContainer = {
+		   title: "MultipleContainer",
+		   clickable: true,
+		   draggable: true,
+		   icon: customIconMulti
+		}
+         var markerOptionsSingleContainer = {
+		   title: "Single Container",
+		   clickable: true,
+		   draggable: true,
+		   icon: customIconSingle
+		}
+	
+         var marker = new L.Marker([17.200000, 80.486671], markerOptionsMultiContainer);
+         var marker1 = new L.Marker([17.200000, 80.336671], markerOptionsMultiContainer);
+	 var marker2 = new L.Marker([17.200000, 80.186671], markerOptionsSingleContainer);
+	 
+         marker.bindPopup('Multiple Containers Piled up<br/>Count: 3').openPopup();
+         marker1.bindPopup('Multiple Containers Piled up<br/>Count: 3').openPopup();
+         marker2.bindPopup('Single Container Here...').openPopup();
+         
+         // Creating a map object
+         var map = new L.map('map', mapOptions);
+         
+         marker.addTo(map);
+         marker1.addTo(map);
+         marker2.addTo(map);
+         
+         // Creating a Layer object
+         var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+         
+         // Adding layer to the map
+         map.addLayer(layer);
+         // Creating latlng object
+ 	 var latlngs = [
+	    [17.342761, 78.552432],
+	    [16.396553, 80.727725]
+	  ];
+         var rectOptions = {color: 'Red', weight: 1}   // Creating rectOptions
+        
+         // Creating a rectangle
+         var rectangle = L.rectangle(latlngs, rectOptions);
+         rectangle.addTo(map);   // Adding to rectangle to map
+      </script>
+   </body>
+   
+</html>
