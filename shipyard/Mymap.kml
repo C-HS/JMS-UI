@@ -13,6 +13,19 @@
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
     </Style>
+    <Style id="icon-1899-9C27B0-labelson-nodesc">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
     <Style id="poly-0288D1-1200-77-nodesc-normal">
       <LineStyle>
         <color>ffd18802</color>
@@ -428,6 +441,15 @@
             </LinearRing>
           </outerBoundaryIs>
         </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Point</name>
+        <styleUrl>#icon-1899-9C27B0-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            80.26547,26.5048542,0
+          </coordinates>
+        </Point>
       </Placemark>
     </Folder>
   </Document>
