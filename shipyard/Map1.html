@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Layer: Polygon</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwuwxYJx4WAOPZy4l_M9jqRh7wpoSe6gE&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script>
+      "use strict";
+
+      // This example uses the Google Maps JavaScript API's Data layer
+      // to create a rectangular polygon with 2 holes in it.
+      function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 13,
+          center: {
+            lat: 26.51244,
+            lng: 80.26225
+          }
+        }); // Define the LatLng coordinates for the outer path.
+
+                  const outerCoords = [
+    { lat: 26.51244, lng: 80.26225 },
+    { lat: 26.50928, lng: 80.26867 },
+    { lat: 26.50733, lng: 80.27391 },
+    { lat: 26.49661, lng: 80.26921 },
+    { lat: 26.49941, lng: 80.25851 },
+    { lat: 26.50125, lng: 80.25561 },
+    { lat: 26.50125, lng: 80.25561 },
+    { lat: 26.50308, lng: 80.25771 }
+  ];
+
+        /*const outerCoords = [
+          {
+            lat: -32.364,
+            lng: 153.207
+          },
+          {
+            lat: -35.364,
+            lng: 153.207
+          },
+          {
+            lat: -35.364,
+            lng: 158.207
+          },
+          {
+            lat: -32.364,
+            lng: 158.207
+          } 
+        ]; */
+
+       /* const innerCoords1 = [
+          {
+            lat: -33.364,
+            lng: 154.207
+          },
+          {
+            lat: -34.364,
+            lng: 154.207
+          },
+          {
+            lat: -34.364,
+            lng: 155.207
+          },
+          {
+            lat: -33.364,
+            lng: 155.207
+          }
+        ]; */
+        // Define the LatLng coordinates for another inner path.
+
+        /*const innerCoords2 = [
+          {
+            lat: -33.364,
+            lng: 156.207
+          },
+          {
+            lat: -34.364,
+            lng: 156.207
+          },
+          {
+            lat: -34.364,
+            lng: 157.207
+          },
+          {
+            lat: -33.364,
+            lng: 157.207
+          }
+        ];*/
+        map.data.add({
+          geometry: new google.maps.Data.Polygon([
+            outerCoords
+            /*innerCoords1,
+            innerCoords2*/
+          ])
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
+</html>
